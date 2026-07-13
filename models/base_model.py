@@ -1,17 +1,18 @@
-"""Base model abstractions for tabpfm failure cases.
 
+Abstract base class for all models.
 """
 
-from abc import ABC, abstractmethod
+class BaseModel:
 
-
-class BaseModel(ABC):
-
-    @abstractmethod
     def fit(self, X, y):
+        """Train model."""
         pass
 
-    @abstractmethod
     def predict(self, X):
+        """Predict."""
+        pass
+
+    def predict_proba(self, X):
+        """Predict probabilities."""
         pass
   
