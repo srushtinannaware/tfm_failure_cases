@@ -22,7 +22,7 @@ Currently the following models will be evaluated:
 
 - TabPFN v2
 - TabPFN v2.5
-- TabPFN v2.6
+- TabFM
 - TabPFN v3
 - NanoTabPFN
 
