@@ -20,10 +20,10 @@ This environment does not include the TFM model packages themselves, because dif
 ## Models
 Currently the following models will be evaluated:
 
-- TabPFN v2
-- TabPFN v2.5
+- TabPFN V2
+- TabPFN V2.5
 - TabFM
-- TabPFN v3
+- TabPFN V3
 - NanoTabPFN
 
 ---
