@@ -1,9 +1,28 @@
+# Core numerical and benchmark stack
 numpy
 pandas
 matplotlib
 scikit-learn
 scipy
 seaborn
+
+# Interactive analysis
 jupyterlab
+notebook
+
+# Utilities and planned baselines
 tqdm
 pyyaml
+catboost
+
+# Tabular foundation models available from PyPI
+tabicl>=2.1
+tabpfn>=8.0.1
+
+# TabFM is intentionally not listed as a package requirement. It currently
+# needs to be cloned and installed from its official repository:
+#   git clone https://github.com/google-research/tabfm.git
+#   pip install -e ".[pytorch]"
+#
+# nanoTabPFN is also not a normal inference dependency. Its official project
+# requires cloning the repository and training a NanoTabPFNModel before use.

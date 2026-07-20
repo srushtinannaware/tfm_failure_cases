@@ -11,6 +11,7 @@ dependencies:
   - scikit-learn
   - scipy
   - seaborn
+  - catboost
 
   - jupyterlab
   - notebook
@@ -18,3 +19,5 @@ dependencies:
   - pip:
       - tqdm
       - pyyaml
+      - tabicl>=2.1
+      - tabpfn>=8.0.1
