@@ -80,6 +80,17 @@ def _create_nanotabpfn() -> Any:
     )
 
 
+def _create_realmlp() -> Any:
+    try:
+        from pytabkit import RealMLP_TD_Classifier
+    except ImportError as error:
+        raise ModelSetupError(
+            "RealMLP is not installed. Install it with: pip install pytabkit"
+        ) from error
+
+    return RealMLP_TD_Classifier(random_state=42)
+
+
 _MODEL_REGISTRY: dict[str, tuple[str, ModelFactory]] = {
     "tabpfn_v2": ("TabPFN-v2", _tabpfn_factory("V2")),
     "tabpfn_v2_5": ("TabPFN-v2.5", _tabpfn_factory("V2_5")),
@@ -87,6 +98,7 @@ _MODEL_REGISTRY: dict[str, tuple[str, ModelFactory]] = {
     "tabicl_v2": ("TabICL-v2", _create_tabicl_v2),
     "tabfm": ("TabFM-v1.0", _create_tabfm),
     "nanotabpfn": ("nanoTabPFN", _create_nanotabpfn),
+    "realmlp": ("RealMLP-TD", _create_realmlp),
 }
 
 _ALIASES = {
@@ -97,6 +109,8 @@ _ALIASES = {
     "tabicl": "tabicl_v2",
     "tabfm_v1": "tabfm",
     "nano_tabpfn": "nanotabpfn",
+    "real_mlp": "realmlp",
+    "realmlp_td": "realmlp",
 }
 
 

@@ -1,0 +1,133 @@
+dataset_module,dataset_variant,model,seed,n_samples,n_features,train_samples,test_samples,accuracy,balanced_accuracy,precision_macro,recall_macro,f1_macro,fit_seconds,prediction_seconds,total_seconds,log_loss,roc_auc,status,error
+kate_datasets,F1_base,TabPFN-v3,0,10000,3,7500,2500,0.9776,0.9775559724539806,0.9776660386140332,0.9775559724539806,0.9775953541726412,128.69508354199934,34.70294204101083,163.39802558301017,0.10486002428306226,0.9793878505899198,success,
+kate_datasets,F1_base,RealMLP-TD,0,10000,3,7500,2500,,,,,,,,,,,failed,RealMLP is not installed. Install it with: pip install pytabkit
+kate_datasets,F1_noisy,TabPFN-v3,0,10000,3,7500,2500,0.8092,0.8091319377760706,0.8091574683524854,0.8091319377760706,0.8091435370239932,0.3206212090153713,29.482588625018252,29.803209834033623,0.45952415654044343,0.8579597977082133,success,
+kate_datasets,F1_noisy,RealMLP-TD,0,10000,3,7500,2500,,,,,,,,,,,failed,RealMLP is not installed. Install it with: pip install pytabkit
+kate_datasets,F1_irrelevant,TabPFN-v3,0,10000,18,7500,2500,0.9788,0.9788005857294995,0.9787996664317865,0.9788005857294995,0.978799969471956,0.3000889999966603,45.47733891598182,45.77742791597848,0.09897488192067051,0.9837215583271893,success,
+kate_datasets,F1_irrelevant,RealMLP-TD,0,10000,18,7500,2500,,,,,,,,,,,failed,RealMLP is not installed. Install it with: pip install pytabkit
+kate_datasets,F2_base,TabPFN-v3,0,10000,4,7500,2500,0.9568,0.9567587358158207,0.9568429516727102,0.9567587358158207,0.9567910401900939,0.3033910419908352,41.3867559999926,41.69014704198344,0.1793741497651408,0.957288722297325,success,
+kate_datasets,F2_base,RealMLP-TD,0,10000,4,7500,2500,,,,,,,,,,,failed,RealMLP is not installed. Install it with: pip install pytabkit
+kate_datasets,F2_noisy,TabPFN-v3,0,10000,4,7500,2500,0.7728,0.7728059648954384,0.7728017745931357,0.7728059648954384,0.772799418366511,0.26297279199934565,40.075527375011006,40.33850016701035,0.5118512439477357,0.8228160450567209,success,
+kate_datasets,F2_noisy,RealMLP-TD,0,10000,4,7500,2500,,,,,,,,,,,failed,RealMLP is not installed. Install it with: pip install pytabkit
+kate_datasets,F2_irrelevant,TabPFN-v3,0,10000,24,7500,2500,0.9504,0.9503850040737278,0.950419597383653,0.9503850040737278,0.9503968253968254,0.2787133750098292,63.22523112501949,63.50394450002932,0.19137546942803615,0.957325381723971,success,
+kate_datasets,F2_irrelevant,RealMLP-TD,0,10000,24,7500,2500,,,,,,,,,,,failed,RealMLP is not installed. Install it with: pip install pytabkit
+kate_datasets,R1_base,TabPFN-v3,0,10000,24,7500,2500,0.9748,0.9585902483561246,0.9743295092928734,0.9585902483561246,0.9661273932609642,0.3805869170173537,67.60185325000202,67.98244016701938,0.11807017128173584,0.9626666192817633,success,
+kate_datasets,R1_base,RealMLP-TD,0,10000,24,7500,2500,,,,,,,,,,,failed,RealMLP is not installed. Install it with: pip install pytabkit
+kate_datasets,R1_noisy,TabPFN-v3,0,10000,24,7500,2500,0.7608,0.6860734463894728,0.7370276151653539,0.6860734463894728,0.6988342569082788,0.31596495799021795,66.14076004200615,66.45672499999637,0.5287763032826668,0.7505218620650937,success,
+kate_datasets,R1_noisy,RealMLP-TD,0,10000,24,7500,2500,,,,,,,,,,,failed,RealMLP is not installed. Install it with: pip install pytabkit
+kate_datasets,R1_imbalanced,TabPFN-v3,0,10000,24,7500,2500,0.9796,0.9042421291965919,0.9776150591560462,0.9042421291965919,0.9370983855252284,0.3097367089940235,68.11433883299469,68.42407554198871,0.1002876983857925,0.8975751707992145,success,
+kate_datasets,R1_imbalanced,RealMLP-TD,0,10000,24,7500,2500,,,,,,,,,,,failed,RealMLP is not installed. Install it with: pip install pytabkit
+kate_datasets,R2_base,TabPFN-v3,0,10000,105,7500,2500,,,,,,,,,,,failed,"MPS out of memory with 2,500 test samples.
+
+This is issue is usually caused by one of the following two reasons:
+
+1) Large test set — split into batches:
+
+    predictions = []
+    for i in range(0, len(X_test), 100):
+        pred = model.predict_proba(X_test[i:i + 100])
+        predictions.append(pred)
+    predictions = np.vstack(predictions)
+
+   Only with fit_mode='fit_with_cache', test rows are chunked
+   automatically — lower the TABPFN_MAX_BATCHED_TEST_ROWS
+   environment variable (currently 32768) to
+   reduce peak memory without changing your code.
+
+2) Large training set — batching won't help.
+   Subsample your training data; see https://docs.priorlabs.ai
+   for further guidance.
+
+Your sizes: 7,500 train / 2,500 test samples, 105 features.
+Not sure which? If model.predict_proba(X_test[:1]) also fails, it's (2).
+
+Original error: MPS backend out of memory (MPS allocated: 1.77 GiB, other allocations: 6.51 GiB, max allowed: 8.29 GiB). Tried to allocate 26.50 MiB on shared pool. Use PYTORCH_MPS_HIGH_WATERMARK_RATIO=0.0 to disable upper limit for memory allocations (may cause system failure)."
+kate_datasets,R2_base,RealMLP-TD,0,10000,105,7500,2500,,,,,,,,,,,failed,RealMLP is not installed. Install it with: pip install pytabkit
+kate_datasets,R2_noisy,TabPFN-v3,0,10000,105,7500,2500,,,,,,,,,,,failed,"MPS out of memory with 2,500 test samples.
+
+This is issue is usually caused by one of the following two reasons:
+
+1) Large test set — split into batches:
+
+    predictions = []
+    for i in range(0, len(X_test), 100):
+        pred = model.predict_proba(X_test[i:i + 100])
+        predictions.append(pred)
+    predictions = np.vstack(predictions)
+
+   Only with fit_mode='fit_with_cache', test rows are chunked
+   automatically — lower the TABPFN_MAX_BATCHED_TEST_ROWS
+   environment variable (currently 32768) to
+   reduce peak memory without changing your code.
+
+2) Large training set — batching won't help.
+   Subsample your training data; see https://docs.priorlabs.ai
+   for further guidance.
+
+Your sizes: 7,500 train / 2,500 test samples, 105 features.
+Not sure which? If model.predict_proba(X_test[:1]) also fails, it's (2).
+
+Original error: MPS backend out of memory (MPS allocated: 1.72 GiB, other allocations: 6.54 GiB, max allowed: 8.29 GiB). Tried to allocate 33.00 MiB on shared pool. Use PYTORCH_MPS_HIGH_WATERMARK_RATIO=0.0 to disable upper limit for memory allocations (may cause system failure)."
+kate_datasets,R2_noisy,RealMLP-TD,0,10000,105,7500,2500,,,,,,,,,,,failed,RealMLP is not installed. Install it with: pip install pytabkit
+kate_datasets,R2_imbalanced,TabPFN-v3,0,10000,105,7500,2500,0.904,0.637952708987327,0.720952968424483,0.637952708987327,0.6662773235441348,0.46171537501504645,237.36026795799262,237.82198333300767,0.2385499275234621,0.7798420968492037,success,
+kate_datasets,R2_imbalanced,RealMLP-TD,0,10000,105,7500,2500,,,,,,,,,,,failed,RealMLP is not installed. Install it with: pip install pytabkit
+kate_datasets,S1_base,TabPFN-v3,0,10000,3,7500,2500,0.9464,0.9463986856951588,0.9464055424886798,0.9463986856951588,0.9463996912622217,0.2677482909930404,47.34185475000413,47.60960304099717,0.12515289607517738,0.9908134341205979,success,
+kate_datasets,S1_base,RealMLP-TD,0,10000,3,7500,2500,,,,,,,,,,,failed,RealMLP is not installed. Install it with: pip install pytabkit
+kate_datasets,S1_noisy,TabPFN-v3,0,10000,3,7500,2500,0.8816,0.8816420482331826,0.8815834274142967,0.8816420482331826,0.8815924219150025,0.262427875015419,49.061284583993256,49.323712459008675,0.2656750181945612,0.9565855269727392,success,
+kate_datasets,S1_noisy,RealMLP-TD,0,10000,3,7500,2500,,,,,,,,,,,failed,RealMLP is not installed. Install it with: pip install pytabkit
+kate_datasets,S1_irrelevant,TabPFN-v3,0,10000,18,7500,2500,,,,,,,,,,,failed,"MPS out of memory with 2,500 test samples.
+
+This is issue is usually caused by one of the following two reasons:
+
+1) Large test set — split into batches:
+
+    predictions = []
+    for i in range(0, len(X_test), 100):
+        pred = model.predict_proba(X_test[i:i + 100])
+        predictions.append(pred)
+    predictions = np.vstack(predictions)
+
+   Only with fit_mode='fit_with_cache', test rows are chunked
+   automatically — lower the TABPFN_MAX_BATCHED_TEST_ROWS
+   environment variable (currently 32768) to
+   reduce peak memory without changing your code.
+
+2) Large training set — batching won't help.
+   Subsample your training data; see https://docs.priorlabs.ai
+   for further guidance.
+
+Your sizes: 7,500 train / 2,500 test samples, 18 features.
+Not sure which? If model.predict_proba(X_test[:1]) also fails, it's (2).
+
+Original error: MPS backend out of memory (MPS allocated: 1.74 GiB, other allocations: 6.85 GiB, max allowed: 8.29 GiB). Tried to allocate 32.96 MiB on shared pool. Use PYTORCH_MPS_HIGH_WATERMARK_RATIO=0.0 to disable upper limit for memory allocations (may cause system failure)."
+kate_datasets,S1_irrelevant,RealMLP-TD,0,10000,18,7500,2500,,,,,,,,,,,failed,RealMLP is not installed. Install it with: pip install pytabkit
+kate_datasets,S2_base,TabPFN-v3,0,10000,5,7500,2500,0.946,0.9460636957679545,0.9459783356533704,0.9460636957679545,0.945995429053115,0.2971203330089338,51.75467483300599,52.05179516601493,0.1151095048545183,0.9920265066164121,success,
+kate_datasets,S2_base,RealMLP-TD,0,10000,5,7500,2500,,,,,,,,,,,failed,RealMLP is not installed. Install it with: pip install pytabkit
+kate_datasets,S2_noisy,TabPFN-v3,0,10000,5,7500,2500,0.9068,0.9069127485847281,0.9068671719941962,0.9069127485847281,0.9067992693062714,0.29799233298399486,51.77956525000627,52.077557582990266,0.22565141031983213,0.9692692050665579,success,
+kate_datasets,S2_noisy,RealMLP-TD,0,10000,5,7500,2500,,,,,,,,,,,failed,RealMLP is not installed. Install it with: pip install pytabkit
+kate_datasets,S2_irrelevant,TabPFN-v3,0,10000,25,7500,2500,,,,,,,,,,,failed,"MPS out of memory with 2,500 test samples.
+
+This is issue is usually caused by one of the following two reasons:
+
+1) Large test set — split into batches:
+
+    predictions = []
+    for i in range(0, len(X_test), 100):
+        pred = model.predict_proba(X_test[i:i + 100])
+        predictions.append(pred)
+    predictions = np.vstack(predictions)
+
+   Only with fit_mode='fit_with_cache', test rows are chunked
+   automatically — lower the TABPFN_MAX_BATCHED_TEST_ROWS
+   environment variable (currently 32768) to
+   reduce peak memory without changing your code.
+
+2) Large training set — batching won't help.
+   Subsample your training data; see https://docs.priorlabs.ai
+   for further guidance.
+
+Your sizes: 7,500 train / 2,500 test samples, 25 features.
+Not sure which? If model.predict_proba(X_test[:1]) also fails, it's (2).
+
+Original error: MPS backend out of memory (MPS allocated: 1.24 GiB, other allocations: 7.08 GiB, max allowed: 8.29 GiB). Tried to allocate 16.00 KiB on shared pool. Use PYTORCH_MPS_HIGH_WATERMARK_RATIO=0.0 to disable upper limit for memory allocations (may cause system failure)."
+kate_datasets,S2_irrelevant,RealMLP-TD,0,10000,25,7500,2500,,,,,,,,,,,failed,RealMLP is not installed. Install it with: pip install pytabkit
