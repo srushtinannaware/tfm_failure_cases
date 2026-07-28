@@ -81,14 +81,39 @@ def save_results(
     rows: list[dict[str, Any]],
     dataset_module_name: str,
 ) -> Path:
-    """Save all model results to one CSV."""
+    """Save all model results to one CSV, merging with any existing rows
+    on disk instead of overwriting them. Re-running with a different
+    --models subset (or after a crash partway through) no longer erases
+    previously completed results for the same dataset module."""
     RESULTS_DIR.mkdir(parents=True, exist_ok=True)
 
     csv_path = RESULTS_DIR / f"{dataset_module_name}_results.csv"
 
-    all_columns: list[str] = []
+    # Load whatever already exists for this dataset module
+    existing_rows: list[dict[str, Any]] = []
+    if csv_path.exists():
+        with csv_path.open("r", newline="", encoding="utf-8") as file:
+            existing_rows = list(csv.DictReader(file))
 
+    # A run is uniquely identified by variant + model + seed. New rows
+    # replace old ones with the same key (e.g. a fixed/re-run result
+    # correctly supersedes a stale "failed" row); anything not touched
+    # in this invocation is kept as-is.
+    key_fields = ("dataset_variant", "model", "seed")
+
+    def row_key(row: dict[str, Any]) -> tuple:
+        return tuple(row.get(field) for field in key_fields)
+
+    merged: dict[tuple, dict[str, Any]] = {
+        row_key(row): row for row in existing_rows
+    }
     for row in rows:
+        merged[row_key(row)] = row
+
+    combined_rows = list(merged.values())
+
+    all_columns: list[str] = []
+    for row in combined_rows:
         for column in row:
             if column not in all_columns:
                 all_columns.append(column)
@@ -96,7 +121,7 @@ def save_results(
     with csv_path.open("w", newline="", encoding="utf-8") as file:
         writer = csv.DictWriter(file, fieldnames=all_columns)
         writer.writeheader()
-        writer.writerows(rows)
+        writer.writerows(combined_rows)
 
     return csv_path
 
