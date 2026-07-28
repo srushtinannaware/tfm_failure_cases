@@ -40,13 +40,13 @@ import pandas as pd
 import os
 import json
 
-OUT_DIR = "/home/claude/kate_datasets"
+OUT_DIR = os.path.dirname(os.path.abspath(__file__))
 os.makedirs(OUT_DIR, exist_ok=True)
 
 MASTER_SEED = 42
-N_TRAIN = 8000
-N_TEST = 2000
-N_OOD_TEST = 2000
+N_TRAIN = 1000
+N_TEST = 200
+N_OOD_TEST = 200
 LABEL_NOISE_MEDIUM = 0.02
 LABEL_NOISE_HARD = 0.04
 

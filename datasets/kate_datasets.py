@@ -252,4 +252,4 @@ def run_causal_shortcut_check(
 
 if __name__ == "__main__":
     # Edit this list to change which of your models get run.
-    run_causal_shortcut_check(model_names=["catboost", "realmlp"])
+    run_causal_shortcut_check(model_names=["tabpfn_v2", "tabpfn_v3", "tabicl_v2", "realmlp", "catboost"])
