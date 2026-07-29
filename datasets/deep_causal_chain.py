@@ -100,11 +100,35 @@ def save_csv(seed: int = 0) -> Path:
 # ood_test dropped) - same convention as kate_datasets.py's S1/S2 handling.
 # ---------------------------------------------------------------------------
 def get_datasets(seed: int) -> dict[str, tuple[np.ndarray, np.ndarray]]:
+    """Returns BOTH variants for comparison:
+      - deep_causal_chain: ORIGINAL version, B/C/D/E all exposed as
+        features. Kept as a valid negative-finding baseline - since the
+        immediate parent of label (E) is directly observable, chain depth
+        turned out not to matter; models never needed to trace anything.
+      - deep_causal_chain_hidden: FIXED version, only A and Spur_shortcut
+        exposed. B/C/D/E are hidden latent variables used only to generate
+        the label. This forces a real choice: trust A's weak, noise-decayed
+        marginal correlation with label (the true but indirect cause) vs.
+        Spur_shortcut's clean rho=0.9 correlation with A (the shortcut).
+        As chain depth grows, accumulated hop noise weakens A's signal,
+        which should make the shortcut relatively MORE tempting - this is
+        the actual mechanism the "depth increases shortcut reliance"
+        hypothesis needs, which the original exposed version didn't test.
+    """
     df = generate_full(seed)
-    in_dist = df[df["split"] != "ood_test"].drop(columns=["split"])
-    y = in_dist.pop("label").to_numpy()
-    X = in_dist.to_numpy()
-    return {"deep_causal_chain": (X, y)}
+    in_dist = df[df["split"] != "ood_test"]
+
+    datasets: dict[str, tuple[np.ndarray, np.ndarray]] = {}
+
+    exposed = in_dist.drop(columns=["split"]).copy()
+    y_exposed = exposed.pop("label").to_numpy()
+    datasets["deep_causal_chain"] = (exposed.to_numpy(), y_exposed)
+
+    hidden = in_dist[["A", "Spur_shortcut", "label"]].copy()
+    y_hidden = hidden.pop("label").to_numpy()
+    datasets["deep_causal_chain_hidden"] = (hidden.to_numpy(), y_hidden)
+
+    return datasets
 
 
 # ---------------------------------------------------------------------------
@@ -114,20 +138,28 @@ def get_datasets(seed: int) -> dict[str, tuple[np.ndarray, np.ndarray]]:
 def run_causal_shortcut_check(
     model_names: list[str],
     seeds: list[int] = (0, 1, 2),
+    expose_intermediates: bool = False,
 ) -> list[dict]:
+    """Set expose_intermediates=True to reproduce the ORIGINAL (flawed)
+    version for comparison. Default False runs the FIXED hidden-feature
+    version - only A and Spur_shortcut as features - which is the real
+    test of whether chain depth increases shortcut reliance."""
     from metrics import evaluate_classifier
     from models import get_model
 
     model_factories = get_model(model_names)
     rows: list[dict] = []
+    variant_label = "deep_causal_chain" if expose_intermediates else "deep_causal_chain_hidden"
 
     for seed in seeds:
         df = generate_full(seed)
 
+        feature_cols = FEATURE_COLUMNS if expose_intermediates else ["A", "Spur_shortcut"]
+
         def _split_xy(split_name: str):
-            sub = df[df["split"] == split_name].drop(columns=["split"]).copy()
-            y = sub.pop("label").to_numpy()
-            X = sub.to_numpy()
+            sub = df[df["split"] == split_name]
+            X = sub[feature_cols].to_numpy()
+            y = sub["label"].to_numpy()
             return X, y
 
         X_train, y_train = _split_xy("train")
@@ -135,9 +167,9 @@ def run_causal_shortcut_check(
         X_ood, y_ood = _split_xy("ood_test")
 
         for model_name, factory in model_factories.items():
-            print(f"[deep_causal_chain] {model_name} (seed={seed})...")
+            print(f"[{variant_label}] {model_name} (seed={seed})...")
 
-            base_row = {"variant": "deep_causal_chain", "model": model_name, "seed": seed}
+            base_row = {"variant": variant_label, "model": model_name, "seed": seed}
 
             try:
                 metrics_test = evaluate_classifier(
@@ -172,7 +204,7 @@ def run_causal_shortcut_check(
 
     results_dir = Path("results")
     results_dir.mkdir(parents=True, exist_ok=True)
-    csv_path = results_dir / "deep_causal_chain_check_results.csv"
+    csv_path = results_dir / f"{variant_label}_check_results.csv"
 
     all_columns: list[str] = []
     for row in rows:
@@ -191,5 +223,16 @@ def run_causal_shortcut_check(
 
 if __name__ == "__main__":
     save_csv(seed=0)  # optional inspection copy
-    # Edit this list to change which models the check runs.
-    run_causal_shortcut_check(model_names=["catboost", "realmlp", "tabpfn_v2", "tabpfn_v3", "tabicl_v2"])
+
+    models_to_run = ["catboost", "realmlp", "tabpfn_v2", "tabpfn_v3", "tabicl_v2"]
+
+    print("=" * 70)
+    print("HIDDEN version (the real test) - only A, Spur_shortcut exposed")
+    print("=" * 70)
+    run_causal_shortcut_check(model_names=models_to_run, expose_intermediates=False)
+
+    print()
+    print("=" * 70)
+    print("EXPOSED version (original baseline) - B/C/D/E all visible")
+    print("=" * 70)
+    run_causal_shortcut_check(model_names=models_to_run, expose_intermediates=True)
