@@ -1,84 +1,63 @@
 """
-Context Length & Attention Dilution Dataset:
-Tests transformer in-context attention bottlenecks against standard training scaling.
+Feature Attention Dilution Dataset:
+Tests transformer in-context attention bottlenecks under increasing feature dimensions.
+
+Tree models perform greedy split selection to naturally ignore uninformative 
+features. Transformers pass all feature tokens into self-attention layers,
+diluting attention weights over noisy dimensions as feature count grows.
 
 Variants:
-  - attention_clean_base:   1,000 clean signal training rows.
-  - attention_dilution_50:  1,000 clean + 1,000 noisy training rows (50% signal).
-  - attention_dilution_80:  1,000 clean + 4,000 noisy training rows (20% signal).
-
-Test set stays strictly constant across all variants at N_TEST = 200 clean rows.
+  - attention_clean_base:       5 clean signal features (0 noise features).
+  - attention_dilution_50feat:  5 clean signal features + 45 noise features.
+  - attention_dilution_150feat: 5 clean signal features + 145 noise features.
 
 Usage 1 (Standard main.py harness):
     python main.py --dataset context_length --models catboost realmlp tabpfn_v2 tabpfn_v3 tabicl_v2
 
 Usage 2 (Standalone module check matching deep_causal_chain.py pattern):
-    python datasets/context_length.py
+    python -m datasets.context_length
 """
 
 from __future__ import annotations
 
 import csv as csv_module
 from pathlib import Path
+import sys
 
 import numpy as np
 
 N_TRAIN = 1000
 N_TEST = 200
-N_FEATURES = 8
+N_SIGNAL_FEATURES = 5
 MASTER_SEED_OFFSET = 500
 
 
-def _generate_clean_signal(n: int, rng) -> tuple[np.ndarray, np.ndarray]:
-    X = rng.normal(0, 1, size=(n, N_FEATURES))
-    score = X[:, 0] * X[:, 1] + X[:, 2]
+def _generate_signal_and_labels(n: int, rng) -> tuple[np.ndarray, np.ndarray]:
+    X_signal = rng.normal(0, 1, size=(n, N_SIGNAL_FEATURES))
+    score = X_signal[:, 0] * X_signal[:, 1] + X_signal[:, 2] - X_signal[:, 3] * X_signal[:, 4]
     y = (score > 0).astype(int)
-    return X, y
+    return X_signal, y
 
 
 def get_datasets(seed: int) -> dict[str, tuple[np.ndarray, np.ndarray]]:
-    """
-    Returns full (X, y) combined arrays per variant.
-    The first N_TRAIN (or scaled N_TRAIN) rows form training data,
-    while the final N_TEST (200) rows form the constant clean test set.
-    """
     rng = np.random.default_rng(seed + MASTER_SEED_OFFSET)
+    n_total = N_TRAIN + N_TEST
     datasets: dict[str, tuple[np.ndarray, np.ndarray]] = {}
 
-    # Base clean train (1000) and clean test (200)
-    X_clean_train, y_clean_train = _generate_clean_signal(N_TRAIN, rng)
-    X_clean_test, y_clean_test = _generate_clean_signal(N_TEST, rng)
+    X_signal, y = _generate_signal_and_labels(n_total, rng)
 
-    # 1. Clean Base Variant
-    X_base = np.vstack([X_clean_train, X_clean_test])
-    y_base = np.concatenate([y_clean_train, y_clean_test])
-    datasets["attention_clean_base"] = (X_base, y_base)
+    # Variant 1: Clean Base (5 features)
+    datasets["attention_clean_base"] = (X_signal.copy(), y)
 
-    # 2. 50% Dilution (1000 clean train + 1000 noisy train + 200 clean test)
-    X_noise_1000 = rng.normal(0, 1, size=(1000, N_FEATURES))
-    y_noise_1000 = rng.choice([0, 1], size=1000)
+    # Variant 2: 50 Features Total (5 signal + 45 noise features)
+    X_noise_45 = rng.normal(0, 1, size=(n_total, 45))
+    X_50 = np.hstack([X_signal, X_noise_45])
+    datasets["attention_dilution_50feat"] = (X_50, y)
 
-    X_train_50 = np.vstack([X_clean_train, X_noise_1000])
-    y_train_50 = np.concatenate([y_clean_train, y_noise_1000])
-    perm_50 = rng.permutation(len(y_train_50))
-    X_train_50, y_train_50 = X_train_50[perm_50], y_train_50[perm_50]
-
-    X_50 = np.vstack([X_train_50, X_clean_test])
-    y_50 = np.concatenate([y_train_50, y_clean_test])
-    datasets["attention_dilution_50pct"] = (X_50, y_50)
-
-    # 3. 80% Dilution (1000 clean train + 4000 noisy train + 200 clean test)
-    X_noise_4000 = rng.normal(0, 1, size=(4000, N_FEATURES))
-    y_noise_4000 = rng.choice([0, 1], size=4000)
-
-    X_train_80 = np.vstack([X_clean_train, X_noise_4000])
-    y_train_80 = np.concatenate([y_clean_train, y_noise_4000])
-    perm_80 = rng.permutation(len(y_train_80))
-    X_train_80, y_train_80 = X_train_80[perm_80], y_train_80[perm_80]
-
-    X_80 = np.vstack([X_train_80, X_clean_test])
-    y_80 = np.concatenate([y_train_80, y_clean_test])
-    datasets["attention_dilution_80pct"] = (X_80, y_80)
+    # Variant 3: 150 Features Total (5 signal + 145 noise features)
+    X_noise_145 = rng.normal(0, 1, size=(n_total, 145))
+    X_150 = np.hstack([X_signal, X_noise_145])
+    datasets["attention_dilution_150feat"] = (X_150, y)
 
     return datasets
 
@@ -87,12 +66,9 @@ def run_context_length_check(
     model_names: list[str],
     seeds: list[int] = (0, 1, 2),
 ) -> list[dict]:
-    import sys
     sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
-
     from metrics import evaluate_classifier
     from models import get_model
-
 
     model_factories = get_model(model_names)
     rows: list[dict] = []
@@ -101,9 +77,8 @@ def run_context_length_check(
         dataset_variants = get_datasets(seed)
 
         for variant_name, (X, y) in dataset_variants.items():
-            # Test set is ALWAYS the last N_TEST (200) rows across all variants
-            X_train, y_train = X[:-N_TEST], y[:-N_TEST]
-            X_test, y_test = X[-N_TEST:], y[-N_TEST:]
+            X_train, y_train = X[:N_TRAIN], y[:N_TRAIN]
+            X_test, y_test = X[N_TRAIN:], y[N_TRAIN:]
 
             for model_name, factory in model_factories.items():
                 print(f"[{variant_name}] {model_name} (seed={seed})...")
@@ -164,6 +139,6 @@ if __name__ == "__main__":
     models_to_run = ["catboost", "realmlp", "tabpfn_v2", "tabpfn_v3", "tabicl_v2"]
 
     print("=" * 70)
-    print("Running Context Length & Attention Dilution Benchmark")
+    print("Running Context Length & Feature Attention Dilution Benchmark")
     print("=" * 70)
     run_context_length_check(model_names=models_to_run)

@@ -6,21 +6,22 @@ prior, while CatBoost naturally approximates them using axis-aligned splits.
 
 Variants:
   - periodic_low_freq:        sin(1 * x0) > 0 (Easy baseline)
-  - periodic_mid_freq:        sin(4 * x0) > 0 (Medium difficulty)
-  - periodic_high_freq:       sin(10 * x0) > 0 (Exposes TFM prior smoothing)
-  - periodic_2d_checkerboard: sin(6 * x0) * cos(6 * x1) > 0 (Complex 2D grid)
+  - periodic_mid_freq:        sin(3 * x0) > 0 (Medium difficulty)
+  - periodic_high_freq:       sin(6 * x0) > 0 (Exposes TFM prior smoothing)
+  - periodic_2d_checkerboard: sin(2 * x0) * cos(2 * x1) > 0 (2D Grid)
 
 Usage 1 (Standard main.py harness):
     python main.py --dataset periodic_boundary --models catboost realmlp tabpfn_v2 tabpfn_v3 tabicl_v2
 
 Usage 2 (Standalone module check matching deep_causal_chain.py pattern):
-    python datasets/periodic_boundary.py
+    python -m datasets.periodic_boundary
 """
 
 from __future__ import annotations
 
 import csv as csv_module
 from pathlib import Path
+import sys
 
 import numpy as np
 
@@ -35,22 +36,24 @@ def get_datasets(seed: int) -> dict[str, tuple[np.ndarray, np.ndarray]]:
     n_total = N_TRAIN + N_TEST
     datasets: dict[str, tuple[np.ndarray, np.ndarray]] = {}
 
-    X = rng.uniform(-np.pi * 2, np.pi * 2, size=(n_total, N_FEATURES))
+    # Sample uniformly in [-pi, pi]
+    X = rng.uniform(-np.pi, np.pi, size=(n_total, N_FEATURES))
 
-    # Variant 1: Low Frequency (Smooth)
+    # Variant 1: Low Frequency (Smooth baseline)
     y_low = (np.sin(1.0 * X[:, 0]) > 0).astype(int)
     datasets["periodic_low_freq"] = (X, y_low)
 
     # Variant 2: Mid Frequency
-    y_mid = (np.sin(4.0 * X[:, 0]) > 0).astype(int)
+    y_mid = (np.sin(3.0 * X[:, 0]) > 0).astype(int)
     datasets["periodic_mid_freq"] = (X, y_mid)
 
-    # Variant 3: High Frequency (Violates TFM smoothness prior)
-    y_high = (np.sin(10.0 * X[:, 0]) > 0).astype(int)
+    # Variant 3: High Frequency
+    y_high = (np.sin(6.0 * X[:, 0]) > 0).astype(int)
     datasets["periodic_high_freq"] = (X, y_high)
 
-    # Variant 4: 2D Oscillating Interaction (Checkerboard pattern)
-    y_2d = (np.sin(6.0 * X[:, 0]) * np.cos(6.0 * X[:, 1]) > 0).astype(int)
+    # Variant 4: 2D Calibrated Checkerboard Pattern
+    # Frequency=2 over [-pi, pi] yields 16 grid cells (62.5 train samples/cell)
+    y_2d = (np.sin(2.0 * X[:, 0]) * np.cos(2.0 * X[:, 1]) > 0).astype(int)
     datasets["periodic_2d_checkerboard"] = (X, y_2d)
 
     return datasets
@@ -60,12 +63,10 @@ def run_periodic_boundary_check(
     model_names: list[str],
     seeds: list[int] = (0, 1, 2),
 ) -> list[dict]:
-    import sys
     sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
-
     from metrics import evaluate_classifier
     from models import get_model
-    
+
     model_factories = get_model(model_names)
     rows: list[dict] = []
 
@@ -73,7 +74,6 @@ def run_periodic_boundary_check(
         dataset_variants = get_datasets(seed)
 
         for variant_name, (X, y) in dataset_variants.items():
-            # Explicit split matching N_TRAIN (1000) and N_TEST (200)
             X_train, y_train = X[:N_TRAIN], y[:N_TRAIN]
             X_test, y_test = X[N_TRAIN:], y[N_TRAIN:]
 
