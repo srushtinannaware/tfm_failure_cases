@@ -87,12 +87,12 @@ def run_context_length_check(
     model_names: list[str],
     seeds: list[int] = (0, 1, 2),
 ) -> list[dict]:
-    """
-    Evaluates requested models across attention dilution variants,
-    keeping the test set fixed at N_TEST = 200 clean samples.
-    """
+    import sys
+    sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+
     from metrics import evaluate_classifier
     from models import get_model
+
 
     model_factories = get_model(model_names)
     rows: list[dict] = []

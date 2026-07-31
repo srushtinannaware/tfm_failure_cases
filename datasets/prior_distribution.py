@@ -73,12 +73,13 @@ def run_prior_distribution_check(
     model_names: list[str],
     seeds: list[int] = (0, 1, 2),
 ) -> list[dict]:
-    """
-    Evaluates requested models across all prior distribution variants,
-    prints metrics live, and saves results to results/prior_distribution_check_results.csv.
-    """
+    import sys
+    # Add project root directory to sys.path
+    sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+
     from metrics import evaluate_classifier
     from models import get_model
+
 
     model_factories = get_model(model_names)
     rows: list[dict] = []

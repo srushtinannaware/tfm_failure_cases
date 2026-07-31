@@ -60,13 +60,12 @@ def run_periodic_boundary_check(
     model_names: list[str],
     seeds: list[int] = (0, 1, 2),
 ) -> list[dict]:
-    """
-    Evaluates requested models across all periodic boundary variants,
-    prints metrics live, and saves results to results/periodic_boundary_check_results.csv.
-    """
+    import sys
+    sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+
     from metrics import evaluate_classifier
     from models import get_model
-
+    
     model_factories = get_model(model_names)
     rows: list[dict] = []
 
