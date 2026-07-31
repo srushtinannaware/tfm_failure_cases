@@ -1,0 +1,693 @@
+Could not save font_manager cache [Errno 122] Disk quota exceeded: '/home/pereirak/.cache/matplotlib/fontlist-v3.11.0.json.matplotlib-lock'
+/project/dl2026s/pereirak/miniconda3/envs/tfm/lib/python3.12/site-packages/torch/cuda/__init__.py:422: UserWarning: Found GPU0 NVIDIA GeForce GTX 1080 Ti which is of compute capability (CC) 6.1.
+The following list shows the CCs this version of PyTorch was built for and the hardware CCs it supports:
+- 7.5 which supports hardware CC >=7.5,<8.0
+- 8.0 which supports hardware CC >=8.0,<9.0 except {8.7}
+- 8.6 which supports hardware CC >=8.6,<9.0 except {8.7}
+- 9.0 which supports hardware CC >=9.0,<10.0
+- 10.0 which supports hardware CC >=10.0,<11.0 except {10.1}
+- 12.0 which supports hardware CC >=12.0,<13.0
+Your installed torch==2.13.0+cu130 does not include kernels for this GPU. Reinstall the same version against a CUDA build that does, e.g.:
+  For CUDA 12.6 use pip install torch==2.13.0 --index-url https://download.pytorch.org/whl/cu126
+  _warn_unsupported_code(d, device_cc, code_ccs)
+/project/dl2026s/pereirak/miniconda3/envs/tfm/lib/python3.12/site-packages/torch/cuda/__init__.py:422: UserWarning: Found GPU1 NVIDIA GeForce GTX 1080 Ti which is of compute capability (CC) 6.1.
+The following list shows the CCs this version of PyTorch was built for and the hardware CCs it supports:
+- 7.5 which supports hardware CC >=7.5,<8.0
+- 8.0 which supports hardware CC >=8.0,<9.0 except {8.7}
+- 8.6 which supports hardware CC >=8.6,<9.0 except {8.7}
+- 9.0 which supports hardware CC >=9.0,<10.0
+- 10.0 which supports hardware CC >=10.0,<11.0 except {10.1}
+- 12.0 which supports hardware CC >=12.0,<13.0
+Your installed torch==2.13.0+cu130 does not include kernels for this GPU. Reinstall the same version against a CUDA build that does, e.g.:
+  For CUDA 12.6 use pip install torch==2.13.0 --index-url https://download.pytorch.org/whl/cu126
+  _warn_unsupported_code(d, device_cc, code_ccs)
+/project/dl2026s/pereirak/miniconda3/envs/tfm/lib/python3.12/site-packages/torch/cuda/__init__.py:422: UserWarning: Found GPU2 NVIDIA GeForce GTX 1080 Ti which is of compute capability (CC) 6.1.
+The following list shows the CCs this version of PyTorch was built for and the hardware CCs it supports:
+- 7.5 which supports hardware CC >=7.5,<8.0
+- 8.0 which supports hardware CC >=8.0,<9.0 except {8.7}
+- 8.6 which supports hardware CC >=8.6,<9.0 except {8.7}
+- 9.0 which supports hardware CC >=9.0,<10.0
+- 10.0 which supports hardware CC >=10.0,<11.0 except {10.1}
+- 12.0 which supports hardware CC >=12.0,<13.0
+Your installed torch==2.13.0+cu130 does not include kernels for this GPU. Reinstall the same version against a CUDA build that does, e.g.:
+  For CUDA 12.6 use pip install torch==2.13.0 --index-url https://download.pytorch.org/whl/cu126
+  _warn_unsupported_code(d, device_cc, code_ccs)
+/project/dl2026s/pereirak/miniconda3/envs/tfm/lib/python3.12/site-packages/torch/cuda/__init__.py:422: UserWarning: Found GPU3 NVIDIA GeForce GTX 1080 Ti which is of compute capability (CC) 6.1.
+The following list shows the CCs this version of PyTorch was built for and the hardware CCs it supports:
+- 7.5 which supports hardware CC >=7.5,<8.0
+- 8.0 which supports hardware CC >=8.0,<9.0 except {8.7}
+- 8.6 which supports hardware CC >=8.6,<9.0 except {8.7}
+- 9.0 which supports hardware CC >=9.0,<10.0
+- 10.0 which supports hardware CC >=10.0,<11.0 except {10.1}
+- 12.0 which supports hardware CC >=12.0,<13.0
+Your installed torch==2.13.0+cu130 does not include kernels for this GPU. Reinstall the same version against a CUDA build that does, e.g.:
+  For CUDA 12.6 use pip install torch==2.13.0 --index-url https://download.pytorch.org/whl/cu126
+  _warn_unsupported_code(d, device_cc, code_ccs)
+/project/dl2026s/pereirak/miniconda3/envs/tfm/lib/python3.12/site-packages/torch/cuda/__init__.py:422: UserWarning: Found GPU4 NVIDIA GeForce GTX 1080 Ti which is of compute capability (CC) 6.1.
+The following list shows the CCs this version of PyTorch was built for and the hardware CCs it supports:
+- 7.5 which supports hardware CC >=7.5,<8.0
+- 8.0 which supports hardware CC >=8.0,<9.0 except {8.7}
+- 8.6 which supports hardware CC >=8.6,<9.0 except {8.7}
+- 9.0 which supports hardware CC >=9.0,<10.0
+- 10.0 which supports hardware CC >=10.0,<11.0 except {10.1}
+- 12.0 which supports hardware CC >=12.0,<13.0
+Your installed torch==2.13.0+cu130 does not include kernels for this GPU. Reinstall the same version against a CUDA build that does, e.g.:
+  For CUDA 12.6 use pip install torch==2.13.0 --index-url https://download.pytorch.org/whl/cu126
+  _warn_unsupported_code(d, device_cc, code_ccs)
+/project/dl2026s/pereirak/miniconda3/envs/tfm/lib/python3.12/site-packages/torch/cuda/__init__.py:422: UserWarning: Found GPU5 NVIDIA GeForce GTX 1080 Ti which is of compute capability (CC) 6.1.
+The following list shows the CCs this version of PyTorch was built for and the hardware CCs it supports:
+- 7.5 which supports hardware CC >=7.5,<8.0
+- 8.0 which supports hardware CC >=8.0,<9.0 except {8.7}
+- 8.6 which supports hardware CC >=8.6,<9.0 except {8.7}
+- 9.0 which supports hardware CC >=9.0,<10.0
+- 10.0 which supports hardware CC >=10.0,<11.0 except {10.1}
+- 12.0 which supports hardware CC >=12.0,<13.0
+Your installed torch==2.13.0+cu130 does not include kernels for this GPU. Reinstall the same version against a CUDA build that does, e.g.:
+  For CUDA 12.6 use pip install torch==2.13.0 --index-url https://download.pytorch.org/whl/cu126
+  _warn_unsupported_code(d, device_cc, code_ccs)
+/project/dl2026s/pereirak/miniconda3/envs/tfm/lib/python3.12/site-packages/torch/cuda/__init__.py:422: UserWarning: Found GPU6 NVIDIA GeForce GTX 1080 Ti which is of compute capability (CC) 6.1.
+The following list shows the CCs this version of PyTorch was built for and the hardware CCs it supports:
+- 7.5 which supports hardware CC >=7.5,<8.0
+- 8.0 which supports hardware CC >=8.0,<9.0 except {8.7}
+- 8.6 which supports hardware CC >=8.6,<9.0 except {8.7}
+- 9.0 which supports hardware CC >=9.0,<10.0
+- 10.0 which supports hardware CC >=10.0,<11.0 except {10.1}
+- 12.0 which supports hardware CC >=12.0,<13.0
+Your installed torch==2.13.0+cu130 does not include kernels for this GPU. Reinstall the same version against a CUDA build that does, e.g.:
+  For CUDA 12.6 use pip install torch==2.13.0 --index-url https://download.pytorch.org/whl/cu126
+  _warn_unsupported_code(d, device_cc, code_ccs)
+/project/dl2026s/pereirak/miniconda3/envs/tfm/lib/python3.12/site-packages/torch/cuda/__init__.py:422: UserWarning: Found GPU7 NVIDIA GeForce GTX 1080 Ti which is of compute capability (CC) 6.1.
+The following list shows the CCs this version of PyTorch was built for and the hardware CCs it supports:
+- 7.5 which supports hardware CC >=7.5,<8.0
+- 8.0 which supports hardware CC >=8.0,<9.0 except {8.7}
+- 8.6 which supports hardware CC >=8.6,<9.0 except {8.7}
+- 9.0 which supports hardware CC >=9.0,<10.0
+- 10.0 which supports hardware CC >=10.0,<11.0 except {10.1}
+- 12.0 which supports hardware CC >=12.0,<13.0
+Your installed torch==2.13.0+cu130 does not include kernels for this GPU. Reinstall the same version against a CUDA build that does, e.g.:
+  For CUDA 12.6 use pip install torch==2.13.0 --index-url https://download.pytorch.org/whl/cu126
+  _warn_unsupported_code(d, device_cc, code_ccs)
+/project/dl2026s/pereirak/miniconda3/envs/tfm/lib/python3.12/site-packages/torch/cuda/__init__.py:540: UserWarning: 
+NVIDIA GeForce GTX 1080 Ti with CUDA capability sm_61 is not compatible with the current PyTorch installation.
+The current PyTorch install supports CUDA capabilities sm_75 sm_80 sm_86 sm_90 sm_100 sm_120.
+If you want to use the NVIDIA GeForce GTX 1080 Ti GPU with PyTorch, please check the instructions at https://pytorch.org/get-started/locally/
+
+  queued_call()
+
+======================================================================
+Dataset: F1_base | Seed: 0 | Rows: 10000 | Features: 3
+======================================================================
+Running CatBoost...
+Accuracy=0.9684 | F1=0.9684 | Log loss=0.1336 | Time=2.76s
+Running RealMLP-TD...
+Failed: CUDA error: no kernel image is available for execution on the device
+Search for `cudaErrorNoKernelImageForDevice' in https://docs.nvidia.com/cuda/cuda-runtime-api/group__CUDART__TYPES.html for more information.
+For more detailed error information, run with CUDA_LOG_FILE=stderr
+
+
+======================================================================
+Dataset: F1_noisy | Seed: 0 | Rows: 10000 | Features: 3
+======================================================================
+Running CatBoost...
+Accuracy=0.8072 | F1=0.8071 | Log loss=0.4636 | Time=2.52s
+Running RealMLP-TD...
+Failed: CUDA error: no kernel image is available for execution on the device
+Search for `cudaErrorNoKernelImageForDevice' in https://docs.nvidia.com/cuda/cuda-runtime-api/group__CUDART__TYPES.html for more information.
+For more detailed error information, run with CUDA_LOG_FILE=stderr
+
+
+======================================================================
+Dataset: F1_irrelevant | Seed: 0 | Rows: 10000 | Features: 18
+======================================================================
+Running CatBoost...
+Accuracy=0.9664 | F1=0.9664 | Log loss=0.1426 | Time=2.59s
+Running RealMLP-TD...
+Failed: CUDA error: no kernel image is available for execution on the device
+Search for `cudaErrorNoKernelImageForDevice' in https://docs.nvidia.com/cuda/cuda-runtime-api/group__CUDART__TYPES.html for more information.
+For more detailed error information, run with CUDA_LOG_FILE=stderr
+
+
+======================================================================
+Dataset: F2_base | Seed: 0 | Rows: 10000 | Features: 4
+======================================================================
+Running CatBoost...
+Accuracy=0.9388 | F1=0.9388 | Log loss=0.2281 | Time=2.49s
+Running RealMLP-TD...
+Failed: CUDA error: no kernel image is available for execution on the device
+Search for `cudaErrorNoKernelImageForDevice' in https://docs.nvidia.com/cuda/cuda-runtime-api/group__CUDART__TYPES.html for more information.
+For more detailed error information, run with CUDA_LOG_FILE=stderr
+
+
+======================================================================
+Dataset: F2_noisy | Seed: 0 | Rows: 10000 | Features: 4
+======================================================================
+Running CatBoost...
+Accuracy=0.7692 | F1=0.7692 | Log loss=0.5318 | Time=2.44s
+Running RealMLP-TD...
+Failed: CUDA error: no kernel image is available for execution on the device
+Search for `cudaErrorNoKernelImageForDevice' in https://docs.nvidia.com/cuda/cuda-runtime-api/group__CUDART__TYPES.html for more information.
+For more detailed error information, run with CUDA_LOG_FILE=stderr
+
+
+======================================================================
+Dataset: F2_irrelevant | Seed: 0 | Rows: 10000 | Features: 24
+======================================================================
+Running CatBoost...
+Accuracy=0.9376 | F1=0.9376 | Log loss=0.2556 | Time=2.82s
+Running RealMLP-TD...
+Failed: CUDA error: no kernel image is available for execution on the device
+Search for `cudaErrorNoKernelImageForDevice' in https://docs.nvidia.com/cuda/cuda-runtime-api/group__CUDART__TYPES.html for more information.
+For more detailed error information, run with CUDA_LOG_FILE=stderr
+
+
+======================================================================
+Dataset: R1_base | Seed: 0 | Rows: 10000 | Features: 24
+======================================================================
+Running CatBoost...
+Accuracy=0.9516 | F1=0.9341 | Log loss=0.1825 | Time=2.92s
+Running RealMLP-TD...
+Failed: CUDA error: no kernel image is available for execution on the device
+Search for `cudaErrorNoKernelImageForDevice' in https://docs.nvidia.com/cuda/cuda-runtime-api/group__CUDART__TYPES.html for more information.
+For more detailed error information, run with CUDA_LOG_FILE=stderr
+
+
+======================================================================
+Dataset: R1_noisy | Seed: 0 | Rows: 10000 | Features: 24
+======================================================================
+Running CatBoost...
+Accuracy=0.7528 | F1=0.6865 | Log loss=0.5388 | Time=3.05s
+Running RealMLP-TD...
+Failed: CUDA error: no kernel image is available for execution on the device
+Search for `cudaErrorNoKernelImageForDevice' in https://docs.nvidia.com/cuda/cuda-runtime-api/group__CUDART__TYPES.html for more information.
+For more detailed error information, run with CUDA_LOG_FILE=stderr
+
+
+======================================================================
+Dataset: R1_imbalanced | Seed: 0 | Rows: 10000 | Features: 24
+======================================================================
+Running CatBoost...
+Accuracy=0.9656 | F1=0.8868 | Log loss=0.1340 | Time=2.89s
+Running RealMLP-TD...
+Failed: CUDA error: no kernel image is available for execution on the device
+Search for `cudaErrorNoKernelImageForDevice' in https://docs.nvidia.com/cuda/cuda-runtime-api/group__CUDART__TYPES.html for more information.
+For more detailed error information, run with CUDA_LOG_FILE=stderr
+
+
+======================================================================
+Dataset: R2_base | Seed: 0 | Rows: 10000 | Features: 105
+======================================================================
+Running CatBoost...
+Accuracy=0.9236 | F1=0.8935 | Log loss=0.2761 | Time=5.14s
+Running RealMLP-TD...
+Failed: CUDA error: no kernel image is available for execution on the device
+Search for `cudaErrorNoKernelImageForDevice' in https://docs.nvidia.com/cuda/cuda-runtime-api/group__CUDART__TYPES.html for more information.
+For more detailed error information, run with CUDA_LOG_FILE=stderr
+
+
+======================================================================
+Dataset: R2_noisy | Seed: 0 | Rows: 10000 | Features: 105
+======================================================================
+Running CatBoost...
+Accuracy=0.6936 | F1=0.5915 | Log loss=0.5992 | Time=5.26s
+Running RealMLP-TD...
+Failed: CUDA error: no kernel image is available for execution on the device
+Search for `cudaErrorNoKernelImageForDevice' in https://docs.nvidia.com/cuda/cuda-runtime-api/group__CUDART__TYPES.html for more information.
+For more detailed error information, run with CUDA_LOG_FILE=stderr
+
+
+======================================================================
+Dataset: R2_imbalanced | Seed: 0 | Rows: 10000 | Features: 105
+======================================================================
+Running CatBoost...
+Accuracy=0.9216 | F1=0.6458 | Log loss=0.2367 | Time=5.12s
+Running RealMLP-TD...
+Failed: CUDA error: no kernel image is available for execution on the device
+Search for `cudaErrorNoKernelImageForDevice' in https://docs.nvidia.com/cuda/cuda-runtime-api/group__CUDART__TYPES.html for more information.
+For more detailed error information, run with CUDA_LOG_FILE=stderr
+
+
+======================================================================
+Dataset: S1_base | Seed: 0 | Rows: 10000 | Features: 3
+======================================================================
+Running CatBoost...
+Accuracy=0.9448 | F1=0.9448 | Log loss=0.1347 | Time=2.53s
+Running RealMLP-TD...
+Failed: CUDA error: no kernel image is available for execution on the device
+Search for `cudaErrorNoKernelImageForDevice' in https://docs.nvidia.com/cuda/cuda-runtime-api/group__CUDART__TYPES.html for more information.
+For more detailed error information, run with CUDA_LOG_FILE=stderr
+
+
+======================================================================
+Dataset: S1_noisy | Seed: 0 | Rows: 10000 | Features: 3
+======================================================================
+Running CatBoost...
+Accuracy=0.8748 | F1=0.8748 | Log loss=0.2775 | Time=2.53s
+Running RealMLP-TD...
+Failed: CUDA error: no kernel image is available for execution on the device
+Search for `cudaErrorNoKernelImageForDevice' in https://docs.nvidia.com/cuda/cuda-runtime-api/group__CUDART__TYPES.html for more information.
+For more detailed error information, run with CUDA_LOG_FILE=stderr
+
+
+======================================================================
+Dataset: S1_irrelevant | Seed: 0 | Rows: 10000 | Features: 18
+======================================================================
+Running CatBoost...
+Accuracy=0.9476 | F1=0.9476 | Log loss=0.1138 | Time=2.62s
+Running RealMLP-TD...
+Failed: CUDA error: no kernel image is available for execution on the device
+Search for `cudaErrorNoKernelImageForDevice' in https://docs.nvidia.com/cuda/cuda-runtime-api/group__CUDART__TYPES.html for more information.
+For more detailed error information, run with CUDA_LOG_FILE=stderr
+
+
+======================================================================
+Dataset: S2_base | Seed: 0 | Rows: 10000 | Features: 5
+======================================================================
+Running CatBoost...
+Accuracy=0.9432 | F1=0.9432 | Log loss=0.1263 | Time=2.54s
+Running RealMLP-TD...
+Failed: CUDA error: no kernel image is available for execution on the device
+Search for `cudaErrorNoKernelImageForDevice' in https://docs.nvidia.com/cuda/cuda-runtime-api/group__CUDART__TYPES.html for more information.
+For more detailed error information, run with CUDA_LOG_FILE=stderr
+
+
+======================================================================
+Dataset: S2_noisy | Seed: 0 | Rows: 10000 | Features: 5
+======================================================================
+Running CatBoost...
+Accuracy=0.8976 | F1=0.8976 | Log loss=0.2388 | Time=2.57s
+Running RealMLP-TD...
+Failed: CUDA error: no kernel image is available for execution on the device
+Search for `cudaErrorNoKernelImageForDevice' in https://docs.nvidia.com/cuda/cuda-runtime-api/group__CUDART__TYPES.html for more information.
+For more detailed error information, run with CUDA_LOG_FILE=stderr
+
+
+======================================================================
+Dataset: S2_irrelevant | Seed: 0 | Rows: 10000 | Features: 25
+======================================================================
+Running CatBoost...
+Accuracy=0.9420 | F1=0.9420 | Log loss=0.1314 | Time=2.86s
+Running RealMLP-TD...
+Failed: CUDA error: no kernel image is available for execution on the device
+Search for `cudaErrorNoKernelImageForDevice' in https://docs.nvidia.com/cuda/cuda-runtime-api/group__CUDART__TYPES.html for more information.
+For more detailed error information, run with CUDA_LOG_FILE=stderr
+
+
+======================================================================
+Dataset: F1_base | Seed: 1 | Rows: 10000 | Features: 3
+======================================================================
+Running CatBoost...
+Accuracy=0.9696 | F1=0.9696 | Log loss=0.1480 | Time=2.53s
+Running RealMLP-TD...
+Failed: CUDA error: no kernel image is available for execution on the device
+Search for `cudaErrorNoKernelImageForDevice' in https://docs.nvidia.com/cuda/cuda-runtime-api/group__CUDART__TYPES.html for more information.
+For more detailed error information, run with CUDA_LOG_FILE=stderr
+
+
+======================================================================
+Dataset: F1_noisy | Seed: 1 | Rows: 10000 | Features: 3
+======================================================================
+Running CatBoost...
+Accuracy=0.8004 | F1=0.8004 | Log loss=0.4805 | Time=2.45s
+Running RealMLP-TD...
+Failed: CUDA error: no kernel image is available for execution on the device
+Search for `cudaErrorNoKernelImageForDevice' in https://docs.nvidia.com/cuda/cuda-runtime-api/group__CUDART__TYPES.html for more information.
+For more detailed error information, run with CUDA_LOG_FILE=stderr
+
+
+======================================================================
+Dataset: F1_irrelevant | Seed: 1 | Rows: 10000 | Features: 18
+======================================================================
+Running CatBoost...
+Accuracy=0.9588 | F1=0.9588 | Log loss=0.1556 | Time=2.56s
+Running RealMLP-TD...
+Failed: CUDA error: no kernel image is available for execution on the device
+Search for `cudaErrorNoKernelImageForDevice' in https://docs.nvidia.com/cuda/cuda-runtime-api/group__CUDART__TYPES.html for more information.
+For more detailed error information, run with CUDA_LOG_FILE=stderr
+
+
+======================================================================
+Dataset: F2_base | Seed: 1 | Rows: 10000 | Features: 4
+======================================================================
+Running CatBoost...
+Accuracy=0.9444 | F1=0.9444 | Log loss=0.2194 | Time=2.48s
+Running RealMLP-TD...
+Failed: CUDA error: no kernel image is available for execution on the device
+Search for `cudaErrorNoKernelImageForDevice' in https://docs.nvidia.com/cuda/cuda-runtime-api/group__CUDART__TYPES.html for more information.
+For more detailed error information, run with CUDA_LOG_FILE=stderr
+
+
+======================================================================
+Dataset: F2_noisy | Seed: 1 | Rows: 10000 | Features: 4
+======================================================================
+Running CatBoost...
+Accuracy=0.7716 | F1=0.7716 | Log loss=0.5158 | Time=2.52s
+Running RealMLP-TD...
+Failed: CUDA error: no kernel image is available for execution on the device
+Search for `cudaErrorNoKernelImageForDevice' in https://docs.nvidia.com/cuda/cuda-runtime-api/group__CUDART__TYPES.html for more information.
+For more detailed error information, run with CUDA_LOG_FILE=stderr
+
+
+======================================================================
+Dataset: F2_irrelevant | Seed: 1 | Rows: 10000 | Features: 24
+======================================================================
+Running CatBoost...
+Accuracy=0.9436 | F1=0.9436 | Log loss=0.2306 | Time=3.02s
+Running RealMLP-TD...
+Failed: CUDA error: no kernel image is available for execution on the device
+Search for `cudaErrorNoKernelImageForDevice' in https://docs.nvidia.com/cuda/cuda-runtime-api/group__CUDART__TYPES.html for more information.
+For more detailed error information, run with CUDA_LOG_FILE=stderr
+
+
+======================================================================
+Dataset: R1_base | Seed: 1 | Rows: 10000 | Features: 24
+======================================================================
+Running CatBoost...
+Accuracy=0.9596 | F1=0.9451 | Log loss=0.1650 | Time=2.89s
+Running RealMLP-TD...
+Failed: CUDA error: no kernel image is available for execution on the device
+Search for `cudaErrorNoKernelImageForDevice' in https://docs.nvidia.com/cuda/cuda-runtime-api/group__CUDART__TYPES.html for more information.
+For more detailed error information, run with CUDA_LOG_FILE=stderr
+
+
+======================================================================
+Dataset: R1_noisy | Seed: 1 | Rows: 10000 | Features: 24
+======================================================================
+Running CatBoost...
+Accuracy=0.7476 | F1=0.6779 | Log loss=0.5400 | Time=2.99s
+Running RealMLP-TD...
+Failed: CUDA error: no kernel image is available for execution on the device
+Search for `cudaErrorNoKernelImageForDevice' in https://docs.nvidia.com/cuda/cuda-runtime-api/group__CUDART__TYPES.html for more information.
+For more detailed error information, run with CUDA_LOG_FILE=stderr
+
+
+======================================================================
+Dataset: R1_imbalanced | Seed: 1 | Rows: 10000 | Features: 24
+======================================================================
+Running CatBoost...
+Accuracy=0.9688 | F1=0.9008 | Log loss=0.1225 | Time=2.93s
+Running RealMLP-TD...
+Failed: CUDA error: no kernel image is available for execution on the device
+Search for `cudaErrorNoKernelImageForDevice' in https://docs.nvidia.com/cuda/cuda-runtime-api/group__CUDART__TYPES.html for more information.
+For more detailed error information, run with CUDA_LOG_FILE=stderr
+
+
+======================================================================
+Dataset: R2_base | Seed: 1 | Rows: 10000 | Features: 105
+======================================================================
+Running CatBoost...
+Accuracy=0.9212 | F1=0.8904 | Log loss=0.2828 | Time=4.92s
+Running RealMLP-TD...
+Failed: CUDA error: no kernel image is available for execution on the device
+Search for `cudaErrorNoKernelImageForDevice' in https://docs.nvidia.com/cuda/cuda-runtime-api/group__CUDART__TYPES.html for more information.
+For more detailed error information, run with CUDA_LOG_FILE=stderr
+
+
+======================================================================
+Dataset: R2_noisy | Seed: 1 | Rows: 10000 | Features: 105
+======================================================================
+Running CatBoost...
+Accuracy=0.6880 | F1=0.5866 | Log loss=0.6025 | Time=4.98s
+Running RealMLP-TD...
+Failed: CUDA error: no kernel image is available for execution on the device
+Search for `cudaErrorNoKernelImageForDevice' in https://docs.nvidia.com/cuda/cuda-runtime-api/group__CUDART__TYPES.html for more information.
+For more detailed error information, run with CUDA_LOG_FILE=stderr
+
+
+======================================================================
+Dataset: R2_imbalanced | Seed: 1 | Rows: 10000 | Features: 105
+======================================================================
+Running CatBoost...
+Accuracy=0.9168 | F1=0.6289 | Log loss=0.2467 | Time=4.95s
+Running RealMLP-TD...
+Failed: CUDA error: no kernel image is available for execution on the device
+Search for `cudaErrorNoKernelImageForDevice' in https://docs.nvidia.com/cuda/cuda-runtime-api/group__CUDART__TYPES.html for more information.
+For more detailed error information, run with CUDA_LOG_FILE=stderr
+
+
+======================================================================
+Dataset: S1_base | Seed: 1 | Rows: 10000 | Features: 3
+======================================================================
+Running CatBoost...
+Accuracy=0.9488 | F1=0.9488 | Log loss=0.1249 | Time=2.49s
+Running RealMLP-TD...
+Failed: CUDA error: no kernel image is available for execution on the device
+Search for `cudaErrorNoKernelImageForDevice' in https://docs.nvidia.com/cuda/cuda-runtime-api/group__CUDART__TYPES.html for more information.
+For more detailed error information, run with CUDA_LOG_FILE=stderr
+
+
+======================================================================
+Dataset: S1_noisy | Seed: 1 | Rows: 10000 | Features: 3
+======================================================================
+Running CatBoost...
+Accuracy=0.8828 | F1=0.8828 | Log loss=0.2649 | Time=2.48s
+Running RealMLP-TD...
+Failed: CUDA error: no kernel image is available for execution on the device
+Search for `cudaErrorNoKernelImageForDevice' in https://docs.nvidia.com/cuda/cuda-runtime-api/group__CUDART__TYPES.html for more information.
+For more detailed error information, run with CUDA_LOG_FILE=stderr
+
+
+======================================================================
+Dataset: S1_irrelevant | Seed: 1 | Rows: 10000 | Features: 18
+======================================================================
+Running CatBoost...
+Accuracy=0.9388 | F1=0.9388 | Log loss=0.1362 | Time=2.56s
+Running RealMLP-TD...
+Failed: CUDA error: no kernel image is available for execution on the device
+Search for `cudaErrorNoKernelImageForDevice' in https://docs.nvidia.com/cuda/cuda-runtime-api/group__CUDART__TYPES.html for more information.
+For more detailed error information, run with CUDA_LOG_FILE=stderr
+
+
+======================================================================
+Dataset: S2_base | Seed: 1 | Rows: 10000 | Features: 5
+======================================================================
+Running CatBoost...
+Accuracy=0.9444 | F1=0.9444 | Log loss=0.1297 | Time=2.49s
+Running RealMLP-TD...
+Failed: CUDA error: no kernel image is available for execution on the device
+Search for `cudaErrorNoKernelImageForDevice' in https://docs.nvidia.com/cuda/cuda-runtime-api/group__CUDART__TYPES.html for more information.
+For more detailed error information, run with CUDA_LOG_FILE=stderr
+
+
+======================================================================
+Dataset: S2_noisy | Seed: 1 | Rows: 10000 | Features: 5
+======================================================================
+Running CatBoost...
+Accuracy=0.8960 | F1=0.8960 | Log loss=0.2304 | Time=2.46s
+Running RealMLP-TD...
+Failed: CUDA error: no kernel image is available for execution on the device
+Search for `cudaErrorNoKernelImageForDevice' in https://docs.nvidia.com/cuda/cuda-runtime-api/group__CUDART__TYPES.html for more information.
+For more detailed error information, run with CUDA_LOG_FILE=stderr
+
+
+======================================================================
+Dataset: S2_irrelevant | Seed: 1 | Rows: 10000 | Features: 25
+======================================================================
+Running CatBoost...
+Accuracy=0.9368 | F1=0.9368 | Log loss=0.1450 | Time=3.07s
+Running RealMLP-TD...
+Failed: CUDA error: no kernel image is available for execution on the device
+Search for `cudaErrorNoKernelImageForDevice' in https://docs.nvidia.com/cuda/cuda-runtime-api/group__CUDART__TYPES.html for more information.
+For more detailed error information, run with CUDA_LOG_FILE=stderr
+
+
+======================================================================
+Dataset: F1_base | Seed: 2 | Rows: 10000 | Features: 3
+======================================================================
+Running CatBoost...
+Accuracy=0.9712 | F1=0.9712 | Log loss=0.1291 | Time=2.63s
+Running RealMLP-TD...
+Failed: CUDA error: no kernel image is available for execution on the device
+Search for `cudaErrorNoKernelImageForDevice' in https://docs.nvidia.com/cuda/cuda-runtime-api/group__CUDART__TYPES.html for more information.
+For more detailed error information, run with CUDA_LOG_FILE=stderr
+
+
+======================================================================
+Dataset: F1_noisy | Seed: 2 | Rows: 10000 | Features: 3
+======================================================================
+Running CatBoost...
+Accuracy=0.8056 | F1=0.8056 | Log loss=0.4648 | Time=2.55s
+Running RealMLP-TD...
+Failed: CUDA error: no kernel image is available for execution on the device
+Search for `cudaErrorNoKernelImageForDevice' in https://docs.nvidia.com/cuda/cuda-runtime-api/group__CUDART__TYPES.html for more information.
+For more detailed error information, run with CUDA_LOG_FILE=stderr
+
+
+======================================================================
+Dataset: F1_irrelevant | Seed: 2 | Rows: 10000 | Features: 18
+======================================================================
+Running CatBoost...
+Accuracy=0.9632 | F1=0.9632 | Log loss=0.1599 | Time=2.72s
+Running RealMLP-TD...
+Failed: CUDA error: no kernel image is available for execution on the device
+Search for `cudaErrorNoKernelImageForDevice' in https://docs.nvidia.com/cuda/cuda-runtime-api/group__CUDART__TYPES.html for more information.
+For more detailed error information, run with CUDA_LOG_FILE=stderr
+
+
+======================================================================
+Dataset: F2_base | Seed: 2 | Rows: 10000 | Features: 4
+======================================================================
+Running CatBoost...
+Accuracy=0.9420 | F1=0.9420 | Log loss=0.2236 | Time=2.50s
+Running RealMLP-TD...
+Failed: CUDA error: no kernel image is available for execution on the device
+Search for `cudaErrorNoKernelImageForDevice' in https://docs.nvidia.com/cuda/cuda-runtime-api/group__CUDART__TYPES.html for more information.
+For more detailed error information, run with CUDA_LOG_FILE=stderr
+
+
+======================================================================
+Dataset: F2_noisy | Seed: 2 | Rows: 10000 | Features: 4
+======================================================================
+Running CatBoost...
+Accuracy=0.7748 | F1=0.7748 | Log loss=0.5136 | Time=2.47s
+Running RealMLP-TD...
+Failed: CUDA error: no kernel image is available for execution on the device
+Search for `cudaErrorNoKernelImageForDevice' in https://docs.nvidia.com/cuda/cuda-runtime-api/group__CUDART__TYPES.html for more information.
+For more detailed error information, run with CUDA_LOG_FILE=stderr
+
+
+======================================================================
+Dataset: F2_irrelevant | Seed: 2 | Rows: 10000 | Features: 24
+======================================================================
+Running CatBoost...
+Accuracy=0.9316 | F1=0.9316 | Log loss=0.2524 | Time=2.83s
+Running RealMLP-TD...
+Failed: CUDA error: no kernel image is available for execution on the device
+Search for `cudaErrorNoKernelImageForDevice' in https://docs.nvidia.com/cuda/cuda-runtime-api/group__CUDART__TYPES.html for more information.
+For more detailed error information, run with CUDA_LOG_FILE=stderr
+
+
+======================================================================
+Dataset: R1_base | Seed: 2 | Rows: 10000 | Features: 24
+======================================================================
+Running CatBoost...
+Accuracy=0.9532 | F1=0.9365 | Log loss=0.1723 | Time=2.93s
+Running RealMLP-TD...
+Failed: CUDA error: no kernel image is available for execution on the device
+Search for `cudaErrorNoKernelImageForDevice' in https://docs.nvidia.com/cuda/cuda-runtime-api/group__CUDART__TYPES.html for more information.
+For more detailed error information, run with CUDA_LOG_FILE=stderr
+
+
+======================================================================
+Dataset: R1_noisy | Seed: 2 | Rows: 10000 | Features: 24
+======================================================================
+Running CatBoost...
+Accuracy=0.7724 | F1=0.7081 | Log loss=0.5186 | Time=2.89s
+Running RealMLP-TD...
+Failed: CUDA error: no kernel image is available for execution on the device
+Search for `cudaErrorNoKernelImageForDevice' in https://docs.nvidia.com/cuda/cuda-runtime-api/group__CUDART__TYPES.html for more information.
+For more detailed error information, run with CUDA_LOG_FILE=stderr
+
+
+======================================================================
+Dataset: R1_imbalanced | Seed: 2 | Rows: 10000 | Features: 24
+======================================================================
+Running CatBoost...
+Accuracy=0.9696 | F1=0.9049 | Log loss=0.1292 | Time=2.88s
+Running RealMLP-TD...
+Failed: CUDA error: no kernel image is available for execution on the device
+Search for `cudaErrorNoKernelImageForDevice' in https://docs.nvidia.com/cuda/cuda-runtime-api/group__CUDART__TYPES.html for more information.
+For more detailed error information, run with CUDA_LOG_FILE=stderr
+
+
+======================================================================
+Dataset: R2_base | Seed: 2 | Rows: 10000 | Features: 105
+======================================================================
+Running CatBoost...
+Accuracy=0.9208 | F1=0.8902 | Log loss=0.2740 | Time=4.97s
+Running RealMLP-TD...
+Failed: CUDA error: no kernel image is available for execution on the device
+Search for `cudaErrorNoKernelImageForDevice' in https://docs.nvidia.com/cuda/cuda-runtime-api/group__CUDART__TYPES.html for more information.
+For more detailed error information, run with CUDA_LOG_FILE=stderr
+
+
+======================================================================
+Dataset: R2_noisy | Seed: 2 | Rows: 10000 | Features: 105
+======================================================================
+Running CatBoost...
+Accuracy=0.6884 | F1=0.5865 | Log loss=0.6044 | Time=5.00s
+Running RealMLP-TD...
+Failed: CUDA error: no kernel image is available for execution on the device
+Search for `cudaErrorNoKernelImageForDevice' in https://docs.nvidia.com/cuda/cuda-runtime-api/group__CUDART__TYPES.html for more information.
+For more detailed error information, run with CUDA_LOG_FILE=stderr
+
+
+======================================================================
+Dataset: R2_imbalanced | Seed: 2 | Rows: 10000 | Features: 105
+======================================================================
+Running CatBoost...
+Accuracy=0.9144 | F1=0.6158 | Log loss=0.2471 | Time=4.94s
+Running RealMLP-TD...
+Failed: CUDA error: no kernel image is available for execution on the device
+Search for `cudaErrorNoKernelImageForDevice' in https://docs.nvidia.com/cuda/cuda-runtime-api/group__CUDART__TYPES.html for more information.
+For more detailed error information, run with CUDA_LOG_FILE=stderr
+
+
+======================================================================
+Dataset: S1_base | Seed: 2 | Rows: 10000 | Features: 3
+======================================================================
+Running CatBoost...
+Accuracy=0.9504 | F1=0.9504 | Log loss=0.1201 | Time=2.47s
+Running RealMLP-TD...
+Failed: CUDA error: no kernel image is available for execution on the device
+Search for `cudaErrorNoKernelImageForDevice' in https://docs.nvidia.com/cuda/cuda-runtime-api/group__CUDART__TYPES.html for more information.
+For more detailed error information, run with CUDA_LOG_FILE=stderr
+
+
+======================================================================
+Dataset: S1_noisy | Seed: 2 | Rows: 10000 | Features: 3
+======================================================================
+Running CatBoost...
+Accuracy=0.8876 | F1=0.8875 | Log loss=0.2578 | Time=2.60s
+Running RealMLP-TD...
+Failed: CUDA error: no kernel image is available for execution on the device
+Search for `cudaErrorNoKernelImageForDevice' in https://docs.nvidia.com/cuda/cuda-runtime-api/group__CUDART__TYPES.html for more information.
+For more detailed error information, run with CUDA_LOG_FILE=stderr
+
+
+======================================================================
+Dataset: S1_irrelevant | Seed: 2 | Rows: 10000 | Features: 18
+======================================================================
+Running CatBoost...
+Accuracy=0.9516 | F1=0.9516 | Log loss=0.1115 | Time=2.70s
+Running RealMLP-TD...
+Failed: CUDA error: no kernel image is available for execution on the device
+Search for `cudaErrorNoKernelImageForDevice' in https://docs.nvidia.com/cuda/cuda-runtime-api/group__CUDART__TYPES.html for more information.
+For more detailed error information, run with CUDA_LOG_FILE=stderr
+
+
+======================================================================
+Dataset: S2_base | Seed: 2 | Rows: 10000 | Features: 5
+======================================================================
+Running CatBoost...
+Accuracy=0.9532 | F1=0.9532 | Log loss=0.1142 | Time=2.55s
+Running RealMLP-TD...
+Failed: CUDA error: no kernel image is available for execution on the device
+Search for `cudaErrorNoKernelImageForDevice' in https://docs.nvidia.com/cuda/cuda-runtime-api/group__CUDART__TYPES.html for more information.
+For more detailed error information, run with CUDA_LOG_FILE=stderr
+
+
+======================================================================
+Dataset: S2_noisy | Seed: 2 | Rows: 10000 | Features: 5
+======================================================================
+Running CatBoost...
+Accuracy=0.8928 | F1=0.8928 | Log loss=0.2414 | Time=2.52s
+Running RealMLP-TD...
+Failed: CUDA error: no kernel image is available for execution on the device
+Search for `cudaErrorNoKernelImageForDevice' in https://docs.nvidia.com/cuda/cuda-runtime-api/group__CUDART__TYPES.html for more information.
+For more detailed error information, run with CUDA_LOG_FILE=stderr
+
+
+======================================================================
+Dataset: S2_irrelevant | Seed: 2 | Rows: 10000 | Features: 25
+======================================================================
+Running CatBoost...
+Accuracy=0.9436 | F1=0.9436 | Log loss=0.1282 | Time=3.06s
+Running RealMLP-TD...
+Failed: CUDA error: no kernel image is available for execution on the device
+Search for `cudaErrorNoKernelImageForDevice' in https://docs.nvidia.com/cuda/cuda-runtime-api/group__CUDART__TYPES.html for more information.
+For more detailed error information, run with CUDA_LOG_FILE=stderr
+
+
+Benchmark finished.
+CSV: results/kate_datasets_results.csv
+Plot: results/kate_datasets_accuracy.png

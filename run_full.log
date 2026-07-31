@@ -1,0 +1,1734 @@
+nohup: ignoring input
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+`Trainer.fit` stopped: `max_epochs=256` reached.
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+`Trainer.fit` stopped: `max_epochs=256` reached.
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+`Trainer.fit` stopped: `max_epochs=256` reached.
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+`Trainer.fit` stopped: `max_epochs=256` reached.
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+`Trainer.fit` stopped: `max_epochs=256` reached.
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+`Trainer.fit` stopped: `max_epochs=256` reached.
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+`Trainer.fit` stopped: `max_epochs=256` reached.
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+`Trainer.fit` stopped: `max_epochs=256` reached.
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+`Trainer.fit` stopped: `max_epochs=256` reached.
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+`Trainer.fit` stopped: `max_epochs=256` reached.
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+`Trainer.fit` stopped: `max_epochs=256` reached.
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+`Trainer.fit` stopped: `max_epochs=256` reached.
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+`Trainer.fit` stopped: `max_epochs=256` reached.
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+`Trainer.fit` stopped: `max_epochs=256` reached.
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+`Trainer.fit` stopped: `max_epochs=256` reached.
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+`Trainer.fit` stopped: `max_epochs=256` reached.
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+`Trainer.fit` stopped: `max_epochs=256` reached.
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+`Trainer.fit` stopped: `max_epochs=256` reached.
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+`Trainer.fit` stopped: `max_epochs=256` reached.
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+`Trainer.fit` stopped: `max_epochs=256` reached.
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+`Trainer.fit` stopped: `max_epochs=256` reached.
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+`Trainer.fit` stopped: `max_epochs=256` reached.
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+`Trainer.fit` stopped: `max_epochs=256` reached.
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+`Trainer.fit` stopped: `max_epochs=256` reached.
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+`Trainer.fit` stopped: `max_epochs=256` reached.
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+`Trainer.fit` stopped: `max_epochs=256` reached.
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+`Trainer.fit` stopped: `max_epochs=256` reached.
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+`Trainer.fit` stopped: `max_epochs=256` reached.
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+`Trainer.fit` stopped: `max_epochs=256` reached.
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+`Trainer.fit` stopped: `max_epochs=256` reached.
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+`Trainer.fit` stopped: `max_epochs=256` reached.
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+`Trainer.fit` stopped: `max_epochs=256` reached.
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+`Trainer.fit` stopped: `max_epochs=256` reached.
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+`Trainer.fit` stopped: `max_epochs=256` reached.
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+`Trainer.fit` stopped: `max_epochs=256` reached.
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+`Trainer.fit` stopped: `max_epochs=256` reached.
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+`Trainer.fit` stopped: `max_epochs=256` reached.
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+`Trainer.fit` stopped: `max_epochs=256` reached.
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+`Trainer.fit` stopped: `max_epochs=256` reached.
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+`Trainer.fit` stopped: `max_epochs=256` reached.
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+`Trainer.fit` stopped: `max_epochs=256` reached.
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+`Trainer.fit` stopped: `max_epochs=256` reached.
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+`Trainer.fit` stopped: `max_epochs=256` reached.
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+`Trainer.fit` stopped: `max_epochs=256` reached.
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+`Trainer.fit` stopped: `max_epochs=256` reached.
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+`Trainer.fit` stopped: `max_epochs=256` reached.
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+`Trainer.fit` stopped: `max_epochs=256` reached.
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+`Trainer.fit` stopped: `max_epochs=256` reached.
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+`Trainer.fit` stopped: `max_epochs=256` reached.
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+`Trainer.fit` stopped: `max_epochs=256` reached.
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+`Trainer.fit` stopped: `max_epochs=256` reached.
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+`Trainer.fit` stopped: `max_epochs=256` reached.
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+`Trainer.fit` stopped: `max_epochs=256` reached.
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+`Trainer.fit` stopped: `max_epochs=256` reached.
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+
+======================================================================
+Dataset: F1_base | Seed: 0 | Rows: 10000 | Features: 3
+======================================================================
+Running CatBoost...
+Accuracy=0.9684 | F1=0.9684 | Log loss=0.1336 | Time=2.62s
+Running RealMLP-TD...
+Accuracy=0.9760 | F1=0.9760 | Log loss=0.1319 | Time=108.71s
+Running TabPFN-v2...
+Failed: [Errno 122] Disk quota exceeded: '/home/pereirak/.cache/tabpfn'
+Running TabPFN-v3...
+Failed: [Errno 122] Disk quota exceeded: '/home/pereirak/.cache/tabpfn'
+Running TabICL-v2...
+INFO: You are downloading 'tabicl-classifier-v2-20260212.ckpt', the latest best-performing version, used in our TabICLv2 paper.
+
+Checkpoint 'tabicl-classifier-v2-20260212.ckpt' not cached.
+ Downloading from Hugging Face Hub (jingang/TabICL).
+
+Failed: [Errno 122] Disk quota exceeded: '/home/pereirak/.cache/huggingface'
+
+======================================================================
+Dataset: F1_noisy | Seed: 0 | Rows: 10000 | Features: 3
+======================================================================
+Running CatBoost...
+Accuracy=0.8072 | F1=0.8071 | Log loss=0.4636 | Time=3.46s
+Running RealMLP-TD...
+Accuracy=0.8072 | F1=0.8070 | Log loss=0.4637 | Time=81.46s
+Running TabPFN-v2...
+Failed: [Errno 122] Disk quota exceeded: '/home/pereirak/.cache/tabpfn'
+Running TabPFN-v3...
+Failed: [Errno 122] Disk quota exceeded: '/home/pereirak/.cache/tabpfn'
+Running TabICL-v2...
+INFO: You are downloading 'tabicl-classifier-v2-20260212.ckpt', the latest best-performing version, used in our TabICLv2 paper.
+
+Checkpoint 'tabicl-classifier-v2-20260212.ckpt' not cached.
+ Downloading from Hugging Face Hub (jingang/TabICL).
+
+Failed: [Errno 122] Disk quota exceeded: '/home/pereirak/.cache/huggingface'
+
+======================================================================
+Dataset: F1_irrelevant | Seed: 0 | Rows: 10000 | Features: 18
+======================================================================
+Running CatBoost...
+Accuracy=0.9664 | F1=0.9664 | Log loss=0.1426 | Time=3.46s
+Running RealMLP-TD...
+Accuracy=0.9748 | F1=0.9748 | Log loss=0.1335 | Time=77.81s
+Running TabPFN-v2...
+Failed: [Errno 122] Disk quota exceeded: '/home/pereirak/.cache/tabpfn'
+Running TabPFN-v3...
+Failed: [Errno 122] Disk quota exceeded: '/home/pereirak/.cache/tabpfn'
+Running TabICL-v2...
+INFO: You are downloading 'tabicl-classifier-v2-20260212.ckpt', the latest best-performing version, used in our TabICLv2 paper.
+
+Checkpoint 'tabicl-classifier-v2-20260212.ckpt' not cached.
+ Downloading from Hugging Face Hub (jingang/TabICL).
+
+Failed: [Errno 122] Disk quota exceeded: '/home/pereirak/.cache/huggingface'
+
+======================================================================
+Dataset: F2_base | Seed: 0 | Rows: 10000 | Features: 4
+======================================================================
+Running CatBoost...
+Accuracy=0.9388 | F1=0.9388 | Log loss=0.2281 | Time=3.05s
+Running RealMLP-TD...
+Accuracy=0.9548 | F1=0.9548 | Log loss=0.1992 | Time=79.57s
+Running TabPFN-v2...
+Failed: [Errno 122] Disk quota exceeded: '/home/pereirak/.cache/tabpfn'
+Running TabPFN-v3...
+Failed: [Errno 122] Disk quota exceeded: '/home/pereirak/.cache/tabpfn'
+Running TabICL-v2...
+INFO: You are downloading 'tabicl-classifier-v2-20260212.ckpt', the latest best-performing version, used in our TabICLv2 paper.
+
+Checkpoint 'tabicl-classifier-v2-20260212.ckpt' not cached.
+ Downloading from Hugging Face Hub (jingang/TabICL).
+
+Failed: [Errno 122] Disk quota exceeded: '/home/pereirak/.cache/huggingface'
+
+======================================================================
+Dataset: F2_noisy | Seed: 0 | Rows: 10000 | Features: 4
+======================================================================
+Running CatBoost...
+Accuracy=0.7692 | F1=0.7692 | Log loss=0.5318 | Time=2.69s
+Running RealMLP-TD...
+Accuracy=0.7724 | F1=0.7723 | Log loss=0.5131 | Time=78.39s
+Running TabPFN-v2...
+Failed: [Errno 122] Disk quota exceeded: '/home/pereirak/.cache/tabpfn'
+Running TabPFN-v3...
+Failed: [Errno 122] Disk quota exceeded: '/home/pereirak/.cache/tabpfn'
+Running TabICL-v2...
+INFO: You are downloading 'tabicl-classifier-v2-20260212.ckpt', the latest best-performing version, used in our TabICLv2 paper.
+
+Checkpoint 'tabicl-classifier-v2-20260212.ckpt' not cached.
+ Downloading from Hugging Face Hub (jingang/TabICL).
+
+Failed: [Errno 122] Disk quota exceeded: '/home/pereirak/.cache/huggingface'
+
+======================================================================
+Dataset: F2_irrelevant | Seed: 0 | Rows: 10000 | Features: 24
+======================================================================
+Running CatBoost...
+Accuracy=0.9376 | F1=0.9376 | Log loss=0.2556 | Time=3.56s
+Running RealMLP-TD...
+Accuracy=0.9404 | F1=0.9404 | Log loss=0.2306 | Time=78.93s
+Running TabPFN-v2...
+Failed: [Errno 122] Disk quota exceeded: '/home/pereirak/.cache/tabpfn'
+Running TabPFN-v3...
+Failed: [Errno 122] Disk quota exceeded: '/home/pereirak/.cache/tabpfn'
+Running TabICL-v2...
+INFO: You are downloading 'tabicl-classifier-v2-20260212.ckpt', the latest best-performing version, used in our TabICLv2 paper.
+
+Checkpoint 'tabicl-classifier-v2-20260212.ckpt' not cached.
+ Downloading from Hugging Face Hub (jingang/TabICL).
+
+Failed: [Errno 122] Disk quota exceeded: '/home/pereirak/.cache/huggingface'
+
+======================================================================
+Dataset: R1_base | Seed: 0 | Rows: 10000 | Features: 24
+======================================================================
+Running CatBoost...
+Accuracy=0.9516 | F1=0.9341 | Log loss=0.1825 | Time=3.72s
+Running RealMLP-TD...
+Accuracy=0.9688 | F1=0.9581 | Log loss=0.1541 | Time=81.42s
+Running TabPFN-v2...
+Failed: [Errno 122] Disk quota exceeded: '/home/pereirak/.cache/tabpfn'
+Running TabPFN-v3...
+Failed: [Errno 122] Disk quota exceeded: '/home/pereirak/.cache/tabpfn'
+Running TabICL-v2...
+INFO: You are downloading 'tabicl-classifier-v2-20260212.ckpt', the latest best-performing version, used in our TabICLv2 paper.
+
+Checkpoint 'tabicl-classifier-v2-20260212.ckpt' not cached.
+ Downloading from Hugging Face Hub (jingang/TabICL).
+
+Failed: [Errno 122] Disk quota exceeded: '/home/pereirak/.cache/huggingface'
+
+======================================================================
+Dataset: R1_noisy | Seed: 0 | Rows: 10000 | Features: 24
+======================================================================
+Running CatBoost...
+Accuracy=0.7528 | F1=0.6865 | Log loss=0.5388 | Time=3.51s
+Running RealMLP-TD...
+Accuracy=0.7560 | F1=0.6925 | Log loss=0.5317 | Time=81.48s
+Running TabPFN-v2...
+Failed: [Errno 122] Disk quota exceeded: '/home/pereirak/.cache/tabpfn'
+Running TabPFN-v3...
+Failed: [Errno 122] Disk quota exceeded: '/home/pereirak/.cache/tabpfn'
+Running TabICL-v2...
+INFO: You are downloading 'tabicl-classifier-v2-20260212.ckpt', the latest best-performing version, used in our TabICLv2 paper.
+
+Checkpoint 'tabicl-classifier-v2-20260212.ckpt' not cached.
+ Downloading from Hugging Face Hub (jingang/TabICL).
+
+Failed: [Errno 122] Disk quota exceeded: '/home/pereirak/.cache/huggingface'
+
+======================================================================
+Dataset: R1_imbalanced | Seed: 0 | Rows: 10000 | Features: 24
+======================================================================
+Running CatBoost...
+Accuracy=0.9656 | F1=0.8868 | Log loss=0.1340 | Time=3.34s
+Running RealMLP-TD...
+Accuracy=0.9728 | F1=0.9170 | Log loss=0.1279 | Time=80.61s
+Running TabPFN-v2...
+Failed: [Errno 122] Disk quota exceeded: '/home/pereirak/.cache/tabpfn'
+Running TabPFN-v3...
+Failed: [Errno 122] Disk quota exceeded: '/home/pereirak/.cache/tabpfn'
+Running TabICL-v2...
+INFO: You are downloading 'tabicl-classifier-v2-20260212.ckpt', the latest best-performing version, used in our TabICLv2 paper.
+
+Checkpoint 'tabicl-classifier-v2-20260212.ckpt' not cached.
+ Downloading from Hugging Face Hub (jingang/TabICL).
+
+Failed: [Errno 122] Disk quota exceeded: '/home/pereirak/.cache/huggingface'
+
+======================================================================
+Dataset: R2_base | Seed: 0 | Rows: 10000 | Features: 105
+======================================================================
+Running CatBoost...
+Accuracy=0.9236 | F1=0.8935 | Log loss=0.2761 | Time=7.63s
+Running RealMLP-TD...
+Accuracy=0.9200 | F1=0.8928 | Log loss=0.2523 | Time=81.38s
+Running TabPFN-v2...
+Failed: [Errno 122] Disk quota exceeded: '/home/pereirak/.cache/tabpfn'
+Running TabPFN-v3...
+Failed: [Errno 122] Disk quota exceeded: '/home/pereirak/.cache/tabpfn'
+Running TabICL-v2...
+INFO: You are downloading 'tabicl-classifier-v2-20260212.ckpt', the latest best-performing version, used in our TabICLv2 paper.
+
+Checkpoint 'tabicl-classifier-v2-20260212.ckpt' not cached.
+ Downloading from Hugging Face Hub (jingang/TabICL).
+
+Failed: [Errno 122] Disk quota exceeded: '/home/pereirak/.cache/huggingface'
+
+======================================================================
+Dataset: R2_noisy | Seed: 0 | Rows: 10000 | Features: 105
+======================================================================
+Running CatBoost...
+Accuracy=0.6936 | F1=0.5915 | Log loss=0.5992 | Time=7.86s
+Running RealMLP-TD...
+Accuracy=0.6928 | F1=0.6242 | Log loss=0.5982 | Time=79.80s
+Running TabPFN-v2...
+Failed: [Errno 122] Disk quota exceeded: '/home/pereirak/.cache/tabpfn'
+Running TabPFN-v3...
+Failed: [Errno 122] Disk quota exceeded: '/home/pereirak/.cache/tabpfn'
+Running TabICL-v2...
+INFO: You are downloading 'tabicl-classifier-v2-20260212.ckpt', the latest best-performing version, used in our TabICLv2 paper.
+
+Checkpoint 'tabicl-classifier-v2-20260212.ckpt' not cached.
+ Downloading from Hugging Face Hub (jingang/TabICL).
+
+Failed: [Errno 122] Disk quota exceeded: '/home/pereirak/.cache/huggingface'
+
+======================================================================
+Dataset: R2_imbalanced | Seed: 0 | Rows: 10000 | Features: 105
+======================================================================
+Running CatBoost...
+Accuracy=0.9216 | F1=0.6458 | Log loss=0.2367 | Time=7.51s
+Running RealMLP-TD...
+Accuracy=0.9348 | F1=0.7639 | Log loss=0.2203 | Time=80.93s
+Running TabPFN-v2...
+Failed: [Errno 122] Disk quota exceeded: '/home/pereirak/.cache/tabpfn'
+Running TabPFN-v3...
+Failed: [Errno 122] Disk quota exceeded: '/home/pereirak/.cache/tabpfn'
+Running TabICL-v2...
+INFO: You are downloading 'tabicl-classifier-v2-20260212.ckpt', the latest best-performing version, used in our TabICLv2 paper.
+
+Checkpoint 'tabicl-classifier-v2-20260212.ckpt' not cached.
+ Downloading from Hugging Face Hub (jingang/TabICL).
+
+Failed: [Errno 122] Disk quota exceeded: '/home/pereirak/.cache/huggingface'
+
+======================================================================
+Dataset: S1_base | Seed: 0 | Rows: 10000 | Features: 3
+======================================================================
+Running CatBoost...
+Accuracy=0.9448 | F1=0.9448 | Log loss=0.1347 | Time=2.84s
+Running RealMLP-TD...
+Accuracy=0.9468 | F1=0.9468 | Log loss=0.1543 | Time=78.91s
+Running TabPFN-v2...
+Failed: [Errno 122] Disk quota exceeded: '/home/pereirak/.cache/tabpfn'
+Running TabPFN-v3...
+Failed: [Errno 122] Disk quota exceeded: '/home/pereirak/.cache/tabpfn'
+Running TabICL-v2...
+INFO: You are downloading 'tabicl-classifier-v2-20260212.ckpt', the latest best-performing version, used in our TabICLv2 paper.
+
+Checkpoint 'tabicl-classifier-v2-20260212.ckpt' not cached.
+ Downloading from Hugging Face Hub (jingang/TabICL).
+
+Failed: [Errno 122] Disk quota exceeded: '/home/pereirak/.cache/huggingface'
+
+======================================================================
+Dataset: S1_noisy | Seed: 0 | Rows: 10000 | Features: 3
+======================================================================
+Running CatBoost...
+Accuracy=0.8748 | F1=0.8748 | Log loss=0.2775 | Time=2.69s
+Running RealMLP-TD...
+Accuracy=0.8764 | F1=0.8764 | Log loss=0.2893 | Time=75.94s
+Running TabPFN-v2...
+Failed: [Errno 122] Disk quota exceeded: '/home/pereirak/.cache/tabpfn'
+Running TabPFN-v3...
+Failed: [Errno 122] Disk quota exceeded: '/home/pereirak/.cache/tabpfn'
+Running TabICL-v2...
+INFO: You are downloading 'tabicl-classifier-v2-20260212.ckpt', the latest best-performing version, used in our TabICLv2 paper.
+
+Checkpoint 'tabicl-classifier-v2-20260212.ckpt' not cached.
+ Downloading from Hugging Face Hub (jingang/TabICL).
+
+Failed: [Errno 122] Disk quota exceeded: '/home/pereirak/.cache/huggingface'
+
+======================================================================
+Dataset: S1_irrelevant | Seed: 0 | Rows: 10000 | Features: 18
+======================================================================
+Running CatBoost...
+Accuracy=0.9476 | F1=0.9476 | Log loss=0.1138 | Time=3.26s
+Running RealMLP-TD...
+Accuracy=0.9520 | F1=0.9520 | Log loss=0.1398 | Time=75.50s
+Running TabPFN-v2...
+Failed: [Errno 122] Disk quota exceeded: '/home/pereirak/.cache/tabpfn'
+Running TabPFN-v3...
+Failed: [Errno 122] Disk quota exceeded: '/home/pereirak/.cache/tabpfn'
+Running TabICL-v2...
+INFO: You are downloading 'tabicl-classifier-v2-20260212.ckpt', the latest best-performing version, used in our TabICLv2 paper.
+
+Checkpoint 'tabicl-classifier-v2-20260212.ckpt' not cached.
+ Downloading from Hugging Face Hub (jingang/TabICL).
+
+Failed: [Errno 122] Disk quota exceeded: '/home/pereirak/.cache/huggingface'
+
+======================================================================
+Dataset: S2_base | Seed: 0 | Rows: 10000 | Features: 5
+======================================================================
+Running CatBoost...
+Accuracy=0.9432 | F1=0.9432 | Log loss=0.1263 | Time=2.77s
+Running RealMLP-TD...
+Accuracy=0.9460 | F1=0.9460 | Log loss=0.1559 | Time=75.12s
+Running TabPFN-v2...
+Failed: [Errno 122] Disk quota exceeded: '/home/pereirak/.cache/tabpfn'
+Running TabPFN-v3...
+Failed: [Errno 122] Disk quota exceeded: '/home/pereirak/.cache/tabpfn'
+Running TabICL-v2...
+INFO: You are downloading 'tabicl-classifier-v2-20260212.ckpt', the latest best-performing version, used in our TabICLv2 paper.
+
+Checkpoint 'tabicl-classifier-v2-20260212.ckpt' not cached.
+ Downloading from Hugging Face Hub (jingang/TabICL).
+
+Failed: [Errno 122] Disk quota exceeded: '/home/pereirak/.cache/huggingface'
+
+======================================================================
+Dataset: S2_noisy | Seed: 0 | Rows: 10000 | Features: 5
+======================================================================
+Running CatBoost...
+Accuracy=0.8976 | F1=0.8976 | Log loss=0.2388 | Time=2.90s
+Running RealMLP-TD...
+Accuracy=0.9008 | F1=0.9007 | Log loss=0.2705 | Time=74.82s
+Running TabPFN-v2...
+Failed: [Errno 122] Disk quota exceeded: '/home/pereirak/.cache/tabpfn'
+Running TabPFN-v3...
+Failed: [Errno 122] Disk quota exceeded: '/home/pereirak/.cache/tabpfn'
+Running TabICL-v2...
+INFO: You are downloading 'tabicl-classifier-v2-20260212.ckpt', the latest best-performing version, used in our TabICLv2 paper.
+
+Checkpoint 'tabicl-classifier-v2-20260212.ckpt' not cached.
+ Downloading from Hugging Face Hub (jingang/TabICL).
+
+Failed: [Errno 122] Disk quota exceeded: '/home/pereirak/.cache/huggingface'
+
+======================================================================
+Dataset: S2_irrelevant | Seed: 0 | Rows: 10000 | Features: 25
+======================================================================
+Running CatBoost...
+Accuracy=0.9420 | F1=0.9420 | Log loss=0.1314 | Time=3.24s
+Running RealMLP-TD...
+Accuracy=0.9440 | F1=0.9440 | Log loss=0.1346 | Time=74.76s
+Running TabPFN-v2...
+Failed: [Errno 122] Disk quota exceeded: '/home/pereirak/.cache/tabpfn'
+Running TabPFN-v3...
+Failed: [Errno 122] Disk quota exceeded: '/home/pereirak/.cache/tabpfn'
+Running TabICL-v2...
+INFO: You are downloading 'tabicl-classifier-v2-20260212.ckpt', the latest best-performing version, used in our TabICLv2 paper.
+
+Checkpoint 'tabicl-classifier-v2-20260212.ckpt' not cached.
+ Downloading from Hugging Face Hub (jingang/TabICL).
+
+Failed: [Errno 122] Disk quota exceeded: '/home/pereirak/.cache/huggingface'
+
+======================================================================
+Dataset: F1_base | Seed: 1 | Rows: 10000 | Features: 3
+======================================================================
+Running CatBoost...
+Accuracy=0.9696 | F1=0.9696 | Log loss=0.1480 | Time=3.06s
+Running RealMLP-TD...
+Accuracy=0.9768 | F1=0.9768 | Log loss=0.1314 | Time=77.17s
+Running TabPFN-v2...
+Failed: [Errno 122] Disk quota exceeded: '/home/pereirak/.cache/tabpfn'
+Running TabPFN-v3...
+Failed: [Errno 122] Disk quota exceeded: '/home/pereirak/.cache/tabpfn'
+Running TabICL-v2...
+INFO: You are downloading 'tabicl-classifier-v2-20260212.ckpt', the latest best-performing version, used in our TabICLv2 paper.
+
+Checkpoint 'tabicl-classifier-v2-20260212.ckpt' not cached.
+ Downloading from Hugging Face Hub (jingang/TabICL).
+
+Failed: [Errno 122] Disk quota exceeded: '/home/pereirak/.cache/huggingface'
+
+======================================================================
+Dataset: F1_noisy | Seed: 1 | Rows: 10000 | Features: 3
+======================================================================
+Running CatBoost...
+Accuracy=0.8004 | F1=0.8004 | Log loss=0.4805 | Time=2.72s
+Running RealMLP-TD...
+Accuracy=0.8044 | F1=0.8042 | Log loss=0.4740 | Time=74.34s
+Running TabPFN-v2...
+Failed: [Errno 122] Disk quota exceeded: '/home/pereirak/.cache/tabpfn'
+Running TabPFN-v3...
+Failed: [Errno 122] Disk quota exceeded: '/home/pereirak/.cache/tabpfn'
+Running TabICL-v2...
+INFO: You are downloading 'tabicl-classifier-v2-20260212.ckpt', the latest best-performing version, used in our TabICLv2 paper.
+
+Checkpoint 'tabicl-classifier-v2-20260212.ckpt' not cached.
+ Downloading from Hugging Face Hub (jingang/TabICL).
+
+Failed: [Errno 122] Disk quota exceeded: '/home/pereirak/.cache/huggingface'
+
+======================================================================
+Dataset: F1_irrelevant | Seed: 1 | Rows: 10000 | Features: 18
+======================================================================
+Running CatBoost...
+Accuracy=0.9588 | F1=0.9588 | Log loss=0.1556 | Time=3.21s
+Running RealMLP-TD...
+Accuracy=0.9648 | F1=0.9648 | Log loss=0.1527 | Time=74.85s
+Running TabPFN-v2...
+Failed: [Errno 122] Disk quota exceeded: '/home/pereirak/.cache/tabpfn'
+Running TabPFN-v3...
+Failed: [Errno 122] Disk quota exceeded: '/home/pereirak/.cache/tabpfn'
+Running TabICL-v2...
+INFO: You are downloading 'tabicl-classifier-v2-20260212.ckpt', the latest best-performing version, used in our TabICLv2 paper.
+
+Checkpoint 'tabicl-classifier-v2-20260212.ckpt' not cached.
+ Downloading from Hugging Face Hub (jingang/TabICL).
+
+Failed: [Errno 122] Disk quota exceeded: '/home/pereirak/.cache/huggingface'
+
+======================================================================
+Dataset: F2_base | Seed: 1 | Rows: 10000 | Features: 4
+======================================================================
+Running CatBoost...
+Accuracy=0.9444 | F1=0.9444 | Log loss=0.2194 | Time=2.77s
+Running RealMLP-TD...
+Accuracy=0.9604 | F1=0.9604 | Log loss=0.1887 | Time=74.24s
+Running TabPFN-v2...
+Failed: [Errno 122] Disk quota exceeded: '/home/pereirak/.cache/tabpfn'
+Running TabPFN-v3...
+Failed: [Errno 122] Disk quota exceeded: '/home/pereirak/.cache/tabpfn'
+Running TabICL-v2...
+INFO: You are downloading 'tabicl-classifier-v2-20260212.ckpt', the latest best-performing version, used in our TabICLv2 paper.
+
+Checkpoint 'tabicl-classifier-v2-20260212.ckpt' not cached.
+ Downloading from Hugging Face Hub (jingang/TabICL).
+
+Failed: [Errno 122] Disk quota exceeded: '/home/pereirak/.cache/huggingface'
+
+======================================================================
+Dataset: F2_noisy | Seed: 1 | Rows: 10000 | Features: 4
+======================================================================
+Running CatBoost...
+Accuracy=0.7716 | F1=0.7716 | Log loss=0.5158 | Time=3.01s
+Running RealMLP-TD...
+Accuracy=0.7720 | F1=0.7720 | Log loss=0.5194 | Time=74.00s
+Running TabPFN-v2...
+Failed: [Errno 122] Disk quota exceeded: '/home/pereirak/.cache/tabpfn'
+Running TabPFN-v3...
+Failed: [Errno 122] Disk quota exceeded: '/home/pereirak/.cache/tabpfn'
+Running TabICL-v2...
+INFO: You are downloading 'tabicl-classifier-v2-20260212.ckpt', the latest best-performing version, used in our TabICLv2 paper.
+
+Checkpoint 'tabicl-classifier-v2-20260212.ckpt' not cached.
+ Downloading from Hugging Face Hub (jingang/TabICL).
+
+Failed: [Errno 122] Disk quota exceeded: '/home/pereirak/.cache/huggingface'
+
+======================================================================
+Dataset: F2_irrelevant | Seed: 1 | Rows: 10000 | Features: 24
+======================================================================
+Running CatBoost...
+Accuracy=0.9436 | F1=0.9436 | Log loss=0.2306 | Time=3.50s
+Running RealMLP-TD...
+Accuracy=0.9480 | F1=0.9480 | Log loss=0.2093 | Time=74.46s
+Running TabPFN-v2...
+Failed: [Errno 122] Disk quota exceeded: '/home/pereirak/.cache/tabpfn'
+Running TabPFN-v3...
+Failed: [Errno 122] Disk quota exceeded: '/home/pereirak/.cache/tabpfn'
+Running TabICL-v2...
+INFO: You are downloading 'tabicl-classifier-v2-20260212.ckpt', the latest best-performing version, used in our TabICLv2 paper.
+
+Checkpoint 'tabicl-classifier-v2-20260212.ckpt' not cached.
+ Downloading from Hugging Face Hub (jingang/TabICL).
+
+Failed: [Errno 122] Disk quota exceeded: '/home/pereirak/.cache/huggingface'
+
+======================================================================
+Dataset: R1_base | Seed: 1 | Rows: 10000 | Features: 24
+======================================================================
+Running CatBoost...
+Accuracy=0.9596 | F1=0.9451 | Log loss=0.1650 | Time=3.89s
+Running RealMLP-TD...
+Accuracy=0.9632 | F1=0.9503 | Log loss=0.1489 | Time=74.78s
+Running TabPFN-v2...
+Failed: [Errno 122] Disk quota exceeded: '/home/pereirak/.cache/tabpfn'
+Running TabPFN-v3...
+Failed: [Errno 122] Disk quota exceeded: '/home/pereirak/.cache/tabpfn'
+Running TabICL-v2...
+INFO: You are downloading 'tabicl-classifier-v2-20260212.ckpt', the latest best-performing version, used in our TabICLv2 paper.
+
+Checkpoint 'tabicl-classifier-v2-20260212.ckpt' not cached.
+ Downloading from Hugging Face Hub (jingang/TabICL).
+
+Failed: [Errno 122] Disk quota exceeded: '/home/pereirak/.cache/huggingface'
+
+======================================================================
+Dataset: R1_noisy | Seed: 1 | Rows: 10000 | Features: 24
+======================================================================
+Running CatBoost...
+Accuracy=0.7476 | F1=0.6779 | Log loss=0.5400 | Time=3.91s
+Running RealMLP-TD...
+Accuracy=0.7552 | F1=0.6940 | Log loss=0.5259 | Time=74.43s
+Running TabPFN-v2...
+Failed: [Errno 122] Disk quota exceeded: '/home/pereirak/.cache/tabpfn'
+Running TabPFN-v3...
+Failed: [Errno 122] Disk quota exceeded: '/home/pereirak/.cache/tabpfn'
+Running TabICL-v2...
+INFO: You are downloading 'tabicl-classifier-v2-20260212.ckpt', the latest best-performing version, used in our TabICLv2 paper.
+
+Checkpoint 'tabicl-classifier-v2-20260212.ckpt' not cached.
+ Downloading from Hugging Face Hub (jingang/TabICL).
+
+Failed: [Errno 122] Disk quota exceeded: '/home/pereirak/.cache/huggingface'
+
+======================================================================
+Dataset: R1_imbalanced | Seed: 1 | Rows: 10000 | Features: 24
+======================================================================
+Running CatBoost...
+Accuracy=0.9688 | F1=0.9008 | Log loss=0.1225 | Time=3.58s
+Running RealMLP-TD...
+Accuracy=0.9764 | F1=0.9272 | Log loss=0.1271 | Time=74.70s
+Running TabPFN-v2...
+Failed: [Errno 122] Disk quota exceeded: '/home/pereirak/.cache/tabpfn'
+Running TabPFN-v3...
+Failed: [Errno 122] Disk quota exceeded: '/home/pereirak/.cache/tabpfn'
+Running TabICL-v2...
+INFO: You are downloading 'tabicl-classifier-v2-20260212.ckpt', the latest best-performing version, used in our TabICLv2 paper.
+
+Checkpoint 'tabicl-classifier-v2-20260212.ckpt' not cached.
+ Downloading from Hugging Face Hub (jingang/TabICL).
+
+Failed: [Errno 122] Disk quota exceeded: '/home/pereirak/.cache/huggingface'
+
+======================================================================
+Dataset: R2_base | Seed: 1 | Rows: 10000 | Features: 105
+======================================================================
+Running CatBoost...
+Accuracy=0.9212 | F1=0.8904 | Log loss=0.2828 | Time=8.09s
+Running RealMLP-TD...
+Accuracy=0.9280 | F1=0.9031 | Log loss=0.2430 | Time=75.11s
+Running TabPFN-v2...
+Failed: [Errno 122] Disk quota exceeded: '/home/pereirak/.cache/tabpfn'
+Running TabPFN-v3...
+Failed: [Errno 122] Disk quota exceeded: '/home/pereirak/.cache/tabpfn'
+Running TabICL-v2...
+INFO: You are downloading 'tabicl-classifier-v2-20260212.ckpt', the latest best-performing version, used in our TabICLv2 paper.
+
+Checkpoint 'tabicl-classifier-v2-20260212.ckpt' not cached.
+ Downloading from Hugging Face Hub (jingang/TabICL).
+
+Failed: [Errno 122] Disk quota exceeded: '/home/pereirak/.cache/huggingface'
+
+======================================================================
+Dataset: R2_noisy | Seed: 1 | Rows: 10000 | Features: 105
+======================================================================
+Running CatBoost...
+Accuracy=0.6880 | F1=0.5866 | Log loss=0.6025 | Time=8.34s
+Running RealMLP-TD...
+Accuracy=0.7004 | F1=0.6209 | Log loss=0.5995 | Time=75.01s
+Running TabPFN-v2...
+Failed: [Errno 122] Disk quota exceeded: '/home/pereirak/.cache/tabpfn'
+Running TabPFN-v3...
+Failed: [Errno 122] Disk quota exceeded: '/home/pereirak/.cache/tabpfn'
+Running TabICL-v2...
+INFO: You are downloading 'tabicl-classifier-v2-20260212.ckpt', the latest best-performing version, used in our TabICLv2 paper.
+
+Checkpoint 'tabicl-classifier-v2-20260212.ckpt' not cached.
+ Downloading from Hugging Face Hub (jingang/TabICL).
+
+Failed: [Errno 122] Disk quota exceeded: '/home/pereirak/.cache/huggingface'
+
+======================================================================
+Dataset: R2_imbalanced | Seed: 1 | Rows: 10000 | Features: 105
+======================================================================
+Running CatBoost...
+Accuracy=0.9168 | F1=0.6289 | Log loss=0.2467 | Time=7.63s
+Running RealMLP-TD...
+Accuracy=0.9272 | F1=0.7174 | Log loss=0.2389 | Time=74.76s
+Running TabPFN-v2...
+Failed: [Errno 122] Disk quota exceeded: '/home/pereirak/.cache/tabpfn'
+Running TabPFN-v3...
+Failed: [Errno 122] Disk quota exceeded: '/home/pereirak/.cache/tabpfn'
+Running TabICL-v2...
+INFO: You are downloading 'tabicl-classifier-v2-20260212.ckpt', the latest best-performing version, used in our TabICLv2 paper.
+
+Checkpoint 'tabicl-classifier-v2-20260212.ckpt' not cached.
+ Downloading from Hugging Face Hub (jingang/TabICL).
+
+Failed: [Errno 122] Disk quota exceeded: '/home/pereirak/.cache/huggingface'
+
+======================================================================
+Dataset: S1_base | Seed: 1 | Rows: 10000 | Features: 3
+======================================================================
+Running CatBoost...
+Accuracy=0.9488 | F1=0.9488 | Log loss=0.1249 | Time=2.96s
+Running RealMLP-TD...
+Accuracy=0.9452 | F1=0.9452 | Log loss=0.1502 | Time=76.00s
+Running TabPFN-v2...
+Failed: [Errno 122] Disk quota exceeded: '/home/pereirak/.cache/tabpfn'
+Running TabPFN-v3...
+Failed: [Errno 122] Disk quota exceeded: '/home/pereirak/.cache/tabpfn'
+Running TabICL-v2...
+INFO: You are downloading 'tabicl-classifier-v2-20260212.ckpt', the latest best-performing version, used in our TabICLv2 paper.
+
+Checkpoint 'tabicl-classifier-v2-20260212.ckpt' not cached.
+ Downloading from Hugging Face Hub (jingang/TabICL).
+
+Failed: [Errno 122] Disk quota exceeded: '/home/pereirak/.cache/huggingface'
+
+======================================================================
+Dataset: S1_noisy | Seed: 1 | Rows: 10000 | Features: 3
+======================================================================
+Running CatBoost...
+Accuracy=0.8828 | F1=0.8828 | Log loss=0.2649 | Time=2.88s
+Running RealMLP-TD...
+Accuracy=0.8876 | F1=0.8875 | Log loss=0.2804 | Time=75.27s
+Running TabPFN-v2...
+Failed: [Errno 122] Disk quota exceeded: '/home/pereirak/.cache/tabpfn'
+Running TabPFN-v3...
+Failed: [Errno 122] Disk quota exceeded: '/home/pereirak/.cache/tabpfn'
+Running TabICL-v2...
+INFO: You are downloading 'tabicl-classifier-v2-20260212.ckpt', the latest best-performing version, used in our TabICLv2 paper.
+
+Checkpoint 'tabicl-classifier-v2-20260212.ckpt' not cached.
+ Downloading from Hugging Face Hub (jingang/TabICL).
+
+Failed: [Errno 122] Disk quota exceeded: '/home/pereirak/.cache/huggingface'
+
+======================================================================
+Dataset: S1_irrelevant | Seed: 1 | Rows: 10000 | Features: 18
+======================================================================
+Running CatBoost...
+Accuracy=0.9388 | F1=0.9388 | Log loss=0.1362 | Time=3.44s
+Running RealMLP-TD...
+Accuracy=0.9436 | F1=0.9436 | Log loss=0.1818 | Time=74.45s
+Running TabPFN-v2...
+Failed: [Errno 122] Disk quota exceeded: '/home/pereirak/.cache/tabpfn'
+Running TabPFN-v3...
+Failed: [Errno 122] Disk quota exceeded: '/home/pereirak/.cache/tabpfn'
+Running TabICL-v2...
+INFO: You are downloading 'tabicl-classifier-v2-20260212.ckpt', the latest best-performing version, used in our TabICLv2 paper.
+
+Checkpoint 'tabicl-classifier-v2-20260212.ckpt' not cached.
+ Downloading from Hugging Face Hub (jingang/TabICL).
+
+Failed: [Errno 122] Disk quota exceeded: '/home/pereirak/.cache/huggingface'
+
+======================================================================
+Dataset: S2_base | Seed: 1 | Rows: 10000 | Features: 5
+======================================================================
+Running CatBoost...
+Accuracy=0.9444 | F1=0.9444 | Log loss=0.1297 | Time=2.90s
+Running RealMLP-TD...
+Accuracy=0.9472 | F1=0.9471 | Log loss=0.1516 | Time=74.80s
+Running TabPFN-v2...
+Failed: [Errno 122] Disk quota exceeded: '/home/pereirak/.cache/tabpfn'
+Running TabPFN-v3...
+Failed: [Errno 122] Disk quota exceeded: '/home/pereirak/.cache/tabpfn'
+Running TabICL-v2...
+INFO: You are downloading 'tabicl-classifier-v2-20260212.ckpt', the latest best-performing version, used in our TabICLv2 paper.
+
+Checkpoint 'tabicl-classifier-v2-20260212.ckpt' not cached.
+ Downloading from Hugging Face Hub (jingang/TabICL).
+
+Failed: [Errno 122] Disk quota exceeded: '/home/pereirak/.cache/huggingface'
+
+======================================================================
+Dataset: S2_noisy | Seed: 1 | Rows: 10000 | Features: 5
+======================================================================
+Running CatBoost...
+Accuracy=0.8960 | F1=0.8960 | Log loss=0.2304 | Time=2.70s
+Running RealMLP-TD...
+Accuracy=0.9028 | F1=0.9028 | Log loss=0.2311 | Time=74.84s
+Running TabPFN-v2...
+Failed: [Errno 122] Disk quota exceeded: '/home/pereirak/.cache/tabpfn'
+Running TabPFN-v3...
+Failed: [Errno 122] Disk quota exceeded: '/home/pereirak/.cache/tabpfn'
+Running TabICL-v2...
+INFO: You are downloading 'tabicl-classifier-v2-20260212.ckpt', the latest best-performing version, used in our TabICLv2 paper.
+
+Checkpoint 'tabicl-classifier-v2-20260212.ckpt' not cached.
+ Downloading from Hugging Face Hub (jingang/TabICL).
+
+Failed: [Errno 122] Disk quota exceeded: '/home/pereirak/.cache/huggingface'
+
+======================================================================
+Dataset: S2_irrelevant | Seed: 1 | Rows: 10000 | Features: 25
+======================================================================
+Running CatBoost...
+Accuracy=0.9368 | F1=0.9368 | Log loss=0.1450 | Time=3.65s
+Running RealMLP-TD...
+Accuracy=0.9380 | F1=0.9380 | Log loss=0.1779 | Time=73.73s
+Running TabPFN-v2...
+Failed: [Errno 122] Disk quota exceeded: '/home/pereirak/.cache/tabpfn'
+Running TabPFN-v3...
+Failed: [Errno 122] Disk quota exceeded: '/home/pereirak/.cache/tabpfn'
+Running TabICL-v2...
+INFO: You are downloading 'tabicl-classifier-v2-20260212.ckpt', the latest best-performing version, used in our TabICLv2 paper.
+
+Checkpoint 'tabicl-classifier-v2-20260212.ckpt' not cached.
+ Downloading from Hugging Face Hub (jingang/TabICL).
+
+Failed: [Errno 122] Disk quota exceeded: '/home/pereirak/.cache/huggingface'
+
+======================================================================
+Dataset: F1_base | Seed: 2 | Rows: 10000 | Features: 3
+======================================================================
+Running CatBoost...
+Accuracy=0.9712 | F1=0.9712 | Log loss=0.1291 | Time=3.29s
+Running RealMLP-TD...
+Accuracy=0.9788 | F1=0.9788 | Log loss=0.1233 | Time=74.93s
+Running TabPFN-v2...
+Failed: [Errno 122] Disk quota exceeded: '/home/pereirak/.cache/tabpfn'
+Running TabPFN-v3...
+Failed: [Errno 122] Disk quota exceeded: '/home/pereirak/.cache/tabpfn'
+Running TabICL-v2...
+INFO: You are downloading 'tabicl-classifier-v2-20260212.ckpt', the latest best-performing version, used in our TabICLv2 paper.
+
+Checkpoint 'tabicl-classifier-v2-20260212.ckpt' not cached.
+ Downloading from Hugging Face Hub (jingang/TabICL).
+
+Failed: [Errno 122] Disk quota exceeded: '/home/pereirak/.cache/huggingface'
+
+======================================================================
+Dataset: F1_noisy | Seed: 2 | Rows: 10000 | Features: 3
+======================================================================
+Running CatBoost...
+Accuracy=0.8056 | F1=0.8056 | Log loss=0.4648 | Time=2.79s
+Running RealMLP-TD...
+Accuracy=0.8096 | F1=0.8094 | Log loss=0.4614 | Time=74.19s
+Running TabPFN-v2...
+Failed: [Errno 122] Disk quota exceeded: '/home/pereirak/.cache/tabpfn'
+Running TabPFN-v3...
+Failed: [Errno 122] Disk quota exceeded: '/home/pereirak/.cache/tabpfn'
+Running TabICL-v2...
+INFO: You are downloading 'tabicl-classifier-v2-20260212.ckpt', the latest best-performing version, used in our TabICLv2 paper.
+
+Checkpoint 'tabicl-classifier-v2-20260212.ckpt' not cached.
+ Downloading from Hugging Face Hub (jingang/TabICL).
+
+Failed: [Errno 122] Disk quota exceeded: '/home/pereirak/.cache/huggingface'
+
+======================================================================
+Dataset: F1_irrelevant | Seed: 2 | Rows: 10000 | Features: 18
+======================================================================
+Running CatBoost...
+Accuracy=0.9632 | F1=0.9632 | Log loss=0.1599 | Time=3.08s
+Running RealMLP-TD...
+Accuracy=0.9680 | F1=0.9680 | Log loss=0.1504 | Time=74.67s
+Running TabPFN-v2...
+Failed: [Errno 122] Disk quota exceeded: '/home/pereirak/.cache/tabpfn'
+Running TabPFN-v3...
+Failed: [Errno 122] Disk quota exceeded: '/home/pereirak/.cache/tabpfn'
+Running TabICL-v2...
+INFO: You are downloading 'tabicl-classifier-v2-20260212.ckpt', the latest best-performing version, used in our TabICLv2 paper.
+
+Checkpoint 'tabicl-classifier-v2-20260212.ckpt' not cached.
+ Downloading from Hugging Face Hub (jingang/TabICL).
+
+Failed: [Errno 122] Disk quota exceeded: '/home/pereirak/.cache/huggingface'
+
+======================================================================
+Dataset: F2_base | Seed: 2 | Rows: 10000 | Features: 4
+======================================================================
+Running CatBoost...
+Accuracy=0.9420 | F1=0.9420 | Log loss=0.2236 | Time=2.55s
+Running RealMLP-TD...
+Accuracy=0.9552 | F1=0.9552 | Log loss=0.1951 | Time=74.71s
+Running TabPFN-v2...
+Failed: [Errno 122] Disk quota exceeded: '/home/pereirak/.cache/tabpfn'
+Running TabPFN-v3...
+Failed: [Errno 122] Disk quota exceeded: '/home/pereirak/.cache/tabpfn'
+Running TabICL-v2...
+INFO: You are downloading 'tabicl-classifier-v2-20260212.ckpt', the latest best-performing version, used in our TabICLv2 paper.
+
+Checkpoint 'tabicl-classifier-v2-20260212.ckpt' not cached.
+ Downloading from Hugging Face Hub (jingang/TabICL).
+
+Failed: [Errno 122] Disk quota exceeded: '/home/pereirak/.cache/huggingface'
+
+======================================================================
+Dataset: F2_noisy | Seed: 2 | Rows: 10000 | Features: 4
+======================================================================
+Running CatBoost...
+Accuracy=0.7748 | F1=0.7748 | Log loss=0.5136 | Time=2.80s
+Running RealMLP-TD...
+Accuracy=0.7804 | F1=0.7804 | Log loss=0.5035 | Time=74.30s
+Running TabPFN-v2...
+Failed: [Errno 122] Disk quota exceeded: '/home/pereirak/.cache/tabpfn'
+Running TabPFN-v3...
+Failed: [Errno 122] Disk quota exceeded: '/home/pereirak/.cache/tabpfn'
+Running TabICL-v2...
+INFO: You are downloading 'tabicl-classifier-v2-20260212.ckpt', the latest best-performing version, used in our TabICLv2 paper.
+
+Checkpoint 'tabicl-classifier-v2-20260212.ckpt' not cached.
+ Downloading from Hugging Face Hub (jingang/TabICL).
+
+Failed: [Errno 122] Disk quota exceeded: '/home/pereirak/.cache/huggingface'
+
+======================================================================
+Dataset: F2_irrelevant | Seed: 2 | Rows: 10000 | Features: 24
+======================================================================
+Running CatBoost...
+Accuracy=0.9316 | F1=0.9316 | Log loss=0.2524 | Time=3.72s
+Running RealMLP-TD...
+Accuracy=0.9392 | F1=0.9392 | Log loss=0.2224 | Time=73.96s
+Running TabPFN-v2...
+Failed: [Errno 122] Disk quota exceeded: '/home/pereirak/.cache/tabpfn'
+Running TabPFN-v3...
+Failed: [Errno 122] Disk quota exceeded: '/home/pereirak/.cache/tabpfn'
+Running TabICL-v2...
+INFO: You are downloading 'tabicl-classifier-v2-20260212.ckpt', the latest best-performing version, used in our TabICLv2 paper.
+
+Checkpoint 'tabicl-classifier-v2-20260212.ckpt' not cached.
+ Downloading from Hugging Face Hub (jingang/TabICL).
+
+Failed: [Errno 122] Disk quota exceeded: '/home/pereirak/.cache/huggingface'
+
+======================================================================
+Dataset: R1_base | Seed: 2 | Rows: 10000 | Features: 24
+======================================================================
+Running CatBoost...
+Accuracy=0.9532 | F1=0.9365 | Log loss=0.1723 | Time=3.72s
+Running RealMLP-TD...
+Accuracy=0.9672 | F1=0.9561 | Log loss=0.1644 | Time=74.69s
+Running TabPFN-v2...
+Failed: [Errno 122] Disk quota exceeded: '/home/pereirak/.cache/tabpfn'
+Running TabPFN-v3...
+Failed: [Errno 122] Disk quota exceeded: '/home/pereirak/.cache/tabpfn'
+Running TabICL-v2...
+INFO: You are downloading 'tabicl-classifier-v2-20260212.ckpt', the latest best-performing version, used in our TabICLv2 paper.
+
+Checkpoint 'tabicl-classifier-v2-20260212.ckpt' not cached.
+ Downloading from Hugging Face Hub (jingang/TabICL).
+
+Failed: [Errno 122] Disk quota exceeded: '/home/pereirak/.cache/huggingface'
+
+======================================================================
+Dataset: R1_noisy | Seed: 2 | Rows: 10000 | Features: 24
+======================================================================
+Running CatBoost...
+Accuracy=0.7724 | F1=0.7081 | Log loss=0.5186 | Time=3.74s
+Running RealMLP-TD...
+Accuracy=0.7668 | F1=0.7004 | Log loss=0.5235 | Time=74.68s
+Running TabPFN-v2...
+Failed: [Errno 122] Disk quota exceeded: '/home/pereirak/.cache/tabpfn'
+Running TabPFN-v3...
+Failed: [Errno 122] Disk quota exceeded: '/home/pereirak/.cache/tabpfn'
+Running TabICL-v2...
+INFO: You are downloading 'tabicl-classifier-v2-20260212.ckpt', the latest best-performing version, used in our TabICLv2 paper.
+
+Checkpoint 'tabicl-classifier-v2-20260212.ckpt' not cached.
+ Downloading from Hugging Face Hub (jingang/TabICL).
+
+Failed: [Errno 122] Disk quota exceeded: '/home/pereirak/.cache/huggingface'
+
+======================================================================
+Dataset: R1_imbalanced | Seed: 2 | Rows: 10000 | Features: 24
+======================================================================
+Running CatBoost...
+Accuracy=0.9696 | F1=0.9049 | Log loss=0.1292 | Time=3.52s
+Running RealMLP-TD...
+Accuracy=0.9712 | F1=0.9131 | Log loss=0.1398 | Time=74.55s
+Running TabPFN-v2...
+Failed: [Errno 122] Disk quota exceeded: '/home/pereirak/.cache/tabpfn'
+Running TabPFN-v3...
+Failed: [Errno 122] Disk quota exceeded: '/home/pereirak/.cache/tabpfn'
+Running TabICL-v2...
+INFO: You are downloading 'tabicl-classifier-v2-20260212.ckpt', the latest best-performing version, used in our TabICLv2 paper.
+
+Checkpoint 'tabicl-classifier-v2-20260212.ckpt' not cached.
+ Downloading from Hugging Face Hub (jingang/TabICL).
+
+Failed: [Errno 122] Disk quota exceeded: '/home/pereirak/.cache/huggingface'
+
+======================================================================
+Dataset: R2_base | Seed: 2 | Rows: 10000 | Features: 105
+======================================================================
+Running CatBoost...
+Accuracy=0.9208 | F1=0.8902 | Log loss=0.2740 | Time=7.16s
+Running RealMLP-TD...
+Accuracy=0.9276 | F1=0.9032 | Log loss=0.2471 | Time=75.30s
+Running TabPFN-v2...
+Failed: [Errno 122] Disk quota exceeded: '/home/pereirak/.cache/tabpfn'
+Running TabPFN-v3...
+Failed: [Errno 122] Disk quota exceeded: '/home/pereirak/.cache/tabpfn'
+Running TabICL-v2...
+INFO: You are downloading 'tabicl-classifier-v2-20260212.ckpt', the latest best-performing version, used in our TabICLv2 paper.
+
+Checkpoint 'tabicl-classifier-v2-20260212.ckpt' not cached.
+ Downloading from Hugging Face Hub (jingang/TabICL).
+
+Failed: [Errno 122] Disk quota exceeded: '/home/pereirak/.cache/huggingface'
+
+======================================================================
+Dataset: R2_noisy | Seed: 2 | Rows: 10000 | Features: 105
+======================================================================
+Running CatBoost...
+Accuracy=0.6884 | F1=0.5865 | Log loss=0.6044 | Time=7.65s
+Running RealMLP-TD...
+Accuracy=0.6872 | F1=0.6235 | Log loss=0.6123 | Time=74.54s
+Running TabPFN-v2...
+Failed: [Errno 122] Disk quota exceeded: '/home/pereirak/.cache/tabpfn'
+Running TabPFN-v3...
+Failed: [Errno 122] Disk quota exceeded: '/home/pereirak/.cache/tabpfn'
+Running TabICL-v2...
+INFO: You are downloading 'tabicl-classifier-v2-20260212.ckpt', the latest best-performing version, used in our TabICLv2 paper.
+
+Checkpoint 'tabicl-classifier-v2-20260212.ckpt' not cached.
+ Downloading from Hugging Face Hub (jingang/TabICL).
+
+Failed: [Errno 122] Disk quota exceeded: '/home/pereirak/.cache/huggingface'
+
+======================================================================
+Dataset: R2_imbalanced | Seed: 2 | Rows: 10000 | Features: 105
+======================================================================
+Running CatBoost...
+Accuracy=0.9144 | F1=0.6158 | Log loss=0.2471 | Time=7.46s
+Running RealMLP-TD...
+Accuracy=0.9292 | F1=0.7411 | Log loss=0.2362 | Time=76.64s
+Running TabPFN-v2...
+Failed: [Errno 122] Disk quota exceeded: '/home/pereirak/.cache/tabpfn'
+Running TabPFN-v3...
+Failed: [Errno 122] Disk quota exceeded: '/home/pereirak/.cache/tabpfn'
+Running TabICL-v2...
+INFO: You are downloading 'tabicl-classifier-v2-20260212.ckpt', the latest best-performing version, used in our TabICLv2 paper.
+
+Checkpoint 'tabicl-classifier-v2-20260212.ckpt' not cached.
+ Downloading from Hugging Face Hub (jingang/TabICL).
+
+Failed: [Errno 122] Disk quota exceeded: '/home/pereirak/.cache/huggingface'
+
+======================================================================
+Dataset: S1_base | Seed: 2 | Rows: 10000 | Features: 3
+======================================================================
+Running CatBoost...
+Accuracy=0.9504 | F1=0.9504 | Log loss=0.1201 | Time=3.47s
+Running RealMLP-TD...
+Accuracy=0.9500 | F1=0.9500 | Log loss=0.1585 | Time=77.02s
+Running TabPFN-v2...
+Failed: [Errno 122] Disk quota exceeded: '/home/pereirak/.cache/tabpfn'
+Running TabPFN-v3...
+Failed: [Errno 122] Disk quota exceeded: '/home/pereirak/.cache/tabpfn'
+Running TabICL-v2...
+INFO: You are downloading 'tabicl-classifier-v2-20260212.ckpt', the latest best-performing version, used in our TabICLv2 paper.
+
+Checkpoint 'tabicl-classifier-v2-20260212.ckpt' not cached.
+ Downloading from Hugging Face Hub (jingang/TabICL).
+
+Failed: [Errno 122] Disk quota exceeded: '/home/pereirak/.cache/huggingface'
+
+======================================================================
+Dataset: S1_noisy | Seed: 2 | Rows: 10000 | Features: 3
+======================================================================
+Running CatBoost...
+Accuracy=0.8876 | F1=0.8875 | Log loss=0.2578 | Time=3.48s
+Running RealMLP-TD...
+Accuracy=0.8884 | F1=0.8883 | Log loss=0.2656 | Time=77.06s
+Running TabPFN-v2...
+Failed: [Errno 122] Disk quota exceeded: '/home/pereirak/.cache/tabpfn'
+Running TabPFN-v3...
+Failed: [Errno 122] Disk quota exceeded: '/home/pereirak/.cache/tabpfn'
+Running TabICL-v2...
+INFO: You are downloading 'tabicl-classifier-v2-20260212.ckpt', the latest best-performing version, used in our TabICLv2 paper.
+
+Checkpoint 'tabicl-classifier-v2-20260212.ckpt' not cached.
+ Downloading from Hugging Face Hub (jingang/TabICL).
+
+Failed: [Errno 122] Disk quota exceeded: '/home/pereirak/.cache/huggingface'
+
+======================================================================
+Dataset: S1_irrelevant | Seed: 2 | Rows: 10000 | Features: 18
+======================================================================
+Running CatBoost...
+Accuracy=0.9516 | F1=0.9516 | Log loss=0.1115 | Time=3.42s
+Running RealMLP-TD...
+Accuracy=0.9520 | F1=0.9520 | Log loss=0.1483 | Time=76.85s
+Running TabPFN-v2...
+Failed: [Errno 122] Disk quota exceeded: '/home/pereirak/.cache/tabpfn'
+Running TabPFN-v3...
+Failed: [Errno 122] Disk quota exceeded: '/home/pereirak/.cache/tabpfn'
+Running TabICL-v2...
+INFO: You are downloading 'tabicl-classifier-v2-20260212.ckpt', the latest best-performing version, used in our TabICLv2 paper.
+
+Checkpoint 'tabicl-classifier-v2-20260212.ckpt' not cached.
+ Downloading from Hugging Face Hub (jingang/TabICL).
+
+Failed: [Errno 122] Disk quota exceeded: '/home/pereirak/.cache/huggingface'
+
+======================================================================
+Dataset: S2_base | Seed: 2 | Rows: 10000 | Features: 5
+======================================================================
+Running CatBoost...
+Accuracy=0.9532 | F1=0.9532 | Log loss=0.1142 | Time=2.80s
+Running RealMLP-TD...
+Accuracy=0.9556 | F1=0.9556 | Log loss=0.1228 | Time=77.46s
+Running TabPFN-v2...
+Failed: [Errno 122] Disk quota exceeded: '/home/pereirak/.cache/tabpfn'
+Running TabPFN-v3...
+Failed: [Errno 122] Disk quota exceeded: '/home/pereirak/.cache/tabpfn'
+Running TabICL-v2...
+INFO: You are downloading 'tabicl-classifier-v2-20260212.ckpt', the latest best-performing version, used in our TabICLv2 paper.
+
+Checkpoint 'tabicl-classifier-v2-20260212.ckpt' not cached.
+ Downloading from Hugging Face Hub (jingang/TabICL).
+
+Failed: [Errno 122] Disk quota exceeded: '/home/pereirak/.cache/huggingface'
+
+======================================================================
+Dataset: S2_noisy | Seed: 2 | Rows: 10000 | Features: 5
+======================================================================
+Running CatBoost...
+Accuracy=0.8928 | F1=0.8928 | Log loss=0.2414 | Time=2.74s
+Running RealMLP-TD...
+Accuracy=0.8944 | F1=0.8944 | Log loss=0.2479 | Time=75.20s
+Running TabPFN-v2...
+Failed: [Errno 122] Disk quota exceeded: '/home/pereirak/.cache/tabpfn'
+Running TabPFN-v3...
+Failed: [Errno 122] Disk quota exceeded: '/home/pereirak/.cache/tabpfn'
+Running TabICL-v2...
+INFO: You are downloading 'tabicl-classifier-v2-20260212.ckpt', the latest best-performing version, used in our TabICLv2 paper.
+
+Checkpoint 'tabicl-classifier-v2-20260212.ckpt' not cached.
+ Downloading from Hugging Face Hub (jingang/TabICL).
+
+Failed: [Errno 122] Disk quota exceeded: '/home/pereirak/.cache/huggingface'
+
+======================================================================
+Dataset: S2_irrelevant | Seed: 2 | Rows: 10000 | Features: 25
+======================================================================
+Running CatBoost...
+Accuracy=0.9436 | F1=0.9436 | Log loss=0.1282 | Time=3.26s
+Running RealMLP-TD...
+Accuracy=0.9372 | F1=0.9372 | Log loss=0.1672 | Time=79.46s
+Running TabPFN-v2...
+Failed: [Errno 122] Disk quota exceeded: '/home/pereirak/.cache/tabpfn'
+Running TabPFN-v3...
+Failed: [Errno 122] Disk quota exceeded: '/home/pereirak/.cache/tabpfn'
+Running TabICL-v2...
+INFO: You are downloading 'tabicl-classifier-v2-20260212.ckpt', the latest best-performing version, used in our TabICLv2 paper.
+
+Checkpoint 'tabicl-classifier-v2-20260212.ckpt' not cached.
+ Downloading from Hugging Face Hub (jingang/TabICL).
+
+Failed: [Errno 122] Disk quota exceeded: '/home/pereirak/.cache/huggingface'
+
+Benchmark finished.
+CSV: results/kate_datasets_results.csv
+Plot: results/kate_datasets_accuracy.png

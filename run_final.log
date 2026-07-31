@@ -1,0 +1,586 @@
+nohup: ignoring input
+
+======================================================================
+Dataset: F1_base | Seed: 0 | Rows: 10000 | Features: 3
+======================================================================
+Running CatBoost...
+Accuracy=0.9684 | F1=0.9684 | Log loss=0.1336 | Time=2.69s
+Running RealMLP-TD...
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+`Trainer.fit` stopped: `max_epochs=256` reached.
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+Accuracy=0.9760 | F1=0.9760 | Log loss=0.1319 | Time=117.91s
+Running TabPFN-v2...
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Accuracy=0.9756 | F1=0.9756 | Log loss=0.1088 | Time=32.29s
+Running TabPFN-v3...
+Accuracy=0.9776 | F1=0.9776 | Log loss=0.1049 | Time=31.81s
+Running TabICL-v2...
+INFO: You are downloading 'tabicl-classifier-v2-20260212.ckpt', the latest best-performing version, used in our TabICLv2 paper.
+
+Checkpoint 'tabicl-classifier-v2-20260212.ckpt' not cached.
+ Downloading from Hugging Face Hub (jingang/TabICL).
+
+Accuracy=0.9784 | F1=0.9784 | Log loss=0.1011 | Time=69.80s
+
+======================================================================
+Dataset: F1_noisy | Seed: 0 | Rows: 10000 | Features: 3
+======================================================================
+Running CatBoost...
+Accuracy=0.8072 | F1=0.8071 | Log loss=0.4636 | Time=2.52s
+Running RealMLP-TD...
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+`Trainer.fit` stopped: `max_epochs=256` reached.
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+Accuracy=0.8072 | F1=0.8070 | Log loss=0.4637 | Time=119.55s
+Running TabPFN-v2...
+Accuracy=0.8068 | F1=0.8067 | Log loss=0.4605 | Time=26.47s
+Running TabPFN-v3...
+Accuracy=0.8084 | F1=0.8083 | Log loss=0.4597 | Time=19.89s
+Running TabICL-v2...
+Accuracy=0.8080 | F1=0.8079 | Log loss=0.4592 | Time=61.86s
+
+======================================================================
+Dataset: F1_irrelevant | Seed: 0 | Rows: 10000 | Features: 18
+======================================================================
+Running CatBoost...
+Accuracy=0.9664 | F1=0.9664 | Log loss=0.1426 | Time=2.66s
+Running RealMLP-TD...
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+`Trainer.fit` stopped: `max_epochs=256` reached.
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+Accuracy=0.9748 | F1=0.9748 | Log loss=0.1335 | Time=119.04s
+Running TabPFN-v2...
+Accuracy=0.9772 | F1=0.9772 | Log loss=0.1079 | Time=118.46s
+Running TabPFN-v3...
+Accuracy=0.9788 | F1=0.9788 | Log loss=0.0989 | Time=20.84s
+Running TabICL-v2...
+Accuracy=0.9800 | F1=0.9800 | Log loss=0.0984 | Time=68.82s
+
+======================================================================
+Dataset: F2_base | Seed: 0 | Rows: 10000 | Features: 4
+======================================================================
+Running CatBoost...
+Accuracy=0.9388 | F1=0.9388 | Log loss=0.2281 | Time=2.50s
+Running RealMLP-TD...
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+`Trainer.fit` stopped: `max_epochs=256` reached.
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+Accuracy=0.9548 | F1=0.9548 | Log loss=0.1992 | Time=113.74s
+Running TabPFN-v2...
+Accuracy=0.9528 | F1=0.9528 | Log loss=0.1864 | Time=34.11s
+Running TabPFN-v3...
+Accuracy=0.9568 | F1=0.9568 | Log loss=0.1795 | Time=19.70s
+Running TabICL-v2...
+Accuracy=0.9568 | F1=0.9568 | Log loss=0.1791 | Time=62.35s
+
+======================================================================
+Dataset: F2_noisy | Seed: 0 | Rows: 10000 | Features: 4
+======================================================================
+Running CatBoost...
+Accuracy=0.7692 | F1=0.7692 | Log loss=0.5318 | Time=2.50s
+Running RealMLP-TD...
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+`Trainer.fit` stopped: `max_epochs=256` reached.
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+Accuracy=0.7724 | F1=0.7723 | Log loss=0.5131 | Time=113.56s
+Running TabPFN-v2...
+Accuracy=0.7740 | F1=0.7740 | Log loss=0.5100 | Time=34.42s
+Running TabPFN-v3...
+Accuracy=0.7732 | F1=0.7732 | Log loss=0.5118 | Time=19.58s
+Running TabICL-v2...
+Accuracy=0.7704 | F1=0.7704 | Log loss=0.5114 | Time=62.25s
+
+======================================================================
+Dataset: F2_irrelevant | Seed: 0 | Rows: 10000 | Features: 24
+======================================================================
+Running CatBoost...
+Accuracy=0.9376 | F1=0.9376 | Log loss=0.2556 | Time=2.85s
+Running RealMLP-TD...
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+`Trainer.fit` stopped: `max_epochs=256` reached.
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+Accuracy=0.9404 | F1=0.9404 | Log loss=0.2306 | Time=112.99s
+Running TabPFN-v2...
+Accuracy=0.9468 | F1=0.9468 | Log loss=0.2014 | Time=155.06s
+Running TabPFN-v3...
+Accuracy=0.9508 | F1=0.9508 | Log loss=0.1913 | Time=21.03s
+Running TabICL-v2...
+Accuracy=0.9496 | F1=0.9496 | Log loss=0.1927 | Time=71.38s
+
+======================================================================
+Dataset: R1_base | Seed: 0 | Rows: 10000 | Features: 24
+======================================================================
+Running CatBoost...
+Accuracy=0.9516 | F1=0.9341 | Log loss=0.1825 | Time=2.85s
+Running RealMLP-TD...
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+`Trainer.fit` stopped: `max_epochs=256` reached.
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+Accuracy=0.9688 | F1=0.9581 | Log loss=0.1541 | Time=115.19s
+Running TabPFN-v2...
+Accuracy=0.9692 | F1=0.9589 | Log loss=0.1409 | Time=155.23s
+Running TabPFN-v3...
+Accuracy=0.9748 | F1=0.9661 | Log loss=0.1183 | Time=21.10s
+Running TabICL-v2...
+Accuracy=0.9736 | F1=0.9646 | Log loss=0.1174 | Time=71.77s
+
+======================================================================
+Dataset: R1_noisy | Seed: 0 | Rows: 10000 | Features: 24
+======================================================================
+Running CatBoost...
+Accuracy=0.7528 | F1=0.6865 | Log loss=0.5388 | Time=2.92s
+Running RealMLP-TD...
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+`Trainer.fit` stopped: `max_epochs=256` reached.
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+Accuracy=0.7560 | F1=0.6925 | Log loss=0.5317 | Time=114.28s
+Running TabPFN-v2...
+Accuracy=0.7532 | F1=0.6838 | Log loss=0.5314 | Time=155.14s
+Running TabPFN-v3...
+Accuracy=0.7600 | F1=0.6976 | Log loss=0.5288 | Time=21.42s
+Running TabICL-v2...
+Accuracy=0.7572 | F1=0.6930 | Log loss=0.5290 | Time=71.53s
+
+======================================================================
+Dataset: R1_imbalanced | Seed: 0 | Rows: 10000 | Features: 24
+======================================================================
+Running CatBoost...
+Accuracy=0.9656 | F1=0.8868 | Log loss=0.1340 | Time=2.90s
+Running RealMLP-TD...
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+`Trainer.fit` stopped: `max_epochs=256` reached.
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+Accuracy=0.9728 | F1=0.9170 | Log loss=0.1279 | Time=114.93s
+Running TabPFN-v2...
+Accuracy=0.9732 | F1=0.9157 | Log loss=0.1132 | Time=155.19s
+Running TabPFN-v3...
+Accuracy=0.9796 | F1=0.9371 | Log loss=0.1005 | Time=21.18s
+Running TabICL-v2...
+Accuracy=0.9788 | F1=0.9349 | Log loss=0.0998 | Time=71.94s
+
+======================================================================
+Dataset: R2_base | Seed: 0 | Rows: 10000 | Features: 105
+======================================================================
+Running CatBoost...
+Accuracy=0.9236 | F1=0.8935 | Log loss=0.2761 | Time=4.87s
+Running RealMLP-TD...
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+`Trainer.fit` stopped: `max_epochs=256` reached.
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+Accuracy=0.9200 | F1=0.8928 | Log loss=0.2523 | Time=114.50s
+Running TabPFN-v2...
+Accuracy=0.7840 | F1=0.6857 | Log loss=0.4333 | Time=663.32s
+Running TabPFN-v3...
+Accuracy=0.7632 | F1=0.6160 | Log loss=0.4303 | Time=30.27s
+Running TabICL-v2...
+Accuracy=0.9316 | F1=0.9104 | Log loss=0.2168 | Time=112.62s
+
+======================================================================
+Dataset: R2_noisy | Seed: 0 | Rows: 10000 | Features: 105
+======================================================================
+Running CatBoost...
+Accuracy=0.6936 | F1=0.5915 | Log loss=0.5992 | Time=5.13s
+Running RealMLP-TD...
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+`Trainer.fit` stopped: `max_epochs=256` reached.
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+Accuracy=0.6928 | F1=0.6242 | Log loss=0.5982 | Time=113.13s
+Running TabPFN-v2...
+Accuracy=0.6484 | F1=0.5329 | Log loss=0.6131 | Time=662.10s
+Running TabPFN-v3...
+Accuracy=0.6452 | F1=0.5326 | Log loss=0.6139 | Time=30.53s
+Running TabICL-v2...
+Accuracy=0.7084 | F1=0.6376 | Log loss=0.5868 | Time=113.03s
+
+======================================================================
+Dataset: R2_imbalanced | Seed: 0 | Rows: 10000 | Features: 105
+======================================================================
+Running CatBoost...
+Accuracy=0.9216 | F1=0.6458 | Log loss=0.2367 | Time=5.07s
+Running RealMLP-TD...
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+`Trainer.fit` stopped: `max_epochs=256` reached.
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+Accuracy=0.9348 | F1=0.7639 | Log loss=0.2203 | Time=115.97s
+Running TabPFN-v2...
+Accuracy=0.9076 | F1=0.6404 | Log loss=0.2415 | Time=661.11s
+Running TabPFN-v3...
+Accuracy=0.9036 | F1=0.6641 | Log loss=0.2385 | Time=30.33s
+Running TabICL-v2...
+Accuracy=0.9480 | F1=0.8192 | Log loss=0.1977 | Time=112.58s
+
+======================================================================
+Dataset: S1_base | Seed: 0 | Rows: 10000 | Features: 3
+======================================================================
+Running CatBoost...
+Accuracy=0.9448 | F1=0.9448 | Log loss=0.1347 | Time=2.51s
+Running RealMLP-TD...
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+`Trainer.fit` stopped: `max_epochs=256` reached.
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+Accuracy=0.9468 | F1=0.9468 | Log loss=0.1543 | Time=115.47s
+Running TabPFN-v2...
+Accuracy=0.9452 | F1=0.9452 | Log loss=0.1261 | Time=26.37s
+Running TabPFN-v3...
+Accuracy=0.9464 | F1=0.9464 | Log loss=0.1253 | Time=19.44s
+Running TabICL-v2...
+Accuracy=0.9476 | F1=0.9476 | Log loss=0.1253 | Time=61.96s
+
+======================================================================
+Dataset: S1_noisy | Seed: 0 | Rows: 10000 | Features: 3
+======================================================================
+Running CatBoost...
+Accuracy=0.8748 | F1=0.8748 | Log loss=0.2775 | Time=2.46s
+Running RealMLP-TD...
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+`Trainer.fit` stopped: `max_epochs=256` reached.
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+Accuracy=0.8764 | F1=0.8764 | Log loss=0.2893 | Time=114.62s
+Running TabPFN-v2...
+Accuracy=0.8832 | F1=0.8832 | Log loss=0.2665 | Time=26.32s
+Running TabPFN-v3...
+Accuracy=0.8820 | F1=0.8820 | Log loss=0.2659 | Time=19.25s
+Running TabICL-v2...
+Accuracy=0.8828 | F1=0.8828 | Log loss=0.2657 | Time=61.90s
+
+======================================================================
+Dataset: S1_irrelevant | Seed: 0 | Rows: 10000 | Features: 18
+======================================================================
+Running CatBoost...
+Accuracy=0.9476 | F1=0.9476 | Log loss=0.1138 | Time=2.58s
+Running RealMLP-TD...
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+`Trainer.fit` stopped: `max_epochs=256` reached.
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+Accuracy=0.9520 | F1=0.9520 | Log loss=0.1398 | Time=114.87s
+Running TabPFN-v2...
+Accuracy=0.9532 | F1=0.9532 | Log loss=0.1046 | Time=118.90s
+Running TabPFN-v3...
+Accuracy=0.9532 | F1=0.9532 | Log loss=0.1050 | Time=20.62s
+Running TabICL-v2...
+Accuracy=0.9528 | F1=0.9528 | Log loss=0.1057 | Time=68.72s
+
+======================================================================
+Dataset: S2_base | Seed: 0 | Rows: 10000 | Features: 5
+======================================================================
+Running CatBoost...
+Accuracy=0.9432 | F1=0.9432 | Log loss=0.1263 | Time=2.59s
+Running RealMLP-TD...
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+`Trainer.fit` stopped: `max_epochs=256` reached.
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+Accuracy=0.9460 | F1=0.9460 | Log loss=0.1559 | Time=112.07s
+Running TabPFN-v2...
+Accuracy=0.9468 | F1=0.9468 | Log loss=0.1158 | Time=38.20s
+Running TabPFN-v3...
+Accuracy=0.9460 | F1=0.9460 | Log loss=0.1152 | Time=20.15s
+Running TabICL-v2...
+Accuracy=0.9460 | F1=0.9460 | Log loss=0.1156 | Time=63.42s
+
+======================================================================
+Dataset: S2_noisy | Seed: 0 | Rows: 10000 | Features: 5
+======================================================================
+Running CatBoost...
+Accuracy=0.8976 | F1=0.8976 | Log loss=0.2388 | Time=2.52s
+Running RealMLP-TD...
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+`Trainer.fit` stopped: `max_epochs=256` reached.
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+Accuracy=0.9008 | F1=0.9007 | Log loss=0.2705 | Time=115.65s
+Running TabPFN-v2...
+Accuracy=0.9064 | F1=0.9064 | Log loss=0.2258 | Time=38.22s
+Running TabPFN-v3...
+Accuracy=0.9068 | F1=0.9068 | Log loss=0.2257 | Time=19.97s
+Running TabICL-v2...
+Accuracy=0.9076 | F1=0.9076 | Log loss=0.2262 | Time=63.40s
+
+======================================================================
+Dataset: S2_irrelevant | Seed: 0 | Rows: 10000 | Features: 25
+======================================================================
+Running CatBoost...
+Accuracy=0.9420 | F1=0.9420 | Log loss=0.1314 | Time=2.94s
+Running RealMLP-TD...
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+`Trainer.fit` stopped: `max_epochs=256` reached.
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+Accuracy=0.9440 | F1=0.9440 | Log loss=0.1346 | Time=116.71s
+Running TabPFN-v2...
+Accuracy=0.9448 | F1=0.9448 | Log loss=0.1183 | Time=159.36s
+Running TabPFN-v3...
+Accuracy=0.9432 | F1=0.9432 | Log loss=0.1180 | Time=21.74s
+Running TabICL-v2...
+Accuracy=0.9436 | F1=0.9436 | Log loss=0.1184 | Time=72.28s
+
+======================================================================
+Dataset: F1_base | Seed: 1 | Rows: 10000 | Features: 3
+======================================================================
+Running CatBoost...
+Accuracy=0.9696 | F1=0.9696 | Log loss=0.1480 | Time=2.47s
+Running RealMLP-TD...
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+`Trainer.fit` stopped: `max_epochs=256` reached.
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+Accuracy=0.9768 | F1=0.9768 | Log loss=0.1314 | Time=114.55s
+Running TabPFN-v2...
+Accuracy=0.9772 | F1=0.9772 | Log loss=0.1142 | Time=26.89s
+Running TabPFN-v3...
+Accuracy=0.9776 | F1=0.9776 | Log loss=0.1059 | Time=19.76s
+Running TabICL-v2...
+Accuracy=0.9780 | F1=0.9780 | Log loss=0.1041 | Time=62.16s
+
+======================================================================
+Dataset: F1_noisy | Seed: 1 | Rows: 10000 | Features: 3
+======================================================================
+Running CatBoost...
+Accuracy=0.8004 | F1=0.8004 | Log loss=0.4805 | Time=2.43s
+Running RealMLP-TD...
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+`Trainer.fit` stopped: `max_epochs=256` reached.
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+Accuracy=0.8044 | F1=0.8042 | Log loss=0.4740 | Time=113.16s
+Running TabPFN-v2...
+Accuracy=0.8080 | F1=0.8079 | Log loss=0.4658 | Time=26.48s
+Running TabPFN-v3...
+Accuracy=0.8084 | F1=0.8083 | Log loss=0.4638 | Time=19.38s
+Running TabICL-v2...
+Accuracy=0.8060 | F1=0.8059 | Log loss=0.4661 | Time=61.88s
+
+======================================================================
+Dataset: F1_irrelevant | Seed: 1 | Rows: 10000 | Features: 18
+======================================================================
+Running CatBoost...
+Accuracy=0.9588 | F1=0.9588 | Log loss=0.1556 | Time=2.56s
+Running RealMLP-TD...
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+`Trainer.fit` stopped: `max_epochs=256` reached.
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+Accuracy=0.9648 | F1=0.9648 | Log loss=0.1527 | Time=114.18s
+Running TabPFN-v2...
+Accuracy=0.9748 | F1=0.9748 | Log loss=0.1197 | Time=118.70s
+Running TabPFN-v3...
+Accuracy=0.9756 | F1=0.9756 | Log loss=0.1138 | Time=20.68s
+Running TabICL-v2...
+Accuracy=0.9772 | F1=0.9772 | Log loss=0.1106 | Time=68.67s
+
+======================================================================
+Dataset: F2_base | Seed: 1 | Rows: 10000 | Features: 4
+======================================================================
+Running CatBoost...
+Accuracy=0.9444 | F1=0.9444 | Log loss=0.2194 | Time=2.49s
+Running RealMLP-TD...
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+💡 Tip: For seamless cloud logging and experiment tracking, try installing [litlogger](https://pypi.org/project/litlogger/) to enable LitLogger, which logs metrics and artifacts automatically to the Lightning Experiments platform.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1,2,3,4,5,6,7]
+[rank: 0] Received SIGTERM: 15
