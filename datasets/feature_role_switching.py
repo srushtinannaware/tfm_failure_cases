@@ -112,25 +112,26 @@ def _make_role_switch(n: int, n_roles: int, pool_size: int, rng, far_split: bool
     return X, y
 
 
-def get_datasets(seed: int) -> dict[str, tuple[np.ndarray, np.ndarray, int]]:
-    """Returns variant_name -> (X, y, n_train)."""
+def get_datasets(seed: int) -> dict[str, tuple[np.ndarray, np.ndarray]]:
+    """Returns variant_name -> (X, y) where X and y are already
+    concatenated train+test so main.py can do its own split."""
     rng = np.random.default_rng(seed + MASTER_SEED_OFFSET)
-    datasets: dict[str, tuple[np.ndarray, np.ndarray, int]] = {}
+    datasets: dict[str, tuple[np.ndarray, np.ndarray]] = {}
 
     # --- sanity checks: run these first ---
     n_roles = 2
     n_train = SANITY_TRAIN_PER_ROLE * n_roles
     n_test = SANITY_TEST_PER_ROLE * n_roles
     X, y = _make_role_switch(n_train + n_test, n_roles, SANITY_POOL_SIZE, rng, far_split=False)
-    datasets["role_sanity_2roles_adjacent"] = (X, y, n_train)
+    datasets["role_sanity_2roles_adjacent"] = (X, y)
 
     X, y = _make_role_switch(n_train + n_test, n_roles, SANITY_POOL_SIZE, rng, far_split=True)
-    datasets["role_sanity_2roles_farsplit"] = (X, y, n_train)
+    datasets["role_sanity_2roles_farsplit"] = (X, y)
 
     # --- primary experiment: pure distance sweep, no branching ---
     for d in DIST_VALUES:
         X, y = _make_pair_interaction(DIST_N_TRAIN + DIST_N_TEST, DIST_POOL_SIZE, col_a=0, col_b=d, rng=rng)
-        datasets[f"distance_sweep_d{d}"] = (X, y, DIST_N_TRAIN)
+        datasets[f"distance_sweep_d{d}"] = (X, y)
 
     return datasets
 
@@ -146,7 +147,8 @@ def run_role_switch_check(model_names: list[str], seeds: list[int] = (0, 1, 2)) 
     for seed in seeds:
         dataset_variants = get_datasets(seed)
 
-        for variant_name, (X, y, n_train) in dataset_variants.items():
+        for variant_name, (X, y) in dataset_variants.items():
+            n_train = int(len(X) * 0.8)
             X_train, y_train = X[:n_train], y[:n_train]
             X_test, y_test = X[n_train:], y[n_train:]
 

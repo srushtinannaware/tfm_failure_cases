@@ -113,28 +113,28 @@ def _make_catboost_with_cat():
     return CatBoostClassifier(random_state=42, verbose=False, cat_features=[KEY_COL_IDX])
 
 
-def get_datasets(seed: int) -> dict[str, tuple[np.ndarray, np.ndarray, int]]:
-    """Returns variant_name -> (X, y, n_keys). n_keys is explicit metadata
-    now, not something to recover by parsing the variant name."""
+def get_datasets(seed: int) -> dict[str, tuple[np.ndarray, np.ndarray]]:
+    """Returns variant_name -> (X, y) for main.py compatibility.
+    n_keys metadata is stored in run_context_routing_check directly."""
     rng = np.random.default_rng(seed + MASTER_SEED_OFFSET)
     n_total = N_TRAIN + N_TEST
     datasets: dict[str, tuple[np.ndarray, np.ndarray, int]] = {}
 
     for n_keys in (10, 50, 200, 800, 2000):
         X, y = _make_routing(n_total, n_keys, N_DECOY_FEATURES, rng, float_key=False)
-        datasets[f"routing_M{n_keys}"] = (X, y, n_keys)
+        datasets[f"routing_M{n_keys}"] = (X, y)
 
     for n_keys in (50, 200, 500):
         X, y = _make_routing(n_total, n_keys, N_DECOY_FEATURES, rng, float_key=True)
-        datasets[f"routing_M{n_keys}_floatkey"] = (X, y, n_keys)
+        datasets[f"routing_M{n_keys}_floatkey"] = (X, y)
 
     for n_keys in (1000, 1500, 2000, 3000):
         X, y = _make_routing(n_total, n_keys, N_DECOY_FEATURES, rng, float_key=False)
-        datasets[f"routing_collision_M{n_keys}"] = (X, y, n_keys)
+        datasets[f"routing_collision_M{n_keys}"] = (X, y)
 
     for n_keys in (200, 500, 1000):
         X, y = _make_routing(n_total, n_keys, N_DECOY_FEATURES, rng, float_key=True)
-        datasets[f"routing_combined_M{n_keys}"] = (X, y, n_keys)
+        datasets[f"routing_combined_M{n_keys}"] = (X, y)
 
     # NEW: dense bridge between routing_M500_floatkey and routing_collision_M1000,
     # i.e. the zone where the seed-0/1/2 run actually showed the gap opening
@@ -143,7 +143,7 @@ def get_datasets(seed: int) -> dict[str, tuple[np.ndarray, np.ndarray, int]]:
     # widely-spaced, hard-to-connect points.
     for n_keys in range(500, 1001, 50):
         X, y = _make_routing(n_total, n_keys, N_DECOY_FEATURES, rng, float_key=True)
-        datasets[f"routing_bridge_M{n_keys}"] = (X, y, n_keys)
+        datasets[f"routing_bridge_M{n_keys}"] = (X, y)
 
     return datasets
 
