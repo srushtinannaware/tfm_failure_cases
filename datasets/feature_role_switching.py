@@ -26,9 +26,20 @@ in models.py actually maps to the triplet-grouping architecture
 instead and this whole mechanism doesn't apply to it).
 
 Variants:
+  - role_switch_1role:
+        sanity baseline — a single role, generous sample budget. Check
+        this is near-ceiling (>=90%) for every model before trusting
+        anything from the K-sweep below. If it isn't, the interaction/
+        noise formulation is the problem, not role-switching, and
+        INTERACTION_NOISE_STD needs to come down further.
   - role_switch_2roles / 5roles / 10roles / 20roles:
         role given as an explicit categorical feature; K grows, so the
         number of conditional branches a model must represent grows.
+        Sample budget scales with K (TRAIN_PER_ROLE/TEST_PER_ROLE are
+        held constant per branch) so this isolates "more roles" from
+        "less data" — an earlier version of this script fixed total N
+        and conflated the two, which made every model (including
+        CatBoost) collapse to chance by K=10 for the wrong reason.
   - role_switch_10roles_farsplit:
         same K=10, but the two signal columns for each role are placed
         at maximum index distance apart (col k and pool_size-1-k), so
@@ -58,9 +69,21 @@ import sys
 
 import numpy as np
 
-N_TRAIN = 1000
-N_TEST = 200
+TRAIN_PER_ROLE = 150   # held constant across the K-sweep so "more roles" != "less data per role"
+TEST_PER_ROLE = 40
+INTERACTION_NOISE_STD = 0.15  # was 0.5 — that made the base task itself near-chance; see notes below
 MASTER_SEED_OFFSET = 600
+
+# NOTE on the redesign (after seeing seed-0 results where CatBoost was ~50-58% on
+# every K>=10 variant, i.e. everyone was at the noise floor, not just the ICL models):
+# score = a*b + N(0, INTERACTION_NOISE_STD) puts most of its density near zero (product
+# of two standard normals), so even a modest noise std causes heavy label flipping right
+# where it matters. At std=0.5 that capped Bayes accuracy well below what's needed to see
+# any model-specific degradation curve. Dropped to 0.15. If CatBoost still isn't >=90% on
+# role_switch_1role, drop it further before trusting anything from the K-sweep.
+# Also: N_TRAIN was FIXED at 1000 regardless of n_roles, so K=10 meant ~100 rows/role and
+# K=20 meant ~50 — nobody can fit a noisy interaction from that. Sample budget now scales
+# with n_roles so each branch gets a constant TRAIN_PER_ROLE/TEST_PER_ROLE regardless of K.
 
 
 def _make_role_switch(
@@ -87,7 +110,7 @@ def _make_role_switch(
 
     a = X_pool[np.arange(n), col_a]
     b = X_pool[np.arange(n), col_b]
-    score = a * b + rng.normal(0, 0.5, n)  # mild label noise, matches context_length.py style
+    score = a * b + rng.normal(0, INTERACTION_NOISE_STD, n)
     y = (score > 0).astype(int)
 
     feature_blocks = [X_pool]
@@ -104,21 +127,32 @@ def _make_role_switch(
     return X, y
 
 
-def get_datasets(seed: int) -> dict[str, tuple[np.ndarray, np.ndarray]]:
+def get_datasets(seed: int) -> dict[str, tuple[np.ndarray, np.ndarray, int]]:
+    """Returns variant_name -> (X, y, n_train). n_train varies per variant now,
+    since sample budget scales with n_roles — callers must slice on the returned
+    n_train, NOT a global N_TRAIN constant."""
     rng = np.random.default_rng(seed + MASTER_SEED_OFFSET)
-    n_total = N_TRAIN + N_TEST
-    datasets = {}
+    datasets: dict[str, tuple[np.ndarray, np.ndarray, int]] = {}
+
+    # Sanity baseline: single role, generous budget. If any model isn't near-ceiling
+    # here, the interaction/noise formulation itself is the problem, not role-switching.
+    n_train, n_test = TRAIN_PER_ROLE * 4, TEST_PER_ROLE * 4
+    X, y = _make_role_switch(n_train + n_test, 1, pool_size=20, rng=rng, explicit_role=True)
+    datasets["role_switch_1role"] = (X, y, n_train)
 
     for n_roles in (2, 5, 10, 20):
         pool_size = max(n_roles * 2, 20)
-        X, y = _make_role_switch(n_total, n_roles, pool_size, rng, far_split=False, explicit_role=True)
-        datasets[f"role_switch_{n_roles}roles"] = (X, y)
+        n_train, n_test = TRAIN_PER_ROLE * n_roles, TEST_PER_ROLE * n_roles
+        X, y = _make_role_switch(n_train + n_test, n_roles, pool_size, rng, far_split=False, explicit_role=True)
+        datasets[f"role_switch_{n_roles}roles"] = (X, y, n_train)
 
-    X, y = _make_role_switch(n_total, 10, 40, rng, far_split=True, explicit_role=True)
-    datasets["role_switch_10roles_farsplit"] = (X, y)
+    n_roles = 10
+    n_train, n_test = TRAIN_PER_ROLE * n_roles, TEST_PER_ROLE * n_roles
+    X, y = _make_role_switch(n_train + n_test, n_roles, 40, rng, far_split=True, explicit_role=True)
+    datasets["role_switch_10roles_farsplit"] = (X, y, n_train)
 
-    X, y = _make_role_switch(n_total, 10, 40, rng, far_split=False, explicit_role=False, latent_bits=4)
-    datasets["role_switch_10roles_latent"] = (X, y)
+    X, y = _make_role_switch(n_train + n_test, n_roles, 40, rng, far_split=False, explicit_role=False, latent_bits=4)
+    datasets["role_switch_10roles_latent"] = (X, y, n_train)
 
     return datasets
 
@@ -134,9 +168,9 @@ def run_role_switch_check(model_names: list[str], seeds: list[int] = (0, 1, 2)) 
     for seed in seeds:
         dataset_variants = get_datasets(seed)
 
-        for variant_name, (X, y) in dataset_variants.items():
-            X_train, y_train = X[:N_TRAIN], y[:N_TRAIN]
-            X_test, y_test = X[N_TRAIN:], y[N_TRAIN:]
+        for variant_name, (X, y, n_train) in dataset_variants.items():
+            X_train, y_train = X[:n_train], y[:n_train]
+            X_test, y_test = X[n_train:], y[n_train:]
 
             for model_name, factory in model_factories.items():
                 print(f"[{variant_name}] {model_name} (seed={seed})...")
