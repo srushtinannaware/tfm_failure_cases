@@ -34,30 +34,60 @@ MASTER_SEED_OFFSET = 500
 
 def _generate_signal_and_labels(n: int, rng) -> tuple[np.ndarray, np.ndarray]:
     X_signal = rng.normal(0, 1, size=(n, N_SIGNAL_FEATURES))
-    score = X_signal[:, 0] * X_signal[:, 1] + X_signal[:, 2] - X_signal[:, 3] * X_signal[:, 4]
+    
+    # WEAKER signal — add noise directly to the score
+    score = (
+        X_signal[:, 0] * X_signal[:, 1]    # interaction term
+        + X_signal[:, 2]                     # linear term
+        - X_signal[:, 3] * X_signal[:, 4]   # interaction term
+        + rng.normal(0, 1.5, n)              # ← add label noise here
+    )                                         # makes signal weaker
+    
     y = (score > 0).astype(int)
     return X_signal, y
-
 
 def get_datasets(seed: int) -> dict[str, tuple[np.ndarray, np.ndarray]]:
     rng = np.random.default_rng(seed + MASTER_SEED_OFFSET)
     n_total = N_TRAIN + N_TEST
-    datasets: dict[str, tuple[np.ndarray, np.ndarray]] = {}
+    datasets = {}
 
     X_signal, y = _generate_signal_and_labels(n_total, rng)
 
-    # Variant 1: Clean Base (5 features)
+    # Variant 1: Clean Base (unchanged)
     datasets["attention_clean_base"] = (X_signal.copy(), y)
 
-    # Variant 2: 50 Features Total (5 signal + 45 noise features)
-    X_noise_45 = rng.normal(0, 1, size=(n_total, 45))
-    X_50 = np.hstack([X_signal, X_noise_45])
-    datasets["attention_dilution_50feat"] = (X_50, y)
+    # Variant 2: 50 features — but noise is CORRELATED with signal
+    # This is much harder for TFMs because correlated noise looks
+    # like real features in the attention matrix
+    noise_correlated_45 = X_signal[:, :1] * 0.3 + rng.normal(0, 1, (n_total, 45))
+    X_50_corr = np.hstack([X_signal, noise_correlated_45])
+    datasets["attention_dilution_50feat_correlated"] = (X_50_corr, y)
 
-    # Variant 3: 150 Features Total (5 signal + 145 noise features)
-    X_noise_145 = rng.normal(0, 1, size=(n_total, 145))
-    X_150 = np.hstack([X_signal, X_noise_145])
-    datasets["attention_dilution_150feat"] = (X_150, y)
+    # Variant 3: 150 features — correlated noise
+    noise_correlated_145 = X_signal[:, :1] * 0.3 + rng.normal(0, 1, (n_total, 145))
+    X_150_corr = np.hstack([X_signal, noise_correlated_145])
+    datasets["attention_dilution_150feat_correlated"] = (X_150_corr, y)
+
+    # Variant 4: 500 features — this should break TFMs completely
+    # TabPFN has a hard feature limit — beyond it performance collapses
+    noise_500 = X_signal[:, :1] * 0.3 + rng.normal(0, 1, (n_total, 495))
+    X_500 = np.hstack([X_signal, noise_500])
+    datasets["attention_dilution_500feat"] = (X_500, y)
+
+    # Variant 5: Few-shot — only 50 training samples
+    # TFMs struggle with tiny context, CatBoost overfits but differently
+    datasets["attention_fewshot_50train"] = (X_signal.copy(), y)
+    # NOTE: in run_check below, use only first 50 rows for training
+    # TabPFN v2 hard limit: 100 features
+    # TabPFN v3 extended this but still degrades sharply above ~500
+    # Test exactly at and beyond the limit:
+
+    FEATURE_COUNTS = [5, 50, 100, 200, 500, 1000]
+
+    for n_feat in FEATURE_COUNTS:
+        noise = rng.normal(0, 1, (n_total, n_feat - N_SIGNAL_FEATURES))
+        X = np.hstack([X_signal, noise])
+        datasets[f"attention_dilution_{n_feat}feat"] = (X, y)
 
     return datasets
 

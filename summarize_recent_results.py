@@ -96,6 +96,9 @@ def process_dataset_results(dataset_name: str, csv_path: Path) -> pd.DataFrame |
     # ---------------------------------------------------------------
     fig, axes = plt.subplots(1, 2, figsize=(14, 5))
     variant_order = list(dict.fromkeys(df["dataset_variant"]))
+    
+    # We use this to set explicit ticks for the aligned text
+    x_positions = range(len(variant_order))
 
     # Plot Accuracy
     for model_name in pivot_acc.columns:
@@ -108,9 +111,12 @@ def process_dataset_results(dataset_name: str, csv_path: Path) -> pd.DataFrame |
     axes[0].set_title(f"{dataset_name}: Accuracy")
     axes[0].set_ylabel("Accuracy")
     axes[0].set_ylim(0.0, 1.05)
-    axes[0].tick_params(axis="x", rotation=35)
-    axes[0].grid(True, linestyle="--", alpha=0.5)
-    axes[0].legend()
+    
+    # Perfect X-axis alignment (Matches your image)
+    axes[0].set_xticks(x_positions)
+    axes[0].set_xticklabels(variant_order, rotation=45, ha="right")
+    axes[0].grid(False) # Removed grid to match image
+    axes[0].legend(loc="lower left")
 
     # Plot ROC AUC if available
     if "roc_auc" in metrics_to_group:
@@ -122,18 +128,23 @@ def process_dataset_results(dataset_name: str, csv_path: Path) -> pd.DataFrame |
                 pivot_auc.loc[v, model_name] if v in pivot_auc.index else None
                 for v in variant_order
             ]
-            axes[1].plot(variant_order, y_vals, marker="s", label=model_name)
+            axes[1].plot(variant_order, y_vals, marker="o", label=model_name)
+            
         axes[1].set_title(f"{dataset_name}: ROC AUC")
         axes[1].set_ylabel("ROC AUC")
         axes[1].set_ylim(0.0, 1.05)
-        axes[1].tick_params(axis="x", rotation=35)
-        axes[1].grid(True, linestyle="--", alpha=0.5)
-        axes[1].legend()
+        
+        # Perfect X-axis alignment
+        axes[1].set_xticks(x_positions)
+        axes[1].set_xticklabels(variant_order, rotation=45, ha="right")
+        axes[1].grid(False) # Removed grid to match image
+        axes[1].legend(loc="lower left")
     else:
         axes[1].text(
             0.5, 0.5, "ROC AUC Not Available", ha="center", va="center"
         )
 
+    # Use tight_layout so the rotated labels don't get cut off at the bottom
     plt.tight_layout()
     chart_out = RESULTS_DIR / f"{dataset_name}_comparison.png"
     plt.savefig(chart_out, dpi=160)
