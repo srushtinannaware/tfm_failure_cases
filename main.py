@@ -308,7 +308,7 @@ def parse_arguments() -> argparse.Namespace:
         "--seeds",
         nargs="+",
         type=int,
-        default=[0, 1, 2],
+        default=[0, 1],
         help="Random seeds.",
     )
 

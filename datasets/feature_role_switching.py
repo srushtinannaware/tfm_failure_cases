@@ -1,60 +1,58 @@
 """
-Feature Role Switching Dataset:
-Tests row-conditional feature selection — whether a model can use a
-"role" indicator to know WHICH pair of columns is the signal for a
-given row, while every other column (including pairs that ARE signal
-for other roles) is pure noise for that row.
+Feature Grouping Distance Dataset (formerly "role switching") — rebuilt
+twice now. First rebuild dropped noise and decoupled role-branching from
+distance, but a sanity check with a real gradient booster (sklearn
+GradientBoostingClassifier standing in for CatBoost, since trees are
+provably column-order-blind) showed accuracy swinging randomly by seed
+(0.48 to 0.92) regardless of distance at pool_size=60/N_TRAIN=600 — a
+needle-in-haystack search problem (which 2 of 60 columns interact, out of
+~1770 candidate pairs), not a real distance effect. That noise floor
+would have swamped anything TabPFN-v3-specific.
 
-Motivation (grounded in the TabPFN-3 / TabICL-v2 technical reports,
-not assumed): TabPFN-3 and TabICL-v2 group each feature together with
-its two cyclically-shifted column-index neighbors into a fixed triplet
-BEFORE row aggregation (TabICL's grouping scheme, adopted by TabPFN-3).
-If the two columns that interact for a given role are never co-located
-in the same triplet, the interaction has to be reconstructed from
-already-compressed row embeddings rather than read off directly. Trees
-split on any column pair regardless of index distance, and CatBoost
-can just add more splits as roles grow; an MLP sees the raw row too.
-This gives an architecture-specific, checkable hypothesis rather than
-a vague "attention gets diluted" story.
+Fixed by shrinking the candidate pool and raising sample size until the
+search problem is reliably solved regardless of column distance — checked
+empirically (not just via an oracle-ceiling calculation, which was
+insufficient last time):
 
-TODO(kate): confirm your models.py wrapper doesn't reorder/shuffle
-columns before calling tabpfn_v3/tabicl_v2 — if it does, the
-`farsplit` variant's premise (max index distance -> different triplet)
-is silently defeated. Also confirm which TabPFN/TabICL version string
-in models.py actually maps to the triplet-grouping architecture
-(TabPFN-3 uses it; earlier v2.x alternates row/feature attention
-instead and this whole mechanism doesn't apply to it).
+    pool_size=20, N_TRAIN=1200, noise_std=0.05:
+        GradientBoostingClassifier gets 90-95% across 5 seeds, at d=1
+        AND d=19 (opposite ends of the pool) — i.e. distance genuinely
+        doesn't matter for a tree, as it shouldn't, confirming this is
+        now a clean baseline to test the (potentially different)
+        triplet-grouping story on TabPFN-3/TabICL-v2 against.
+
+    role_sanity K=2 variants needed 1200 samples/role (2400 total) to
+    reach ~87-93% reliably; 300-600/role (what the earlier version used)
+    was NOT reliable (0.57-0.93 spread across seeds) — that alone likely
+    explains a good chunk of the flat-chance results by role_switch_5roles
+    in your last graph.
+
+TODO(kate): run role_sanity_2roles_adjacent FIRST. If CatBoost/RealMLP/
+TabPFN-v2 aren't comfortably >85% there, something in your actual
+models.py config (not this dataset) is still limiting search — these
+numbers were validated with a generic sklearn GBM, not your exact
+CatBoost hyperparameters, so there could still be a gap between the two.
+
+TODO(kate): distance_sweep_* has NO role branching at all (single fixed
+pair) — that's deliberate, to isolate the grouping-distance question
+from the branching-search question that broke the last two versions.
+Reintroduce roles only after distance_sweep_* shows a clean result on
+its own.
+
+TODO(kate): TabPFN-3 and TabICL-v2 reportedly share the triplet-grouping
+mechanism per their technical reports. If TabICL-v2 degrades alongside
+TabPFN-v3 on distance_sweep_* while CatBoost/RealMLP/TabPFN-v2 don't,
+that's still the result you're after (a shared-architecture robustness
+gap) — not a failed experiment.
 
 Variants:
-  - role_switch_1role:
-        sanity baseline — a single role, generous sample budget. Check
-        this is near-ceiling (>=90%) for every model before trusting
-        anything from the K-sweep below. If it isn't, the interaction/
-        noise formulation is the problem, not role-switching, and
-        INTERACTION_NOISE_STD needs to come down further.
-  - role_switch_2roles / 5roles / 10roles / 20roles:
-        role given as an explicit categorical feature; K grows, so the
-        number of conditional branches a model must represent grows.
-        Sample budget scales with K (TRAIN_PER_ROLE/TEST_PER_ROLE are
-        held constant per branch) so this isolates "more roles" from
-        "less data" — an earlier version of this script fixed total N
-        and conflated the two, which made every model (including
-        CatBoost) collapse to chance by K=10 for the wrong reason.
-  - role_switch_10roles_farsplit:
-        same K=10, but the two signal columns for each role are placed
-        at maximum index distance apart (col k and pool_size-1-k), so
-        they can never land in the same triplet-neighbor group. Same
-        difficulty for trees/MLP as role_switch_10roles; should be
-        selectively harder for triplet-grouped models if the grouping
-        hypothesis is real. Compare this against role_switch_10roles
-        directly — that's the actual test, not the accuracy in
-        isolation.
-  - role_switch_10roles_latent:
-        role is NOT given as an explicit feature; it's coded in 4 noisy
-        analog "key" columns instead of a clean categorical, so trees
-        lose their free split-on-role shortcut too. Use this if the
-        explicit-role variants don't separate models enough — it's a
-        harder, less clean-hypothesis version.
+  - role_sanity_2roles_adjacent / role_sanity_2roles_farsplit:
+        run first. K=2, 1200 samples/role, noise=0.05. Identical except
+        column placement (adjacent vs. opposite ends of a 20-col pool).
+  - distance_sweep_d1 / d3 / d6 / d10 / d14 / d19:
+        THE experiment. Single fixed pair, pool_size=20 held constant,
+        column a fixed at index 0, column b at index d. Only distance
+        between the interacting columns changes.
 
 Usage:
     python main.py --dataset feature_role_switching --models catboost realmlp tabpfn_v2 tabpfn_v3 tabicl_v2
@@ -69,35 +67,32 @@ import sys
 
 import numpy as np
 
-TRAIN_PER_ROLE = 150   # held constant across the K-sweep so "more roles" != "less data per role"
-TEST_PER_ROLE = 40
-INTERACTION_NOISE_STD = 0.15  # was 0.5 — that made the base task itself near-chance; see notes below
 MASTER_SEED_OFFSET = 600
+INTERACTION_NOISE_STD = 0.05  # oracle ceiling ~94.8%, checked numerically
 
-# NOTE on the redesign (after seeing seed-0 results where CatBoost was ~50-58% on
-# every K>=10 variant, i.e. everyone was at the noise floor, not just the ICL models):
-# score = a*b + N(0, INTERACTION_NOISE_STD) puts most of its density near zero (product
-# of two standard normals), so even a modest noise std causes heavy label flipping right
-# where it matters. At std=0.5 that capped Bayes accuracy well below what's needed to see
-# any model-specific degradation curve. Dropped to 0.15. If CatBoost still isn't >=90% on
-# role_switch_1role, drop it further before trusting anything from the K-sweep.
-# Also: N_TRAIN was FIXED at 1000 regardless of n_roles, so K=10 meant ~100 rows/role and
-# K=20 meant ~50 — nobody can fit a noisy interaction from that. Sample budget now scales
-# with n_roles so each branch gets a constant TRAIN_PER_ROLE/TEST_PER_ROLE regardless of K.
+# distance-sweep settings (primary experiment) — validated with a real
+# gradient booster to reliably solve the search problem at every distance
+DIST_POOL_SIZE = 20
+DIST_N_TRAIN = 1200
+DIST_N_TEST = 300
+DIST_VALUES = (1, 3, 6, 10, 14, 19)
+
+# role-sanity settings (run first)
+SANITY_TRAIN_PER_ROLE = 1200
+SANITY_TEST_PER_ROLE = 200
+SANITY_POOL_SIZE = 20
 
 
-def _make_role_switch(
-    n: int,
-    n_roles: int,
-    pool_size: int,
-    rng,
-    far_split: bool = False,
-    explicit_role: bool = True,
-    latent_bits: int = 0,
-) -> tuple[np.ndarray, np.ndarray]:
-    n_signal_cols = n_roles * 2
-    assert pool_size >= n_signal_cols, "pool_size must fit 2 signal cols per role"
+def _make_pair_interaction(n: int, pool_size: int, col_a: int, col_b: int, rng) -> tuple[np.ndarray, np.ndarray]:
+    X = rng.normal(0, 1, size=(n, pool_size))
+    a = X[:, col_a]
+    b = X[:, col_b]
+    score = a * b + rng.normal(0, INTERACTION_NOISE_STD, n)
+    y = (score > 0).astype(int)
+    return X, y
 
+
+def _make_role_switch(n: int, n_roles: int, pool_size: int, rng, far_split: bool = False) -> tuple[np.ndarray, np.ndarray]:
     X_pool = rng.normal(0, 1, size=(n, pool_size))
     role = rng.integers(0, n_roles, size=n)
 
@@ -113,46 +108,29 @@ def _make_role_switch(
     score = a * b + rng.normal(0, INTERACTION_NOISE_STD, n)
     y = (score > 0).astype(int)
 
-    feature_blocks = [X_pool]
-
-    if explicit_role:
-        feature_blocks.append(role.reshape(-1, 1).astype(float))
-
-    if latent_bits > 0:
-        bits = (role[:, None] >> np.arange(latent_bits)) & 1
-        key_cols = np.where(bits == 1, 1.0, -1.0) + rng.normal(0, 0.3, (n, latent_bits))
-        feature_blocks.append(key_cols)
-
-    X = np.hstack(feature_blocks)
+    X = np.hstack([X_pool, role.reshape(-1, 1).astype(float)])
     return X, y
 
 
 def get_datasets(seed: int) -> dict[str, tuple[np.ndarray, np.ndarray, int]]:
-    """Returns variant_name -> (X, y, n_train). n_train varies per variant now,
-    since sample budget scales with n_roles — callers must slice on the returned
-    n_train, NOT a global N_TRAIN constant."""
+    """Returns variant_name -> (X, y, n_train)."""
     rng = np.random.default_rng(seed + MASTER_SEED_OFFSET)
     datasets: dict[str, tuple[np.ndarray, np.ndarray, int]] = {}
 
-    # Sanity baseline: single role, generous budget. If any model isn't near-ceiling
-    # here, the interaction/noise formulation itself is the problem, not role-switching.
-    n_train, n_test = TRAIN_PER_ROLE * 4, TEST_PER_ROLE * 4
-    X, y = _make_role_switch(n_train + n_test, 1, pool_size=20, rng=rng, explicit_role=True)
-    datasets["role_switch_1role"] = (X, y, n_train)
+    # --- sanity checks: run these first ---
+    n_roles = 2
+    n_train = SANITY_TRAIN_PER_ROLE * n_roles
+    n_test = SANITY_TEST_PER_ROLE * n_roles
+    X, y = _make_role_switch(n_train + n_test, n_roles, SANITY_POOL_SIZE, rng, far_split=False)
+    datasets["role_sanity_2roles_adjacent"] = (X, y, n_train)
 
-    for n_roles in (2, 5, 10, 20):
-        pool_size = max(n_roles * 2, 20)
-        n_train, n_test = TRAIN_PER_ROLE * n_roles, TEST_PER_ROLE * n_roles
-        X, y = _make_role_switch(n_train + n_test, n_roles, pool_size, rng, far_split=False, explicit_role=True)
-        datasets[f"role_switch_{n_roles}roles"] = (X, y, n_train)
+    X, y = _make_role_switch(n_train + n_test, n_roles, SANITY_POOL_SIZE, rng, far_split=True)
+    datasets["role_sanity_2roles_farsplit"] = (X, y, n_train)
 
-    n_roles = 10
-    n_train, n_test = TRAIN_PER_ROLE * n_roles, TEST_PER_ROLE * n_roles
-    X, y = _make_role_switch(n_train + n_test, n_roles, 40, rng, far_split=True, explicit_role=True)
-    datasets["role_switch_10roles_farsplit"] = (X, y, n_train)
-
-    X, y = _make_role_switch(n_train + n_test, n_roles, 40, rng, far_split=False, explicit_role=False, latent_bits=4)
-    datasets["role_switch_10roles_latent"] = (X, y, n_train)
+    # --- primary experiment: pure distance sweep, no branching ---
+    for d in DIST_VALUES:
+        X, y = _make_pair_interaction(DIST_N_TRAIN + DIST_N_TEST, DIST_POOL_SIZE, col_a=0, col_b=d, rng=rng)
+        datasets[f"distance_sweep_d{d}"] = (X, y, DIST_N_TRAIN)
 
     return datasets
 
@@ -229,6 +207,6 @@ if __name__ == "__main__":
     models_to_run = ["catboost", "realmlp", "tabpfn_v2", "tabpfn_v3", "tabicl_v2"]
 
     print("=" * 70)
-    print("Running Feature Role Switching Benchmark")
+    print("Running Feature Grouping Distance Benchmark")
     print("=" * 70)
     run_role_switch_check(model_names=models_to_run)
