@@ -1,0 +1,16 @@
+dataset_variant,model,accuracy,roc_auc,f1_macro
+attention_clean_base,CatBoost,0.9133,0.9845,0.9132
+attention_clean_base,RealMLP-TD,0.9333,0.9873,0.9331
+attention_clean_base,TabICL-v2,0.9767,0.9981,0.9766
+attention_clean_base,TabPFN-v2,0.955,0.9958,0.9548
+attention_clean_base,TabPFN-v3,0.9633,0.9963,0.9632
+attention_dilution_150feat,CatBoost,0.77,0.8812,0.7697
+attention_dilution_150feat,RealMLP-TD,0.745,0.8281,0.7435
+attention_dilution_150feat,TabICL-v2,0.7317,0.8049,0.7316
+attention_dilution_150feat,TabPFN-v2,0.7333,0.8059,0.7332
+attention_dilution_150feat,TabPFN-v3,0.7383,0.8119,0.7382
+attention_dilution_50feat,CatBoost,0.845,0.9304,0.8448
+attention_dilution_50feat,RealMLP-TD,0.905,0.9682,0.9047
+attention_dilution_50feat,TabICL-v2,0.7317,0.8054,0.7315
+attention_dilution_50feat,TabPFN-v2,0.845,0.9079,0.8447
+attention_dilution_50feat,TabPFN-v3,0.79,0.8843,0.7898
