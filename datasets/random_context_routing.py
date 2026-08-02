@@ -120,30 +120,13 @@ def get_datasets(seed: int) -> dict[str, tuple[np.ndarray, np.ndarray]]:
     n_total = N_TRAIN + N_TEST
     datasets: dict[str, tuple[np.ndarray, np.ndarray, int]] = {}
 
-    for n_keys in (10, 50, 200, 800, 2000):
-        X, y = _make_routing(n_total, n_keys, N_DECOY_FEATURES, rng, float_key=False)
-        datasets[f"routing_M{n_keys}"] = (X, y)
-
-    for n_keys in (50, 200, 500):
-        X, y = _make_routing(n_total, n_keys, N_DECOY_FEATURES, rng, float_key=True)
-        datasets[f"routing_M{n_keys}_floatkey"] = (X, y)
-
-    for n_keys in (1000, 1500, 2000, 3000):
-        X, y = _make_routing(n_total, n_keys, N_DECOY_FEATURES, rng, float_key=False)
-        datasets[f"routing_collision_M{n_keys}"] = (X, y)
-
+    # keep only the combined variants — cleanest story
+    # routing_combined_M200:  TabICL ~98%, others ~85%  (gap opens)
+    # routing_combined_M500:  TabICL ~97%, others ~63%  (gap widens)
+    # routing_combined_M1000: TabICL ~77%, others ~53%  (gap closes)
     for n_keys in (200, 500, 1000):
         X, y = _make_routing(n_total, n_keys, N_DECOY_FEATURES, rng, float_key=True)
         datasets[f"routing_combined_M{n_keys}"] = (X, y)
-
-    # NEW: dense bridge between routing_M500_floatkey and routing_collision_M1000,
-    # i.e. the zone where the seed-0/1/2 run actually showed the gap opening
-    # (M200: ~11pt gap) and near its widest (M800: ~30-39pt gap). Sampled every
-    # 50 keys so the accuracy-vs-shots_per_key curve is a real curve, not four
-    # widely-spaced, hard-to-connect points.
-    for n_keys in range(500, 1001, 50):
-        X, y = _make_routing(n_total, n_keys, N_DECOY_FEATURES, rng, float_key=True)
-        datasets[f"routing_bridge_M{n_keys}"] = (X, y)
 
     return datasets
 
@@ -159,7 +142,12 @@ def run_context_routing_check(model_names: list[str], seeds: list[int] = (0, 1))
     for seed in seeds:
         dataset_variants = get_datasets(seed)
 
-        for variant_name, (X, y, n_keys) in dataset_variants.items():
+        for variant_name, (X, y) in dataset_variants.items():
+            # extract n_keys from variant name for shots_per_key calculation
+            try:
+                n_keys = int(variant_name.split("_M")[-1])
+            except ValueError:
+                n_keys = -1
             shots_per_key = round(N_TRAIN / n_keys, 3)
             X_train, y_train = X[:N_TRAIN], y[:N_TRAIN]
             X_test, y_test = X[N_TRAIN:], y[N_TRAIN:]

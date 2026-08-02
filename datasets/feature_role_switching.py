@@ -75,7 +75,7 @@ INTERACTION_NOISE_STD = 0.05  # oracle ceiling ~94.8%, checked numerically
 DIST_POOL_SIZE = 20
 DIST_N_TRAIN = 1200
 DIST_N_TEST = 300
-DIST_VALUES = (1, 3, 6, 10, 14, 19)
+DIST_VALUES = (1, 3, 6, 10, 14)
 
 # role-sanity settings (run first)
 SANITY_TRAIN_PER_ROLE = 1200
