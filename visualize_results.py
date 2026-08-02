@@ -3,9 +3,10 @@ General results visualizer - works for any dataset results CSV.
 Generates accuracy + ROC AUC charts and summary tables.
 
 Run from the project root:
-    python3 visualize_results.py --results results/many_class_check_results.csv
-    python3 visualize_results.py --results results/context_length_check_results.csv
-    python3 visualize_results.py --results results/complex_logical_interaction_results.csv
+    python3 visualize_results.py --results results/feature_role_switching_results.csv
+    python3 visualize_results.py --results results/random_context_routing_results.csv
+OR
+    /opt/miniconda3/envs/dl_lab/bin/python visualize_results.py --results results/random_context_routing_results.csv
 
 Or run for ALL result files at once:
     python3 visualize_results.py --all
