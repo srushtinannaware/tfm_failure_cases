@@ -124,7 +124,7 @@ def get_datasets(seed: int) -> dict[str, tuple[np.ndarray, np.ndarray]]:
     # gives 6 data points: 150, 350, 550, 750, 950, 1150
     # shots_per_key goes from 20 down to ~2.6
     # smooth degradation curve to show exactly where gap opens
-    for n_keys in range(150, 1200, 200):
+    for n_keys in range(150, 1000, 200):  # stop at M950
         X, y = _make_routing(n_total, n_keys, N_DECOY_FEATURES, rng, float_key=True)
         datasets[f"routing_combined_M{n_keys}"] = (X, y)
 
