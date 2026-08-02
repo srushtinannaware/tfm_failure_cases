@@ -120,11 +120,11 @@ def get_datasets(seed: int) -> dict[str, tuple[np.ndarray, np.ndarray]]:
     n_total = N_TRAIN + N_TEST
     datasets: dict[str, tuple[np.ndarray, np.ndarray, int]] = {}
 
-    # keep only the combined variants — cleanest story
-    # routing_combined_M200:  TabICL ~98%, others ~85%  (gap opens)
-    # routing_combined_M500:  TabICL ~97%, others ~63%  (gap widens)
-    # routing_combined_M1000: TabICL ~77%, others ~53%  (gap closes)
-    for n_keys in (200, 500, 1000):
+    # dense sweep from M150 to M1150 in steps of 200
+    # gives 6 data points: 150, 350, 550, 750, 950, 1150
+    # shots_per_key goes from 20 down to ~2.6
+    # smooth degradation curve to show exactly where gap opens
+    for n_keys in range(150, 1200, 200):
         X, y = _make_routing(n_total, n_keys, N_DECOY_FEATURES, rng, float_key=True)
         datasets[f"routing_combined_M{n_keys}"] = (X, y)
 
