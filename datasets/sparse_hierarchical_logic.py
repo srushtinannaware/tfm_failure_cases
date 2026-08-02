@@ -86,12 +86,42 @@ def get_datasets(seed: int) -> dict[str, tuple[np.ndarray, np.ndarray]]:
     n_total = N_TRAIN + N_TEST
     datasets = {}
 
+    # --- original sweep: kept for continuity, but note pool_size=6 means
+    # depth > 6 reuses columns (bits[:, d] == bits[:, d+6] exactly), which
+    # confounds "depth" with "repeated/cancelling composition" -- this is
+    # almost certainly why every model (incl. CatBoost) dips at depth_6 and
+    # partially recovers at depth_8/10. Do not read this as a depth effect.
     for depth in (2, 4, 6, 8, 10, 12):
         X, y = _make_hierarchical(n_total, depth, pool_size=6, rng=rng)
         datasets[f"hier_depth_{depth}"] = (X, y)
 
     X, y = _make_hierarchical(n_total, depth=8, pool_size=30, rng=rng)
     datasets["hier_depth_8_wide"] = (X, y)
+
+    # --- PRIMARY clean depth sweep: pool_size == depth (fresh column every
+    # step, no reuse/cancellation confound) AND and_every=0 (pure parity,
+    # so labels are guaranteed exactly 50/50 at every depth -- unlike the
+    # AND-mixed chain, whose label balance swings with d % and_every in a
+    # way that doesn't track depth and would confound accuracy comparisons
+    # across variants). This is also a direct comparison point against the
+    # arXiv 2502.08978 finding that TabPFN-v2 approximates parity well: if
+    # parity holds up at depth while the AND-mixed version below degrades,
+    # that pins the failure on "long mixed boolean composition" specifically,
+    # not on chain length or parity per se.
+    for depth in (4, 8, 12, 16, 20, 24, 32):
+        X, y = _make_hierarchical(n_total, depth, pool_size=depth, rng=rng, and_every=0)
+        datasets[f"hier_purestep_parity_depth_{depth}"] = (X, y)
+
+    # --- SECONDARY, explicitly imbalanced: same fresh-column setup but with
+    # ANDs mixed in (and_every=3). Label balance is NOT 50/50 here and shifts
+    # with depth (verified empirically: e.g. depth=4 -> ~25% positive,
+    # depth=8 -> ~52%) -- do not compare raw accuracy against the parity
+    # sweep above or across these depths without also checking/reporting
+    # each variant's label rate, and prefer balanced-accuracy or AUC over
+    # raw accuracy when analyzing this group.
+    for depth in (4, 8, 12, 16, 20, 24, 32):
+        X, y = _make_hierarchical(n_total, depth, pool_size=depth, rng=rng, and_every=3)
+        datasets[f"hier_purestep_mixed_depth_{depth}"] = (X, y)
 
     return datasets
 
