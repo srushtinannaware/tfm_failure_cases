@@ -75,7 +75,15 @@ INTERACTION_NOISE_STD = 0.05  # oracle ceiling ~94.8%, checked numerically
 DIST_POOL_SIZE = 20
 DIST_N_TRAIN = 1200
 DIST_N_TEST = 300
-DIST_VALUES = (1, 3, 6, 10, 14)
+DIST_VALUES = (1, 3, 6, 10, 14, 19)  # extended to max distance (pool_size - 1)
+
+# haystack-size sweep (secondary experiment) — holds the pair at MAXIMUM
+# relative distance (col_b = pool_size - 1) and instead grows pool_size,
+# to isolate "more irrelevant columns" from "raw distance" as a failure
+# axis. Still a single fixed pair, no branching -> no search-noise confound.
+POOL_SIZE_VALUES = (10, 20, 40, 80, 160)
+POOL_SWEEP_N_TRAIN = 1200
+POOL_SWEEP_N_TEST = 300
 
 # role-sanity settings (run first)
 SANITY_TRAIN_PER_ROLE = 1200
@@ -132,6 +140,14 @@ def get_datasets(seed: int) -> dict[str, tuple[np.ndarray, np.ndarray]]:
     for d in DIST_VALUES:
         X, y = _make_pair_interaction(DIST_N_TRAIN + DIST_N_TEST, DIST_POOL_SIZE, col_a=0, col_b=d, rng=rng)
         datasets[f"distance_sweep_d{d}"] = (X, y)
+
+    # --- secondary experiment: pair fixed at max distance, growing haystack ---
+    for pool_size in POOL_SIZE_VALUES:
+        X, y = _make_pair_interaction(
+            POOL_SWEEP_N_TRAIN + POOL_SWEEP_N_TEST, pool_size,
+            col_a=0, col_b=pool_size - 1, rng=rng,
+        )
+        datasets[f"haystack_sweep_p{pool_size}"] = (X, y)
 
     return datasets
 
