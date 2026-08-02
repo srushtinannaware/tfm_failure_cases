@@ -1,0 +1,12 @@
+dataset_module,dataset_variant,model,seed,n_samples,n_features,train_samples,test_samples,accuracy,balanced_accuracy,precision_macro,recall_macro,f1_macro,fit_seconds,prediction_seconds,total_seconds,log_loss,roc_auc,status,error
+feature_role_switching,role_sanity_2roles_adjacent,CatBoost,0,2800,21,2100,700,0.9428571428571428,0.9428485130490861,0.9428774358932492,0.9428485130490861,0.9428552769070011,2.050851946696639,0.00216483511030674,2.053016781806946,0.16038156221633382,0.9893468518110351,success,
+feature_role_switching,role_sanity_2roles_adjacent,TabPFN-v2,0,2800,21,2100,700,,,,,,,,,,,failed,"Running on CPU with more than 1000 samples is not allowed by default due to slow performance.
+To override this behavior, set the environment variable TABPFN_ALLOW_CPU_LARGE_DATASET=1 or set ignore_pretraining_limits=True.
+Alternatively, consider using a GPU or the tabpfn-client API: https://github.com/PriorLabs/tabpfn-client"
+feature_role_switching,role_sanity_2roles_adjacent,CatBoost,0,2800,21,2100,700,0.9428571428571428,0.9428485130490861,0.9428774358932492,0.9428485130490861,0.9428552769070011,2.050851946696639,0.00216483511030674,2.053016781806946,0.16038156221633382,0.9893468518110351,success,
+feature_role_switching,role_sanity_2roles_adjacent,TabPFN-v2,0,2800,21,2100,700,,,,,,,,,,,failed,"Running on CPU with more than 1000 samples is not allowed by default due to slow performance.
+To override this behavior, set the environment variable TABPFN_ALLOW_CPU_LARGE_DATASET=1 or set ignore_pretraining_limits=True.
+Alternatively, consider using a GPU or the tabpfn-client API: https://github.com/PriorLabs/tabpfn-client"
+feature_role_switching,role_sanity_2roles_adjacent,TabPFN-v3,0,2800,21,2100,700,,,,,,,,,,,failed,"Running on CPU with more than 1000 samples is not allowed by default due to slow performance.
+To override this behavior, set the environment variable TABPFN_ALLOW_CPU_LARGE_DATASET=1 or set ignore_pretraining_limits=True.
+Alternatively, consider using a GPU or the tabpfn-client API: https://github.com/PriorLabs/tabpfn-client"
