@@ -224,7 +224,7 @@ def run_causal_shortcut_check(
 if __name__ == "__main__":
     save_csv(seed=0)  # optional inspection copy
 
-    models_to_run = ["catboost", "realmlp", "tabpfn_v2", "tabpfn_v3", "tabicl_v2"]
+    models_to_run = ["catboost", "tabpfn_v2", "tabpfn_v3", "tabicl_v2"]
 
     print("=" * 70)
     print("HIDDEN version (the real test) - only A, Spur_shortcut exposed")
