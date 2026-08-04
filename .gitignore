@@ -1,0 +1,14 @@
+# Python virtual environment
+case1/
+__pycache__/
+*.pyc
+
+# macOS
+.DS_Store
+
+# Large / regenerable data -- rerun prepare_gse40279.py to recreate.
+# 296MB parsed matrix + 302MB raw download don't belong in git.
+data/
+
+# VS Code local settings
+.vscode/
