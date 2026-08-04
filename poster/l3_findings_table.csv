@@ -1,0 +1,7 @@
+Model,0 irrelevant,4 irrelevant,8 irrelevant,Drop 0→8,First observed collapse
+CatBoost,0.945,0.699,0.585,0.360,Not observed
+RealMLP,0.906,0.607,0.527,0.379,8
+TabICL v2,0.819,0.543,0.512,0.307,4
+LimiX,0.895,0.527,0.510,0.385,4
+TabPFN v2,0.859,0.663,0.525,0.333,8
+TabPFN v3,0.917,0.516,0.515,0.403,4
