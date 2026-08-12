@@ -6,14 +6,11 @@ scikit-learn
 scipy
 seaborn
 
-# Interactive analysis
-jupyterlab
-notebook
-
-# Utilities and planned baselines
+# Utilities and baselines
 tqdm
 pyyaml
 catboost
+pytabkit
 
 # Tabular foundation models available from PyPI
 tabicl>=2.1

@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import argparse
 import weakref
 from pathlib import Path
 from typing import Any
@@ -472,3 +473,28 @@ def run_logical_l3_noise_sweep(
         "validation": VALIDATION_PATH,
         "plot": PLOT_PATH,
     }
+
+
+def parse_args() -> argparse.Namespace:
+    parser = argparse.ArgumentParser(
+        description="Run the five-seed L3 XOR irrelevant-feature sweep."
+    )
+    parser.add_argument(
+        "--models",
+        nargs="+",
+        default=sorted(REQUIRED_MODELS),
+        help="The exact six-model comparison used in the reported experiment.",
+    )
+    parser.add_argument(
+        "--seeds",
+        nargs="+",
+        type=int,
+        default=list(REQUIRED_SEEDS),
+        help="The reported experiment uses seeds 0, 1, 2, 3, and 4.",
+    )
+    return parser.parse_args()
+
+
+if __name__ == "__main__":
+    arguments = parse_args()
+    run_logical_l3_noise_sweep(arguments.models, arguments.seeds)
