@@ -2,6 +2,8 @@
 case1/
 __pycache__/
 *.pyc
+.pytest_cache/
+*.log
 
 # macOS
 .DS_Store
@@ -12,3 +14,7 @@ data/
 
 # VS Code local settings
 .vscode/
+
+# Model and plotting caches
+catboost_info/
+.cache/
