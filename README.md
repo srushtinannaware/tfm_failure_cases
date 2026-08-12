@@ -31,8 +31,6 @@ The logical benchmark tests an XOR target whose signal is diluted by irrelevant 
 
 ### Random context routing
 
-### Random context routing
-
 The routing benchmark tests categorical lookup: each row's label is generated as `y = lookup[key]`, with no relationship between nearby key values and their labels, so a model can only score above chance by having seen that specific key a sufficient number of times during training. Ten pure-noise features and a 2% label-flip rate were added to the base task.
 
 Difficulty was controlled through shots per key (training examples per unique key), computed as `N_train / n_keys`. `N_train` was fixed at 3,000 and `n_keys` was swept from 150 to 950 in steps of 150, moving from roughly 20 shots per key down to roughly 2.6. Evaluation used ROC-AUC across the full sweep and F1-macro at the sparsest setting, across two seeds.
