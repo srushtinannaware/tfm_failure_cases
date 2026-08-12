@@ -33,9 +33,18 @@ The logical benchmark tests an XOR target whose signal is diluted by irrelevant 
 
 The routing benchmark tests categorical lookup: each row's label is generated as `y = lookup[key]`, with no relationship between nearby key values and their labels, so a model can only score above chance by having seen that specific key a sufficient number of times during training. Ten pure-noise features and a 2% label-flip rate were added to the base task.
 
-Difficulty was controlled through shots per key (training examples per unique key), computed as `N_train / n_keys`. `N_train` was fixed at 3,000 and `n_keys` was swept from 150 to 950 in steps of 150, moving from roughly 20 shots per key down to roughly 2.6. Evaluation used ROC-AUC across the full sweep and F1-macro at the sparsest setting, across two seeds.
+Difficulty was controlled through shots per key (training examples per unique key), computed as `N_train / n_keys`. `N_train` was fixed at 3,000 and `n_keys` was swept from 150 to 950 in steps of 200, moving from roughly 20 shots per key down to roughly 2.6. Evaluation used ROC-AUC across the full sweep and F1-macro at the sparsest setting, across two seeds.
 
-At the sparsest setting tested (2.6 shots per key), F1-macro scores were: TabICL v2 0.83, CatBoost 0.54, TabPFN-3 0.46, TabPFN v2 0.41. Across the sweep, TabICL v2's ROC-AUC stayed above roughly 0.9 for most of the tested range, while ROC-AUC for the other three models declined as shots per key decreased.
+At the sparsest setting tested (2.6 shots per key):
+
+| Model | F1-macro |
+|---|---:|
+| TabICL v2 | 0.83 |
+| CatBoost | 0.54 |
+| TabPFN-3 | 0.46 |
+| TabPFN v2 | 0.41 |
+
+Across the sweep, TabICL v2's ROC-AUC stayed above roughly 0.9 for most of the tested range, while ROC-AUC for the other three models declined as shots per key decreased.
 
 Consistent with the evaluation principles above, this indicates a comparative advantage for TabICL v2 under sparse-key conditions rather than an established architectural cause — no attention or representation analysis was performed to confirm a specific mechanism.
 
