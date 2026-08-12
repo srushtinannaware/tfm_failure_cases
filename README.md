@@ -37,7 +37,7 @@ Together, the experiments show that model rankings depend on the structure of th
 
 ## Repository branches
 
-The study was developed as three independent failure-case investigations plus shared model wrappers.
+The study was developed as three independent failure-case investigations plus shared model wrappers. The main branch is the project landing page; executable experiment code lives on the branches below.
 
 | Branch | Contents |
 |---|---|
@@ -46,7 +46,7 @@ The study was developed as three independent failure-case investigations plus sh
 | [final_pipeline](https://github.com/srushtinannaware/tfm_failure_cases/tree/final_pipeline) | Random context routing and feature-grouping experiments |
 | [models](https://github.com/srushtinannaware/tfm_failure_cases/tree/models) | Shared model adapters and configuration scaffolding |
 
-The historical `pipeline` branch is retained for provenance but is not part of the final implementation.
+The historical `pipeline` branch is retained for provenance but is not part of the final implementation or reproduction instructions.
 
 ## Reproducing the experiments
 
