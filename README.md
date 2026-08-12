@@ -56,7 +56,7 @@ The study was developed as three independent failure-case investigations plus sh
 |---|---|
 | [regression-failure-case](https://github.com/srushtinannaware/tfm_failure_cases/tree/regression-failure-case) | Wide/short regression, arithmetic supporting experiments, and GSE40279 real-world validation |
 | [l3-xor-failure-case](https://github.com/srushtinannaware/tfm_failure_cases/tree/l3-xor-failure-case) | Multi-condition XOR and irrelevant-feature controls |
-| [final_pipeline](https://github.com/srushtinannaware/tfm_failure_cases/tree/final_pipeline) | Random context routing and feature-grouping experiments |
+| [routing-and-role-switching](https://github.com/srushtinannaware/tfm_failure_cases/tree/routing-and-role-switching) | Random context routing and feature-grouping experiments |
 | [models](https://github.com/srushtinannaware/tfm_failure_cases/tree/models) | Shared model adapters and configuration scaffolding |
 
 The historical `pipeline` branch is retained for provenance but is not part of the final implementation or reproduction instructions.
