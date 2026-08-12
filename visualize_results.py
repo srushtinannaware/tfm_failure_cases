@@ -29,17 +29,9 @@ import pandas as pd
 PROJECT_ROOT = Path(__file__).resolve().parent
 RESULTS_DIR = PROJECT_ROOT / "results"
 
-# maps csv filename → nice title for charts
 DATASET_TITLES = {
-    "kate_datasets_results.csv":                   "Kate Datasets",
-    "many_class_results.csv":                "Many-Class Classification",
-    "context_length_check_results.csv":            "Feature Attention Dilution",
-    "complex_logical_interaction_results.csv":     "Complex Logical Interaction",
-    "periodic_boundary_check_results.csv":         "Periodic Boundary",
-    "prior_distribution_check_results.csv":        "Prior Distribution Mismatch",
-    "causal_shortcut_check_results.csv":           "Causal Shortcut (S1/S2)",
-    "deep_causal_chain_check_results.csv":         "Deep Causal Chain",
-    "feature_scale_mismatch_results.csv":          "Feature Scale Mismatch",
+    "feature_role_switching_results.csv": "Feature grouping",
+    "random_context_routing_results.csv": "Random context routing",
 }
 
 

@@ -17,3 +17,12 @@ env/
 .idea/
 .vscode/
 .cache/
+
+# Platform and runtime artifacts
+.DS_Store
+.pytest_cache/
+*.log
+catboost_info/
+
+# Downloaded model files
+cache/

@@ -13,11 +13,9 @@ dependencies:
   - seaborn
   - catboost
 
-  - jupyterlab
-  - notebook
-
   - pip:
       - tqdm
       - pyyaml
+      - pytabkit
       - tabicl>=2.1
       - tabpfn>=8.0.1

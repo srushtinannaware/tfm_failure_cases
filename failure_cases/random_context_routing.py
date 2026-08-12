@@ -1,63 +1,9 @@
-"""
-Random Context Routing Dataset — dense bridge sweep between the M500/M1000
-zone where the TabICL-v2-vs-everyone-else gap actually lives.
+"""Sparse categorical lookup benchmark.
 
-Two fixes from the previous version, both confirmed against real run output:
-
-FIX 1 — float_key was a no-op.
-    `keys.astype(float).reshape(-1,1)` and `keys.reshape(-1,1).astype(float)`
-    produce an identical array — same values, same dtype. The old
-    `_floatkey` variants were just a second random draw of the same
-    mechanism, not a test of numeric-range sensitivity. Now float_key=True
-    actually rescales+jitters the key far outside a N(0,1)-ish range
-    (key=147 -> ~147000.3x) while keeping keys well-separated so the task
-    stays solvable in principle.
-
-FIX 2 — shots_per_key was recovered by parsing the variant name string.
-    Fragile (silently breaks for any name that doesn't match the pattern)
-    and made the previous CSV's "M" column not really the thing that
-    matters. Every variant now returns n_keys directly as part of its
-    tuple; shots_per_key = N_TRAIN / n_keys is computed once from that,
-    not from string-splitting.
-
-Confirmed finding this dataset is actually measuring (from your last run,
-mean accuracy at M800, N_TRAIN=1000, 3 seeds):
-    CatBoost 53.8%, TabPFN-v2 59.1%, TabPFN-v3 62.9% (high variance),
-    TabICL-v2 92.6% (tight variance).
-So the real story here is "TabICL-v2 uniquely holds up under few-shots-
-per-category lookup" — not a TabPFN-v3/TabICL-v2-selective failure. The
-bridge sweep below is built to trace exactly where that gap opens and
-where it closes, with N_TRAIN=3000 (this file's context-size setting).
-
-Suggested plot (this is the "something else on the axes" part):
-    x-axis: shots_per_key = N_TRAIN / n_keys, NOT n_keys or M. n_keys is
-        an arbitrary lookup-table size; shots_per_key is the quantity
-        that actually drives difficulty and is comparable across
-        different N_TRAIN settings if you ever change that constant.
-        Use a log scale if you plot the full M10..M3000 sweep together
-        (shots_per_key spans ~300 down to ~1); linear scale is fine for
-        just the bridge sweep (shots_per_key ~9 down to ~3).
-    y-axis, two options:
-        (a) accuracy per model (the direct replication of your finding), or
-        (b) gap = TabICL-v2 accuracy - max(other three models' accuracy)
-            — this collapses four lines into one and makes the "where does
-            the advantage open/close" question visually immediate. The
-            run function below writes both a per-model results CSV and a
-            gap-summary CSV so you can make either plot without re-deriving
-            anything.
-
-TODO(kate): the bridge sweep only changes n_keys; it keeps float_key=True
-throughout so it also incidentally re-tests the (now-fixed) Lever 2
-mechanism across that whole range. If you want to isolate "shots_per_key
-alone" from "float key encoding alone," run the bridge twice — once with
-float_key=True, once False — and diff them. I only wired up one pass here
-since you asked for the range between the two named variants, and both of
-those happened to already be on the float_key=True / mixed side.
-
-Usage:
-    python main.py --dataset random_context_routing \
-        --models catboost tabpfn_v2 tabpfn_v3 tabicl_v2
-    python -m datasets.random_context_routing
+Each key maps to a randomly sampled binary label. Increasing the number of
+keys at a fixed training budget reduces the expected observations per key.
+Ten Gaussian decoy features and a small label-flip probability prevent the
+task from being a noiseless lookup.
 """
 
 from __future__ import annotations
@@ -75,9 +21,8 @@ MASTER_SEED_OFFSET = 800
 LABEL_FLIP_PROB = 0.02
 KEY_COL_IDX = 0
 
-# FIX 1: real magnitude shift + jitter, not a dtype no-op. Keys stay
-# well-separated (min gap = FLOAT_KEY_SCALE) so the task remains solvable
-# in principle for a model that actually clusters by key.
+# Keys remain well separated after jitter, so the lookup is solvable in
+# principle while using a numeric rather than native categorical encoding.
 FLOAT_KEY_SCALE = 1000.0
 FLOAT_KEY_JITTER = 0.5
 
@@ -120,11 +65,8 @@ def get_datasets(seed: int) -> dict[str, tuple[np.ndarray, np.ndarray]]:
     n_total = N_TRAIN + N_TEST
     datasets: dict[str, tuple[np.ndarray, np.ndarray, int]] = {}
 
-    # dense sweep from M150 to M1150 in steps of 200
-    # gives 6 data points: 150, 350, 550, 750, 950, 1150
-    # shots_per_key goes from 20 down to ~2.6
-    # smooth degradation curve to show exactly where gap opens
-    for n_keys in range(150, 1000, 200):  # stop at M950
+    # Bridge sweep: 20 observations per key down to approximately 2.6.
+    for n_keys in range(150, 1200, 200):
         X, y = _make_routing(n_total, n_keys, N_DECOY_FEATURES, rng, float_key=True)
         datasets[f"routing_combined_M{n_keys}"] = (X, y)
 

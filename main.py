@@ -1,6 +1,6 @@
 """Common classification benchmark pipeline.
 
-This module provides functions to run classification benchmarks on datasets defined in the datasets/ directory. It loads dataset, runs selected models, calculates metrics, and saves the results to CSV files.
+This module provides functions to run classification benchmarks on datasets defined in the failure_cases/ directory. It loads dataset, runs selected models, calculates metrics, and saves the results to CSV files.
 """
 
 from __future__ import annotations
@@ -27,16 +27,16 @@ def load_dataset_module(
     seed: int,
 ) -> dict[str, tuple[np.ndarray, np.ndarray]]:
     """
-    Dynamically load datasets/<dataset_name>.py.
+    Dynamically load failure_cases/<dataset_name>.py.
 
     The dataset file must contain:
         get_datasets(seed) -> {"variant_name": (X, y)}
     """
-    module = importlib.import_module(f"datasets.{dataset_name}")
+    module = importlib.import_module(f"failure_cases.{dataset_name}")
 
     if not hasattr(module, "get_datasets"):
         raise AttributeError(
-            f"datasets/{dataset_name}.py must define get_datasets(seed)."
+            f"failure_cases/{dataset_name}.py must define get_datasets(seed)."
         )
 
     datasets = module.get_datasets(seed)

@@ -83,15 +83,8 @@ def _create_catboost() -> Any:
     return CatBoostClassifier(random_state=42, verbose=False)
 
 
-# --------------------------------------------------------------------------
-# LimiX - not on PyPI. Clone https://github.com/limix-ldm-ai/LimiX yourself
-# and point this at the folder, e.g.:
-#   export LIMIX_REPO_PATH=/project/<course_code>/pereirak/LimiX
-# --------------------------------------------------------------------------
+# LimiX is loaded from a local repository checkout.
 LIMIX_REPO_PATH = os.environ.get("LIMIX_REPO_PATH", "")
-
-# TODO: confirm the real Hugging Face repo id before relying on this -
-# LimiX's own README and HF pages disagree ("stable-ai" vs "stableai-org").
 LIMIX_HF_REPO_ID = "stableai-org/LimiX-16M"
 LIMIX_CKPT_FILENAME = "LimiX-16M.ckpt"
 
@@ -175,10 +168,7 @@ def _create_limix() -> Any:
 
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
-    # noretrieval is the safer default: LimiX's retrieval-based config needs
-    # more GPU headroom than an RTX 4090 per their own docs, which the pool's
-    # GPUs may not meet. Switch to cls_default_retrieval.json only after
-    # confirming the pool node you land on can handle it.
+    # The no-retrieval configuration has lower memory requirements.
     inference_config = os.path.join(
         LIMIX_REPO_PATH, "config", "cls_default_noretrieval.json"
     )
@@ -199,12 +189,6 @@ _MODEL_REGISTRY: dict[str, tuple[str, ModelFactory]] = {
     "realmlp": ("RealMLP-TD", _create_realmlp),
     "catboost": ("CatBoost", _create_catboost),
     "limix": ("LimiX-16M", _create_limix),
-    # NOTE: "tabfm" and "nanotabpfn" were removed - their factory functions
-    # (_create_tabfm, _create_nanotabpfn) were commented out in the original
-    # file, but the registry dict still referenced those names, which raised
-    # NameError on import (the dict is built at import time, so this broke
-    # every run, not just requests for those two models). Re-add them here
-    # once the factories are actually implemented.
 }
 
 _ALIASES = {

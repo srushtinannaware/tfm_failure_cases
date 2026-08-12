@@ -1,62 +1,9 @@
-"""
-Feature Grouping Distance Dataset (formerly "role switching") — rebuilt
-twice now. First rebuild dropped noise and decoupled role-branching from
-distance, but a sanity check with a real gradient booster (sklearn
-GradientBoostingClassifier standing in for CatBoost, since trees are
-provably column-order-blind) showed accuracy swinging randomly by seed
-(0.48 to 0.92) regardless of distance at pool_size=60/N_TRAIN=600 — a
-needle-in-haystack search problem (which 2 of 60 columns interact, out of
-~1770 candidate pairs), not a real distance effect. That noise floor
-would have swamped anything TabPFN-v3-specific.
+"""Interaction-distance and irrelevant-feature benchmarks.
 
-Fixed by shrinking the candidate pool and raising sample size until the
-search problem is reliably solved regardless of column distance — checked
-empirically (not just via an oracle-ceiling calculation, which was
-insufficient last time):
-
-    pool_size=20, N_TRAIN=1200, noise_std=0.05:
-        GradientBoostingClassifier gets 90-95% across 5 seeds, at d=1
-        AND d=19 (opposite ends of the pool) — i.e. distance genuinely
-        doesn't matter for a tree, as it shouldn't, confirming this is
-        now a clean baseline to test the (potentially different)
-        triplet-grouping story on TabPFN-3/TabICL-v2 against.
-
-    role_sanity K=2 variants needed 1200 samples/role (2400 total) to
-    reach ~87-93% reliably; 300-600/role (what the earlier version used)
-    was NOT reliable (0.57-0.93 spread across seeds) — that alone likely
-    explains a good chunk of the flat-chance results by role_switch_5roles
-    in your last graph.
-
-TODO(kate): run role_sanity_2roles_adjacent FIRST. If CatBoost/RealMLP/
-TabPFN-v2 aren't comfortably >85% there, something in your actual
-models.py config (not this dataset) is still limiting search — these
-numbers were validated with a generic sklearn GBM, not your exact
-CatBoost hyperparameters, so there could still be a gap between the two.
-
-TODO(kate): distance_sweep_* has NO role branching at all (single fixed
-pair) — that's deliberate, to isolate the grouping-distance question
-from the branching-search question that broke the last two versions.
-Reintroduce roles only after distance_sweep_* shows a clean result on
-its own.
-
-TODO(kate): TabPFN-3 and TabICL-v2 reportedly share the triplet-grouping
-mechanism per their technical reports. If TabICL-v2 degrades alongside
-TabPFN-v3 on distance_sweep_* while CatBoost/RealMLP/TabPFN-v2 don't,
-that's still the result you're after (a shared-architecture robustness
-gap) — not a failed experiment.
-
-Variants:
-  - role_sanity_2roles_adjacent / role_sanity_2roles_farsplit:
-        run first. K=2, 1200 samples/role, noise=0.05. Identical except
-        column placement (adjacent vs. opposite ends of a 20-col pool).
-  - distance_sweep_d1 / d3 / d6 / d10 / d14 / d19:
-        THE experiment. Single fixed pair, pool_size=20 held constant,
-        column a fixed at index 0, column b at index d. Only distance
-        between the interacting columns changes.
-
-Usage:
-    python main.py --dataset feature_role_switching --models catboost realmlp tabpfn_v2 tabpfn_v3 tabicl_v2
-    python -m datasets.feature_role_switching
+The target depends on the sign of a noisy product between two features.
+Separate variant groups test role-conditioned interactions, raw column
+distance at fixed dimensionality, and irrelevant-feature dilution at maximum
+pair separation.
 """
 
 from __future__ import annotations
