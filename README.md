@@ -1,61 +1,56 @@
-# TFN Failure Cases
+# Shared model registry
 
----
+This branch documents the model adapters used across the classification experiments. It replaces the earlier empty per-model directory scaffold with a small executable registry.
 
-## Project Overview
+The regression experiment retains a separate registry because it requires both classifier and regressor APIs, explicit device routing, and model-version behavior specific to the wide/short study.
 
-This project investigates **failure cases of Tabular Foundation Models (TFMs)** by evaluating their performance on both real-world and synthetic datasets.
+## Supported classification models
 
-Our objective is to understand when these models fail and why they fail by designing experiments and comparing different versions of TabPFN.
+| Command name | Display name | Python package |
+|---|---|---|
+| `catboost` | CatBoost | `catboost` |
+| `realmlp` | RealMLP-TD | `pytabkit` |
+| `tabpfn_v2` | TabPFN-v2 | `tabpfn` |
+| `tabpfn_v2_5` | TabPFN-v2.5 | `tabpfn` |
+| `tabpfn_v3` | TabPFN-v3 | `tabpfn` |
+| `tabicl_v2` | TabICL v2 | `tabicl` |
 
----
+LimiX is omitted from the shared executable registry because it requires a repository checkout, a model-specific configuration file, and a checkpoint installation outside the standard Python package workflow. The XOR branch contains the adapter used for its recorded LimiX runs.
 
 ## Installation
 
-A shared environment has been created so we can work with the same library versions.
+```bash
+conda env create -f environment.yml
+conda activate tfm-failure
+```
 
-This environment does not include the TFM model packages themselves, because different Tabular Foundation Models may require different library versions and configuration.
----
+Model weights may be downloaded when a factory is first instantiated.
 
-## Models
-Currently the following models will be evaluated:
+## Usage
 
-- TabPFN v2
-- TabPFN v2.5
-- TabPFN v2.6
-- TabPFN v3
-- NanoTabPFN
+List registered models:
 
----
+```bash
+python main.py --list
+```
 
-## Planned Experiments
+Resolve model factories without loading optional dependencies:
 
-### Phase 1
-- Environment setup
-- Selecting Datasets
+```python
+from models import get_model_factories
 
-### Phase 2
-Benchmark on real-world datasets.
+factories = get_model_factories(["catboost", "tabpfn_v3"])
+catboost = factories["CatBoost"]()
+```
 
-### Phase 3
-Synthetic dataset generation.
+Imports are lazy. A package is imported only when its factory is called, so unavailable optional models do not prevent other experiments from starting.
 
-Planned synthetic datasets:
+## Design requirements
 
-- Parity
-- Polynomial
-- Hierarchical
-- Noise
-- more to be added
+Every registered classifier must provide:
 
-### Final Phase
-Failure case analysis.
+- `fit(X_train, y_train)`;
+- `predict(X_test)`;
+- `predict_proba(X_test)`.
 
----
-## Milestones 
-
----
-
-## Further Information
-
----
+Experiment branches are responsible for recording the selected checkpoint, random seed, hardware, and any model-specific settings that affect a reported result.

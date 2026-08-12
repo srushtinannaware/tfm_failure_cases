@@ -1,9 +1,6 @@
-numpy
-pandas
-matplotlib
-scikit-learn
-scipy
-seaborn
-jupyterlab
-tqdm
-pyyaml
+catboost>=1.2
+numpy>=1.26
+pytabkit
+scikit-learn>=1.4
+tabicl>=2.1
+tabpfn>=8.0.1

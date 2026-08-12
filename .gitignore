@@ -16,3 +16,10 @@ env/
 # IDE
 .idea/
 .vscode/
+
+# Platform and runtime artifacts
+.DS_Store
+.pytest_cache/
+*.log
+catboost_info/
+cache/
