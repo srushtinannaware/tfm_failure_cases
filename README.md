@@ -27,7 +27,22 @@ This result is specific to the tested synthetic generator. It does not establish
 
 ### Multi-condition XOR under irrelevant features
 
-The logical benchmark tests an XOR target whose signal is diluted by irrelevant variables. Several TFMs approach chance-level balanced accuracy as irrelevant features are added, while CatBoost remains stronger in the reported four-noise-feature condition.
+The logical benchmark tests whether models can recover a higher-order XOR interaction as irrelevant variables are added. Each dataset contains 1,000 samples, with a stratified 75/25 train-test split.
+
+The models receive the original continuous features, not the Boolean threshold indicators. Difficulty was controlled by adding 0, 2, 4, or 8 independent Gaussian noise features. Results were averaged across five seeds using balanced accuracy as the primary metric.
+
+At four irrelevant features:
+
+| **Model** | **Mean balanced accuracy** |
+|---|---:|
+| CatBoost | 0.699 |
+| TabPFN v2 | 0.663 |
+| RealMLP | 0.607 |
+| TabICL v2 | 0.543 |
+| LimiX | 0.527 |
+| TabPFN-3 | 0.516 |
+
+Several models approached the chance level of 0.50 as irrelevant features were added, while CatBoost remained stronger in the four-noise-feature condition.
 
 ### Random context routing
 
