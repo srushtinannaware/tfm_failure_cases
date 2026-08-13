@@ -27,8 +27,8 @@ The threshold indicators are used only to construct and validate the target. Mod
 ## Evaluated models
 
 - CatBoost
-- RealMLP-TD
-- LimiX-16M
+- RealMLP
+- LimiX
 - TabPFN-v2
 - TabPFN-v3
 - TabICL v2
@@ -66,7 +66,9 @@ RealMLP requires `pytabkit`. LimiX is not installed from PyPI; follow the LimiX 
 Run the exact five-seed benchmark:
 
 ```bash
-python logical_l3_noise_sweep.py \
+python main.py \
+  --dataset logical_dataset \
+  --evaluation-mode logical_l3_noise_sweep \
   --models catboost realmlp tabicl_v2 limix tabpfn_v2 tabpfn_v3 \
   --seeds 0 1 2 3 4
 ```
@@ -88,6 +90,5 @@ The runner writes each completed cell immediately, skips completed cells on rest
 ## Limitations
 
 - The benchmark is synthetic and tests one family of logical rules.
-- Five seeds quantify generator variability but do not cover alternative noise distributions.
-- The result identifies model-specific behavior but does not establish its architectural cause.
-- Model checkpoints and package versions may change after the recorded runs.
+- Five seeds measure generator variability but do not cover other noise distributions.
+- The results identify model-specific behavior but do not establish its architectural cause.
